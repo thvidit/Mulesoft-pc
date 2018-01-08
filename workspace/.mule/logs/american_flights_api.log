@@ -1,0 +1,2175 @@
+2018-01-08 09:13:34,700 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'american_flights_api'                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-08 09:13:34,923 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-08 09:13:35,042 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-08 09:13:35,171 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-08 09:13:35,172 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-08 09:13:35,265 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@73511076: startup date [Mon Jan 08 09:13:35 IST 2018]; root of context hierarchy
+2018-01-08 09:13:36,894 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [api.properties]
+2018-01-08 09:13:36,900 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [api.properties]
+2018-01-08 09:13:36,921 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-08 09:13:37,302 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-08 09:13:37,302 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-08 09:13:37,302 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-08 09:13:37,302 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-08 09:13:38,202 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-08 09:13:39,125 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\american_flights_api\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\american_flights_api\queue-tx-log\tx2.log
+2018-01-08 09:13:39,141 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\american_flights_api\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\american_flights_api\queue-xa-tx-log\tx2.log
+2018-01-08 09:13:39,257 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-08 09:13:39,261 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: api-main
+2018-01-08 09:13:39,261 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2018-01-08 09:13:39,262 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2018-01-08 09:13:39,262 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2018-01-08 09:13:39,262 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2018-01-08 09:13:39,263 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2018-01-08 09:13:39,287 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: api-main.stage1
+2018-01-08 09:13:39,297 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: api-console
+2018-01-08 09:13:39,297 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2f054f70
+2018-01-08 09:13:39,302 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: api-console.stage1
+2018-01-08 09:13:39,307 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/flights:apiConfig
+2018-01-08 09:13:39,307 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4dad8ec0
+2018-01-08 09:13:39,317 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/flights:apiConfig.stage1
+2018-01-08 09:13:39,322 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/flights/{ID}:apiConfig
+2018-01-08 09:13:39,323 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4f363abd
+2018-01-08 09:13:39,327 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/flights/{ID}:apiConfig.stage1
+2018-01-08 09:13:39,328 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/flights:apiConfig
+2018-01-08 09:13:39,328 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@261b9a37
+2018-01-08 09:13:39,331 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/flights:apiConfig.stage1
+2018-01-08 09:13:39,765 [main] WARN  org.mule.module.apikit.Configuration - Action-Resource pair has no implementation -> delete:/flights/{ID} 
+2018-01-08 09:13:39,779 [main] WARN  org.mule.module.apikit.Configuration - Action-Resource-ContentType triplet has no implementation -> put:/flights/{ID}:application/json 
+2018-01-08 09:13:39,790 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2018-01-08 09:13:40,013 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\american_flights_api\american_flights_api.xml'}]"
+2018-01-08 09:13:40,015 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\american_flights_api\american_flights_api.xml'}]"
+2018-01-08 09:13:46,049 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'american_flights_api'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-08 09:13:46,056 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-08 09:13:46,056 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-08 09:13:46,116 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:7070
+2018-01-08 09:13:46,122 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-08 09:13:46,126 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-08 09:13:46,128 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: api-main
+2018-01-08 09:13:46,128 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: api-main.stage1
+2018-01-08 09:13:46,159 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://127.0.0.1:7070/console                            *
+********************************************************************************
+2018-01-08 09:13:46,159 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: api-console
+2018-01-08 09:13:46,159 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: api-console.stage1
+2018-01-08 09:13:46,162 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/flights:apiConfig
+2018-01-08 09:13:46,163 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/flights:apiConfig.stage1
+2018-01-08 09:13:46,164 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/flights/{ID}:apiConfig
+2018-01-08 09:13:46,165 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/flights/{ID}:apiConfig.stage1
+2018-01-08 09:13:46,166 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/flights:apiConfig
+2018-01-08 09:13:46,167 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/flights:apiConfig.stage1
+2018-01-08 09:13:46,241 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-08 09:13:46,281 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: american_flights_api                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-08 09:13:57,098 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1]
+2018-01-08 09:13:57,113 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:13:57,123 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13]
+2018-01-08 09:13:57,131 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=13, type=Boeing 741}]
+2018-01-08 09:13:57,131 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14]
+2018-01-08 09:13:57,139 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=250, planeId=14, type=Boeing 742}]
+2018-01-08 09:13:57,139 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14]
+2018-01-08 09:13:57,146 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=250, planeId=14, type=Boeing 742}]
+2018-01-08 09:13:57,146 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1]
+2018-01-08 09:13:57,156 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:13:57,156 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1]
+2018-01-08 09:13:57,162 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:13:57,163 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1]
+2018-01-08 09:13:57,170 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:13:57,170 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1, 1]
+2018-01-08 09:13:57,176 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:13:57,177 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1, 1, 1]
+2018-01-08 09:13:57,183 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:13:57,184 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1, 1, 1, 18]
+2018-01-08 09:13:57,189 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=18, type=Boeing 743}]
+2018-01-08 09:13:57,193 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - PayloadList from planes is: [{totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=13, type=Boeing 741}, {totalSeats=250, planeId=14, type=Boeing 742}, {totalSeats=250, planeId=14, type=Boeing 742}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=18, type=Boeing 743}]
+2018-01-08 09:13:57,227 [[american_flights_api].httpListenerConfig.worker.02] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2018-01-08 09:13:58,228 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Proper JSON response is: {
+  "flights": [
+    {
+      "flight0": {
+        "airline": "American",
+        "id": 1,
+        "code": "ER38sd",
+        "origin": "CLE",
+        "destination": "SFO",
+        "departureDate": "Jul 26, 2017",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight1": {
+        "airline": "American",
+        "id": 5,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 741",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight2": {
+        "airline": "American",
+        "id": 6,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 742",
+          "totalSeats": "250"
+        }
+      }
+    },
+    {
+      "flight3": {
+        "airline": "American",
+        "id": 7,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 742",
+          "totalSeats": "250"
+        }
+      }
+    },
+    {
+      "flight4": {
+        "airline": "American",
+        "id": 8,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight5": {
+        "airline": "American",
+        "id": 9,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight6": {
+        "airline": "American",
+        "id": 10,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight7": {
+        "airline": "American",
+        "id": 11,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight8": {
+        "airline": "American",
+        "id": 12,
+        "code": "ER41sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight9": {
+        "airline": "American",
+        "id": 13,
+        "code": "ER42sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 743",
+          "totalSeats": "150"
+        }
+      }
+    }
+  ]
+}
+2018-01-08 09:14:16,407 [[american_flights_api].httpListenerConfig.worker.02] ERROR org.mule.module.apikit.MappingExceptionListener - 
+********************************************************************************
+Message               : null
+Payload               : {strange=boom}
+Payload Type          : org.mule.module.http.internal.ParameterMap
+Element               : /api-main/processors/0 @ american_flights_api:american_flights_api.xml:17 (APIkit Router)
+Element XML           : <apikit:router config-ref="apiConfig" doc:name="APIkit Router"></apikit:router>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+org.mule.module.apikit.exception.UnsupportedMediaTypeException
+	at org.mule.module.apikit.HttpRestRequest.handleUnsupportedMediaType(HttpRestRequest.java:366)
+	at org.mule.module.apikit.HttpRestRequest.negotiateInputRepresentation(HttpRestRequest.java:360)
+	at org.mule.module.apikit.HttpRestRequest.validate(HttpRestRequest.java:125)
+	at org.mule.module.apikit.AbstractRouter.processRouterRequest(AbstractRouter.java:205)
+	at org.mule.module.apikit.AbstractRouter.processBlockingRequest(AbstractRouter.java:104)
+	at org.mule.module.apikit.AbstractRouter.processBlocking(AbstractRouter.java:98)
+	at org.mule.module.apikit.AbstractRouter.process(AbstractRouter.java:80)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.process(AsyncInterceptingMessageProcessor.java:108)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.construct.DynamicPipelineMessageProcessor.process(DynamicPipelineMessageProcessor.java:55)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.interceptor.AbstractEnvelopeInterceptor.processBlocking(AbstractEnvelopeInterceptor.java:58)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:47)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractFilteringMessageProcessor.process(AbstractFilteringMessageProcessor.java:52)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.processBlocking(AbstractRequestResponseMessageProcessor.java:56)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:47)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.construct.AbstractPipeline$3.process(AbstractPipeline.java:232)
+	at org.mule.module.http.internal.listener.HttpMessageProcessorTemplate.routeEvent(HttpMessageProcessorTemplate.java:73)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:72)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:59)
+	at org.mule.execution.ExecuteCallbackInterceptor.execute(ExecuteCallbackInterceptor.java:16)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:35)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:22)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:30)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:14)
+	at org.mule.execution.BeginAndResolveTransactionInterceptor.execute(BeginAndResolveTransactionInterceptor.java:67)
+	at org.mule.execution.ResolvePreviousTransactionInterceptor.execute(ResolvePreviousTransactionInterceptor.java:44)
+	at org.mule.execution.SuspendXaTransactionInterceptor.execute(SuspendXaTransactionInterceptor.java:50)
+	at org.mule.execution.ValidateTransactionalStateInterceptor.execute(ValidateTransactionalStateInterceptor.java:40)
+	at org.mule.execution.IsolateCurrentTransactionInterceptor.execute(IsolateCurrentTransactionInterceptor.java:41)
+	at org.mule.execution.ExternalTransactionInterceptor.execute(ExternalTransactionInterceptor.java:48)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:28)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:13)
+	at org.mule.execution.TransactionalErrorHandlingExecutionTemplate.execute(TransactionalErrorHandlingExecutionTemplate.java:110)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:58)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:35)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:69)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:187)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:58)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:93)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:49)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:112)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:39)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.process(PhaseExecutionEngine.java:114)
+	at org.mule.execution.PhaseExecutionEngine.process(PhaseExecutionEngine.java:41)
+	at org.mule.execution.MuleMessageProcessingManager.processMessage(MuleMessageProcessingManager.java:32)
+	at org.mule.module.http.internal.listener.DefaultHttpListener$1.handleRequest(DefaultHttpListener.java:135)
+	at org.mule.module.http.internal.listener.grizzly.GrizzlyRequestDispatcherFilter.handleRead(GrizzlyRequestDispatcherFilter.java:100)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:539)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.run0(ExecutorPerServerAddressIOStrategy.java:119)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.access$100(ExecutorPerServerAddressIOStrategy.java:31)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy$WorkerThreadRunnable.run(ExecutorPerServerAddressIOStrategy.java:142)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+********************************************************************************
+
+2018-01-08 09:14:45,326 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1]
+2018-01-08 09:14:45,332 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:14:45,332 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13]
+2018-01-08 09:14:45,339 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=13, type=Boeing 741}]
+2018-01-08 09:14:45,340 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14]
+2018-01-08 09:14:45,350 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=250, planeId=14, type=Boeing 742}]
+2018-01-08 09:14:45,351 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14]
+2018-01-08 09:14:45,358 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=250, planeId=14, type=Boeing 742}]
+2018-01-08 09:14:45,358 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1]
+2018-01-08 09:14:45,364 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:14:45,364 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1]
+2018-01-08 09:14:45,370 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:14:45,370 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1]
+2018-01-08 09:14:45,376 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:14:45,377 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1, 1]
+2018-01-08 09:14:45,382 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:14:45,383 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1, 1, 1]
+2018-01-08 09:14:45,388 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:14:45,388 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1, 1, 1, 18]
+2018-01-08 09:14:45,394 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=18, type=Boeing 743}]
+2018-01-08 09:14:45,394 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - PayloadList from planes is: [{totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=13, type=Boeing 741}, {totalSeats=250, planeId=14, type=Boeing 742}, {totalSeats=250, planeId=14, type=Boeing 742}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=18, type=Boeing 743}]
+2018-01-08 09:14:45,394 [[american_flights_api].httpListenerConfig.worker.02] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2018-01-08 09:14:45,411 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Proper JSON response is: {
+  "flights": [
+    {
+      "flight0": {
+        "airline": "American",
+        "id": 1,
+        "code": "ER38sd",
+        "origin": "CLE",
+        "destination": "SFO",
+        "departureDate": "Jul 26, 2017",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight1": {
+        "airline": "American",
+        "id": 5,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 741",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight2": {
+        "airline": "American",
+        "id": 6,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 742",
+          "totalSeats": "250"
+        }
+      }
+    },
+    {
+      "flight3": {
+        "airline": "American",
+        "id": 7,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 742",
+          "totalSeats": "250"
+        }
+      }
+    },
+    {
+      "flight4": {
+        "airline": "American",
+        "id": 8,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight5": {
+        "airline": "American",
+        "id": 9,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight6": {
+        "airline": "American",
+        "id": 10,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight7": {
+        "airline": "American",
+        "id": 11,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight8": {
+        "airline": "American",
+        "id": 12,
+        "code": "ER41sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight9": {
+        "airline": "American",
+        "id": 13,
+        "code": "ER42sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 743",
+          "totalSeats": "150"
+        }
+      }
+    }
+  ]
+}
+2018-01-08 09:15:13,775 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1]
+2018-01-08 09:15:13,786 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:15:13,786 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13]
+2018-01-08 09:15:13,791 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=13, type=Boeing 741}]
+2018-01-08 09:15:13,792 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14]
+2018-01-08 09:15:13,797 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=250, planeId=14, type=Boeing 742}]
+2018-01-08 09:15:13,798 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14]
+2018-01-08 09:15:13,803 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=250, planeId=14, type=Boeing 742}]
+2018-01-08 09:15:13,803 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1]
+2018-01-08 09:15:13,809 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:15:13,810 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1]
+2018-01-08 09:15:13,816 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:15:13,817 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1]
+2018-01-08 09:15:13,822 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:15:13,823 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1, 1]
+2018-01-08 09:15:13,827 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:15:13,828 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1, 1, 1]
+2018-01-08 09:15:13,833 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:15:13,834 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1, 1, 1, 18]
+2018-01-08 09:15:13,839 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=18, type=Boeing 743}]
+2018-01-08 09:15:13,840 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - PayloadList from planes is: [{totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=13, type=Boeing 741}, {totalSeats=250, planeId=14, type=Boeing 742}, {totalSeats=250, planeId=14, type=Boeing 742}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=18, type=Boeing 743}]
+2018-01-08 09:15:13,840 [[american_flights_api].httpListenerConfig.worker.02] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2018-01-08 09:15:13,856 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Proper JSON response is: {
+  "flights": [
+    {
+      "flight0": {
+        "airline": "American",
+        "id": 1,
+        "code": "ER38sd",
+        "origin": "CLE",
+        "destination": "SFO",
+        "departureDate": "Jul 26, 2017",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight1": {
+        "airline": "American",
+        "id": 5,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 741",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight2": {
+        "airline": "American",
+        "id": 6,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 742",
+          "totalSeats": "250"
+        }
+      }
+    },
+    {
+      "flight3": {
+        "airline": "American",
+        "id": 7,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 742",
+          "totalSeats": "250"
+        }
+      }
+    },
+    {
+      "flight4": {
+        "airline": "American",
+        "id": 8,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight5": {
+        "airline": "American",
+        "id": 9,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight6": {
+        "airline": "American",
+        "id": 10,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight7": {
+        "airline": "American",
+        "id": 11,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight8": {
+        "airline": "American",
+        "id": 12,
+        "code": "ER41sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight9": {
+        "airline": "American",
+        "id": 13,
+        "code": "ER42sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 743",
+          "totalSeats": "150"
+        }
+      }
+    }
+  ]
+}
+2018-01-08 09:15:27,384 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [3]
+2018-01-08 09:15:27,389 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=250, planeId=3, type=Boeing 739}]
+2018-01-08 09:15:27,390 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - PayloadList from planes is: [{totalSeats=250, planeId=3, type=Boeing 739}]
+2018-01-08 09:15:27,390 [[american_flights_api].httpListenerConfig.worker.02] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2018-01-08 09:15:27,397 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Proper JSON response is: {
+  "flights": [
+    {
+      "flight0": {
+        "airline": "American",
+        "id": 4,
+        "code": "ER40sd",
+        "origin": "SFO",
+        "destination": "LAX",
+        "departureDate": "Jul 29, 2017",
+        "price": 350,
+        "availableSeats": "12",
+        "plane": {
+          "type": "Boeing 739",
+          "totalSeats": "250"
+        }
+      }
+    }
+  ]
+}
+2018-01-08 09:15:31,821 [[american_flights_api].httpListenerConfig.worker.02] ERROR org.mule.module.apikit.MappingExceptionListener - 
+********************************************************************************
+Message               : Invalid value 'PDF' for query parameter code. Invalid element PDF.
+Payload               : {NullPayload}
+Payload Type          : org.mule.transport.NullPayload
+Element               : /api-main/processors/0 @ american_flights_api:american_flights_api.xml:17 (APIkit Router)
+Element XML           : <apikit:router config-ref="apiConfig" doc:name="APIkit Router"></apikit:router>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+org.mule.module.apikit.exception.InvalidQueryParameterException: Invalid value 'PDF' for query parameter code. Invalid element PDF.
+	at org.mule.module.apikit.HttpRestRequest.validateQueryParam(HttpRestRequest.java:229)
+	at org.mule.module.apikit.HttpRestRequest.processQueryParameters(HttpRestRequest.java:181)
+	at org.mule.module.apikit.HttpRestRequest.validate(HttpRestRequest.java:122)
+	at org.mule.module.apikit.AbstractRouter.processRouterRequest(AbstractRouter.java:205)
+	at org.mule.module.apikit.AbstractRouter.processBlockingRequest(AbstractRouter.java:104)
+	at org.mule.module.apikit.AbstractRouter.processBlocking(AbstractRouter.java:98)
+	at org.mule.module.apikit.AbstractRouter.process(AbstractRouter.java:80)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.process(AsyncInterceptingMessageProcessor.java:108)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.construct.DynamicPipelineMessageProcessor.process(DynamicPipelineMessageProcessor.java:55)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.interceptor.AbstractEnvelopeInterceptor.processBlocking(AbstractEnvelopeInterceptor.java:58)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:47)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractFilteringMessageProcessor.process(AbstractFilteringMessageProcessor.java:52)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.processBlocking(AbstractRequestResponseMessageProcessor.java:56)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:47)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.construct.AbstractPipeline$3.process(AbstractPipeline.java:232)
+	at org.mule.module.http.internal.listener.HttpMessageProcessorTemplate.routeEvent(HttpMessageProcessorTemplate.java:73)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:72)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:59)
+	at org.mule.execution.ExecuteCallbackInterceptor.execute(ExecuteCallbackInterceptor.java:16)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:35)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:22)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:30)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:14)
+	at org.mule.execution.BeginAndResolveTransactionInterceptor.execute(BeginAndResolveTransactionInterceptor.java:67)
+	at org.mule.execution.ResolvePreviousTransactionInterceptor.execute(ResolvePreviousTransactionInterceptor.java:44)
+	at org.mule.execution.SuspendXaTransactionInterceptor.execute(SuspendXaTransactionInterceptor.java:50)
+	at org.mule.execution.ValidateTransactionalStateInterceptor.execute(ValidateTransactionalStateInterceptor.java:40)
+	at org.mule.execution.IsolateCurrentTransactionInterceptor.execute(IsolateCurrentTransactionInterceptor.java:41)
+	at org.mule.execution.ExternalTransactionInterceptor.execute(ExternalTransactionInterceptor.java:48)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:28)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:13)
+	at org.mule.execution.TransactionalErrorHandlingExecutionTemplate.execute(TransactionalErrorHandlingExecutionTemplate.java:110)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:58)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:35)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:69)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:187)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:58)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:93)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:49)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:112)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:39)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.process(PhaseExecutionEngine.java:114)
+	at org.mule.execution.PhaseExecutionEngine.process(PhaseExecutionEngine.java:41)
+	at org.mule.execution.MuleMessageProcessingManager.processMessage(MuleMessageProcessingManager.java:32)
+	at org.mule.module.http.internal.listener.DefaultHttpListener$1.handleRequest(DefaultHttpListener.java:135)
+	at org.mule.module.http.internal.listener.grizzly.GrizzlyRequestDispatcherFilter.handleRead(GrizzlyRequestDispatcherFilter.java:100)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:539)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.run0(ExecutorPerServerAddressIOStrategy.java:119)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.access$100(ExecutorPerServerAddressIOStrategy.java:31)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy$WorkerThreadRunnable.run(ExecutorPerServerAddressIOStrategy.java:142)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+********************************************************************************
+
+2018-01-08 09:15:36,107 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [3]
+2018-01-08 09:15:36,112 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=250, planeId=3, type=Boeing 739}]
+2018-01-08 09:15:36,113 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - PayloadList from planes is: [{totalSeats=250, planeId=3, type=Boeing 739}]
+2018-01-08 09:15:36,113 [[american_flights_api].httpListenerConfig.worker.02] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2018-01-08 09:15:36,119 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Proper JSON response is: {
+  "flights": [
+    {
+      "flight0": {
+        "airline": "American",
+        "id": 3,
+        "code": "ER40sd",
+        "origin": "LAX",
+        "destination": "CLE",
+        "departureDate": "Jul 28, 2017",
+        "price": 350,
+        "availableSeats": "12",
+        "plane": {
+          "type": "Boeing 739",
+          "totalSeats": "250"
+        }
+      }
+    }
+  ]
+}
+2018-01-08 09:16:43,086 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'american_flights_api'                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-08 09:16:43,259 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-08 09:16:43,361 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-08 09:16:43,474 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-08 09:16:43,477 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-08 09:16:43,541 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@532721fd: startup date [Mon Jan 08 09:16:43 IST 2018]; root of context hierarchy
+2018-01-08 09:16:44,831 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [api.properties]
+2018-01-08 09:16:44,837 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [api.properties]
+2018-01-08 09:16:44,855 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-08 09:16:45,180 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-08 09:16:45,180 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-08 09:16:45,181 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-08 09:16:45,181 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-08 09:16:45,909 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-08 09:16:46,678 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\american_flights_api\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\american_flights_api\queue-tx-log\tx2.log
+2018-01-08 09:16:46,692 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\american_flights_api\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\american_flights_api\queue-xa-tx-log\tx2.log
+2018-01-08 09:16:46,824 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-08 09:16:46,827 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: api-main
+2018-01-08 09:16:46,828 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2018-01-08 09:16:46,829 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2018-01-08 09:16:46,829 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2018-01-08 09:16:46,829 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2018-01-08 09:16:46,829 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2018-01-08 09:16:46,852 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: api-main.stage1
+2018-01-08 09:16:46,861 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: api-console
+2018-01-08 09:16:46,861 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@38fb50f8
+2018-01-08 09:16:46,865 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: api-console.stage1
+2018-01-08 09:16:46,868 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/flights:apiConfig
+2018-01-08 09:16:46,868 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@45592af7
+2018-01-08 09:16:46,872 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/flights:apiConfig.stage1
+2018-01-08 09:16:46,875 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/flights/{ID}:apiConfig
+2018-01-08 09:16:46,875 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7cfb0c4c
+2018-01-08 09:16:46,880 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/flights/{ID}:apiConfig.stage1
+2018-01-08 09:16:46,881 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/flights:apiConfig
+2018-01-08 09:16:46,881 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1310fcb0
+2018-01-08 09:16:46,883 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/flights:apiConfig.stage1
+2018-01-08 09:16:47,241 [main] WARN  org.mule.module.apikit.Configuration - Action-Resource pair has no implementation -> delete:/flights/{ID} 
+2018-01-08 09:16:47,252 [main] WARN  org.mule.module.apikit.Configuration - Action-Resource-ContentType triplet has no implementation -> put:/flights/{ID}:application/json 
+2018-01-08 09:16:47,263 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2018-01-08 09:16:47,516 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\american_flights_api\american_flights_api.xml'}]"
+2018-01-08 09:16:47,516 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\american_flights_api\american_flights_api.xml'}]"
+2018-01-08 09:16:53,562 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'american_flights_api'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-08 09:16:53,579 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-08 09:16:53,579 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-08 09:16:53,628 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:7070
+2018-01-08 09:16:53,632 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-08 09:16:53,635 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-08 09:16:53,636 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: api-main
+2018-01-08 09:16:53,637 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: api-main.stage1
+2018-01-08 09:16:53,664 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://127.0.0.1:7070/console                            *
+********************************************************************************
+2018-01-08 09:16:53,664 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: api-console
+2018-01-08 09:16:53,665 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: api-console.stage1
+2018-01-08 09:16:53,668 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/flights:apiConfig
+2018-01-08 09:16:53,668 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/flights:apiConfig.stage1
+2018-01-08 09:16:53,670 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/flights/{ID}:apiConfig
+2018-01-08 09:16:53,670 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/flights/{ID}:apiConfig.stage1
+2018-01-08 09:16:53,672 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/flights:apiConfig
+2018-01-08 09:16:53,672 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/flights:apiConfig.stage1
+2018-01-08 09:16:53,713 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-08 09:16:53,738 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: american_flights_api                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-08 09:25:03,349 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'american_flights_api'                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-08 09:25:03,518 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-08 09:25:03,617 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-08 09:25:03,716 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-08 09:25:03,716 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-08 09:25:03,780 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@532721fd: startup date [Mon Jan 08 09:25:03 IST 2018]; root of context hierarchy
+2018-01-08 09:25:05,023 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [api.properties]
+2018-01-08 09:25:05,029 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [api.properties]
+2018-01-08 09:25:05,046 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-08 09:25:05,376 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-08 09:25:05,376 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-08 09:25:05,377 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-08 09:25:05,377 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-08 09:25:06,060 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-08 09:25:06,759 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\american_flights_api\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\american_flights_api\queue-tx-log\tx2.log
+2018-01-08 09:25:06,773 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\american_flights_api\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\american_flights_api\queue-xa-tx-log\tx2.log
+2018-01-08 09:25:06,856 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-08 09:25:06,861 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: api-main
+2018-01-08 09:25:06,861 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2018-01-08 09:25:06,862 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2018-01-08 09:25:06,863 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2018-01-08 09:25:06,863 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2018-01-08 09:25:06,864 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2018-01-08 09:25:06,890 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: api-main.stage1
+2018-01-08 09:25:06,900 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: api-console
+2018-01-08 09:25:06,900 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@38fb50f8
+2018-01-08 09:25:06,904 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: api-console.stage1
+2018-01-08 09:25:06,906 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/flights:apiConfig
+2018-01-08 09:25:06,907 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@45592af7
+2018-01-08 09:25:06,910 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/flights:apiConfig.stage1
+2018-01-08 09:25:06,914 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/flights/{ID}:apiConfig
+2018-01-08 09:25:06,914 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7cfb0c4c
+2018-01-08 09:25:06,919 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/flights/{ID}:apiConfig.stage1
+2018-01-08 09:25:06,920 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/flights:apiConfig
+2018-01-08 09:25:06,920 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1310fcb0
+2018-01-08 09:25:06,922 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/flights:apiConfig.stage1
+2018-01-08 09:25:07,234 [main] WARN  org.mule.module.apikit.Configuration - Action-Resource pair has no implementation -> delete:/flights/{ID} 
+2018-01-08 09:25:07,246 [main] WARN  org.mule.module.apikit.Configuration - Action-Resource-ContentType triplet has no implementation -> put:/flights/{ID}:application/json 
+2018-01-08 09:25:07,255 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2018-01-08 09:25:07,427 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\american_flights_api\american_flights_api.xml'}]"
+2018-01-08 09:25:07,427 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\american_flights_api\american_flights_api.xml'}]"
+2018-01-08 09:25:10,464 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'american_flights_api'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-08 09:25:10,479 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-08 09:25:10,479 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-08 09:25:10,531 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:7070
+2018-01-08 09:25:10,534 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-08 09:25:10,538 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-08 09:25:10,540 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: api-main
+2018-01-08 09:25:10,541 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: api-main.stage1
+2018-01-08 09:25:10,552 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://127.0.0.1:7070/console                            *
+********************************************************************************
+2018-01-08 09:25:10,552 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: api-console
+2018-01-08 09:25:10,552 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: api-console.stage1
+2018-01-08 09:25:10,584 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/flights:apiConfig
+2018-01-08 09:25:10,584 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/flights:apiConfig.stage1
+2018-01-08 09:25:10,587 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/flights/{ID}:apiConfig
+2018-01-08 09:25:10,587 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/flights/{ID}:apiConfig.stage1
+2018-01-08 09:25:10,589 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/flights:apiConfig
+2018-01-08 09:25:10,589 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/flights:apiConfig.stage1
+2018-01-08 09:25:10,630 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-08 09:25:10,650 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: american_flights_api                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-08 09:25:33,313 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [3]
+2018-01-08 09:25:33,326 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=250, planeId=3, type=Boeing 739}]
+2018-01-08 09:25:33,337 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - PayloadList from planes is: [{totalSeats=250, planeId=3, type=Boeing 739}]
+2018-01-08 09:25:33,374 [[american_flights_api].httpListenerConfig.worker.02] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2018-01-08 09:25:34,589 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Proper JSON response is: {
+  "flights": [
+    {
+      "flight0": {
+        "airline": "American",
+        "id": 4,
+        "code": "ER40sd",
+        "origin": "SFO",
+        "destination": "LAX",
+        "departureDate": "Jul 29, 2017",
+        "price": 350,
+        "availableSeats": "12",
+        "plane": {
+          "type": "Boeing 739",
+          "totalSeats": "250"
+        }
+      }
+    }
+  ]
+}
+2018-01-08 09:25:44,577 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1]
+2018-01-08 09:25:44,583 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:25:44,584 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13]
+2018-01-08 09:25:44,591 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=13, type=Boeing 741}]
+2018-01-08 09:25:44,591 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14]
+2018-01-08 09:25:44,597 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=250, planeId=14, type=Boeing 742}]
+2018-01-08 09:25:44,598 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14]
+2018-01-08 09:25:44,604 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=250, planeId=14, type=Boeing 742}]
+2018-01-08 09:25:44,604 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1]
+2018-01-08 09:25:44,611 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:25:44,612 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1]
+2018-01-08 09:25:44,618 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:25:44,618 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1]
+2018-01-08 09:25:44,624 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:25:44,625 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1, 1]
+2018-01-08 09:25:44,629 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:25:44,630 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1, 1, 1]
+2018-01-08 09:25:44,635 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:25:44,635 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1, 1, 1, 18]
+2018-01-08 09:25:44,640 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=18, type=Boeing 743}]
+2018-01-08 09:25:44,640 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - PayloadList from planes is: [{totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=13, type=Boeing 741}, {totalSeats=250, planeId=14, type=Boeing 742}, {totalSeats=250, planeId=14, type=Boeing 742}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=18, type=Boeing 743}]
+2018-01-08 09:25:44,640 [[american_flights_api].httpListenerConfig.worker.02] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2018-01-08 09:25:44,660 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Proper JSON response is: {
+  "flights": [
+    {
+      "flight0": {
+        "airline": "American",
+        "id": 1,
+        "code": "ER38sd",
+        "origin": "CLE",
+        "destination": "SFO",
+        "departureDate": "Jul 26, 2017",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight1": {
+        "airline": "American",
+        "id": 5,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 741",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight2": {
+        "airline": "American",
+        "id": 6,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 742",
+          "totalSeats": "250"
+        }
+      }
+    },
+    {
+      "flight3": {
+        "airline": "American",
+        "id": 7,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 742",
+          "totalSeats": "250"
+        }
+      }
+    },
+    {
+      "flight4": {
+        "airline": "American",
+        "id": 8,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight5": {
+        "airline": "American",
+        "id": 9,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight6": {
+        "airline": "American",
+        "id": 10,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight7": {
+        "airline": "American",
+        "id": 11,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight8": {
+        "airline": "American",
+        "id": 12,
+        "code": "ER41sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight9": {
+        "airline": "American",
+        "id": 13,
+        "code": "ER42sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 743",
+          "totalSeats": "150"
+        }
+      }
+    }
+  ]
+}
+2018-01-08 09:25:52,848 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1]
+2018-01-08 09:25:52,855 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:25:52,855 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13]
+2018-01-08 09:25:52,862 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=13, type=Boeing 741}]
+2018-01-08 09:25:52,862 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14]
+2018-01-08 09:25:52,867 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=250, planeId=14, type=Boeing 742}]
+2018-01-08 09:25:52,868 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14]
+2018-01-08 09:25:52,873 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=250, planeId=14, type=Boeing 742}]
+2018-01-08 09:25:52,874 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1]
+2018-01-08 09:25:52,879 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:25:52,880 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1]
+2018-01-08 09:25:52,886 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:25:52,887 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1]
+2018-01-08 09:25:52,892 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:25:52,893 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1, 1]
+2018-01-08 09:25:52,898 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:25:52,898 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1, 1, 1]
+2018-01-08 09:25:52,904 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 09:25:52,904 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1, 1, 1, 18]
+2018-01-08 09:25:52,910 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=18, type=Boeing 743}]
+2018-01-08 09:25:52,910 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - PayloadList from planes is: [{totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=13, type=Boeing 741}, {totalSeats=250, planeId=14, type=Boeing 742}, {totalSeats=250, planeId=14, type=Boeing 742}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=18, type=Boeing 743}]
+2018-01-08 09:25:52,910 [[american_flights_api].httpListenerConfig.worker.02] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2018-01-08 09:25:52,927 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Proper JSON response is: {
+  "flights": [
+    {
+      "flight0": {
+        "airline": "American",
+        "id": 1,
+        "code": "ER38sd",
+        "origin": "CLE",
+        "destination": "SFO",
+        "departureDate": "Jul 26, 2017",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight1": {
+        "airline": "American",
+        "id": 5,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 741",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight2": {
+        "airline": "American",
+        "id": 6,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 742",
+          "totalSeats": "250"
+        }
+      }
+    },
+    {
+      "flight3": {
+        "airline": "American",
+        "id": 7,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 742",
+          "totalSeats": "250"
+        }
+      }
+    },
+    {
+      "flight4": {
+        "airline": "American",
+        "id": 8,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight5": {
+        "airline": "American",
+        "id": 9,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight6": {
+        "airline": "American",
+        "id": 10,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight7": {
+        "airline": "American",
+        "id": 11,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight8": {
+        "airline": "American",
+        "id": 12,
+        "code": "ER41sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight9": {
+        "airline": "American",
+        "id": 13,
+        "code": "ER42sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 743",
+          "totalSeats": "150"
+        }
+      }
+    }
+  ]
+}
+2018-01-08 09:25:58,781 [[american_flights_api].httpListenerConfig.worker.02] ERROR org.mule.module.apikit.MappingExceptionListener - 
+********************************************************************************
+Message               : Invalid value 'foo' for query parameter code. Invalid element foo.
+Payload               : {NullPayload}
+Payload Type          : org.mule.transport.NullPayload
+Element               : /api-main/processors/0 @ american_flights_api:american_flights_api.xml:17 (APIkit Router)
+Element XML           : <apikit:router config-ref="apiConfig" doc:name="APIkit Router"></apikit:router>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+org.mule.module.apikit.exception.InvalidQueryParameterException: Invalid value 'foo' for query parameter code. Invalid element foo.
+	at org.mule.module.apikit.HttpRestRequest.validateQueryParam(HttpRestRequest.java:229)
+	at org.mule.module.apikit.HttpRestRequest.processQueryParameters(HttpRestRequest.java:181)
+	at org.mule.module.apikit.HttpRestRequest.validate(HttpRestRequest.java:122)
+	at org.mule.module.apikit.AbstractRouter.processRouterRequest(AbstractRouter.java:205)
+	at org.mule.module.apikit.AbstractRouter.processBlockingRequest(AbstractRouter.java:104)
+	at org.mule.module.apikit.AbstractRouter.processBlocking(AbstractRouter.java:98)
+	at org.mule.module.apikit.AbstractRouter.process(AbstractRouter.java:80)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.process(AsyncInterceptingMessageProcessor.java:108)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.construct.DynamicPipelineMessageProcessor.process(DynamicPipelineMessageProcessor.java:55)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.interceptor.AbstractEnvelopeInterceptor.processBlocking(AbstractEnvelopeInterceptor.java:58)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:47)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractFilteringMessageProcessor.process(AbstractFilteringMessageProcessor.java:52)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.processBlocking(AbstractRequestResponseMessageProcessor.java:56)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:47)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.construct.AbstractPipeline$3.process(AbstractPipeline.java:232)
+	at org.mule.module.http.internal.listener.HttpMessageProcessorTemplate.routeEvent(HttpMessageProcessorTemplate.java:73)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:72)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:59)
+	at org.mule.execution.ExecuteCallbackInterceptor.execute(ExecuteCallbackInterceptor.java:16)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:35)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:22)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:30)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:14)
+	at org.mule.execution.BeginAndResolveTransactionInterceptor.execute(BeginAndResolveTransactionInterceptor.java:67)
+	at org.mule.execution.ResolvePreviousTransactionInterceptor.execute(ResolvePreviousTransactionInterceptor.java:44)
+	at org.mule.execution.SuspendXaTransactionInterceptor.execute(SuspendXaTransactionInterceptor.java:50)
+	at org.mule.execution.ValidateTransactionalStateInterceptor.execute(ValidateTransactionalStateInterceptor.java:40)
+	at org.mule.execution.IsolateCurrentTransactionInterceptor.execute(IsolateCurrentTransactionInterceptor.java:41)
+	at org.mule.execution.ExternalTransactionInterceptor.execute(ExternalTransactionInterceptor.java:48)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:28)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:13)
+	at org.mule.execution.TransactionalErrorHandlingExecutionTemplate.execute(TransactionalErrorHandlingExecutionTemplate.java:110)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:58)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:35)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:69)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:187)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:58)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:93)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:49)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:112)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:39)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.process(PhaseExecutionEngine.java:114)
+	at org.mule.execution.PhaseExecutionEngine.process(PhaseExecutionEngine.java:41)
+	at org.mule.execution.MuleMessageProcessingManager.processMessage(MuleMessageProcessingManager.java:32)
+	at org.mule.module.http.internal.listener.DefaultHttpListener$1.handleRequest(DefaultHttpListener.java:135)
+	at org.mule.module.http.internal.listener.grizzly.GrizzlyRequestDispatcherFilter.handleRead(GrizzlyRequestDispatcherFilter.java:100)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:539)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.run0(ExecutorPerServerAddressIOStrategy.java:119)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.access$100(ExecutorPerServerAddressIOStrategy.java:31)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy$WorkerThreadRunnable.run(ExecutorPerServerAddressIOStrategy.java:142)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+********************************************************************************
+
+2018-01-08 09:26:09,507 [[american_flights_api].httpListenerConfig.worker.02] ERROR org.mule.module.apikit.MappingExceptionListener - 
+********************************************************************************
+Message               : Invalid value 'foo' for query parameter code. Invalid element foo.
+Payload               : {NullPayload}
+Payload Type          : org.mule.transport.NullPayload
+Element               : /api-main/processors/0 @ american_flights_api:american_flights_api.xml:17 (APIkit Router)
+Element XML           : <apikit:router config-ref="apiConfig" doc:name="APIkit Router"></apikit:router>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+org.mule.module.apikit.exception.InvalidQueryParameterException: Invalid value 'foo' for query parameter code. Invalid element foo.
+	at org.mule.module.apikit.HttpRestRequest.validateQueryParam(HttpRestRequest.java:229)
+	at org.mule.module.apikit.HttpRestRequest.processQueryParameters(HttpRestRequest.java:181)
+	at org.mule.module.apikit.HttpRestRequest.validate(HttpRestRequest.java:122)
+	at org.mule.module.apikit.AbstractRouter.processRouterRequest(AbstractRouter.java:205)
+	at org.mule.module.apikit.AbstractRouter.processBlockingRequest(AbstractRouter.java:104)
+	at org.mule.module.apikit.AbstractRouter.processBlocking(AbstractRouter.java:98)
+	at org.mule.module.apikit.AbstractRouter.process(AbstractRouter.java:80)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.process(AsyncInterceptingMessageProcessor.java:108)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.construct.DynamicPipelineMessageProcessor.process(DynamicPipelineMessageProcessor.java:55)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.interceptor.AbstractEnvelopeInterceptor.processBlocking(AbstractEnvelopeInterceptor.java:58)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:47)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractFilteringMessageProcessor.process(AbstractFilteringMessageProcessor.java:52)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.processBlocking(AbstractRequestResponseMessageProcessor.java:56)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:47)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.construct.AbstractPipeline$3.process(AbstractPipeline.java:232)
+	at org.mule.module.http.internal.listener.HttpMessageProcessorTemplate.routeEvent(HttpMessageProcessorTemplate.java:73)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:72)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:59)
+	at org.mule.execution.ExecuteCallbackInterceptor.execute(ExecuteCallbackInterceptor.java:16)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:35)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:22)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:30)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:14)
+	at org.mule.execution.BeginAndResolveTransactionInterceptor.execute(BeginAndResolveTransactionInterceptor.java:67)
+	at org.mule.execution.ResolvePreviousTransactionInterceptor.execute(ResolvePreviousTransactionInterceptor.java:44)
+	at org.mule.execution.SuspendXaTransactionInterceptor.execute(SuspendXaTransactionInterceptor.java:50)
+	at org.mule.execution.ValidateTransactionalStateInterceptor.execute(ValidateTransactionalStateInterceptor.java:40)
+	at org.mule.execution.IsolateCurrentTransactionInterceptor.execute(IsolateCurrentTransactionInterceptor.java:41)
+	at org.mule.execution.ExternalTransactionInterceptor.execute(ExternalTransactionInterceptor.java:48)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:28)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:13)
+	at org.mule.execution.TransactionalErrorHandlingExecutionTemplate.execute(TransactionalErrorHandlingExecutionTemplate.java:110)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:58)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:35)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:69)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:187)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:58)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:93)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:49)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:112)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:39)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.process(PhaseExecutionEngine.java:114)
+	at org.mule.execution.PhaseExecutionEngine.process(PhaseExecutionEngine.java:41)
+	at org.mule.execution.MuleMessageProcessingManager.processMessage(MuleMessageProcessingManager.java:32)
+	at org.mule.module.http.internal.listener.DefaultHttpListener$1.handleRequest(DefaultHttpListener.java:135)
+	at org.mule.module.http.internal.listener.grizzly.GrizzlyRequestDispatcherFilter.handleRead(GrizzlyRequestDispatcherFilter.java:100)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:539)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.run0(ExecutorPerServerAddressIOStrategy.java:119)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.access$100(ExecutorPerServerAddressIOStrategy.java:31)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy$WorkerThreadRunnable.run(ExecutorPerServerAddressIOStrategy.java:142)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+********************************************************************************
+
+2018-01-08 09:26:18,324 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [3]
+2018-01-08 09:26:18,331 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=250, planeId=3, type=Boeing 739}]
+2018-01-08 09:26:18,332 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - PayloadList from planes is: [{totalSeats=250, planeId=3, type=Boeing 739}]
+2018-01-08 09:26:18,332 [[american_flights_api].httpListenerConfig.worker.02] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2018-01-08 09:26:18,337 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Proper JSON response is: {
+  "flights": [
+    {
+      "flight0": {
+        "airline": "American",
+        "id": 3,
+        "code": "ER40sd",
+        "origin": "LAX",
+        "destination": "CLE",
+        "departureDate": "Jul 28, 2017",
+        "price": 350,
+        "availableSeats": "12",
+        "plane": {
+          "type": "Boeing 739",
+          "totalSeats": "250"
+        }
+      }
+    }
+  ]
+}
+2018-01-08 09:41:00,383 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [3]
+2018-01-08 09:41:00,390 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=250, planeId=3, type=Boeing 739}]
+2018-01-08 09:41:00,391 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - PayloadList from planes is: [{totalSeats=250, planeId=3, type=Boeing 739}]
+2018-01-08 09:41:00,391 [[american_flights_api].httpListenerConfig.worker.02] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2018-01-08 09:41:00,396 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Proper JSON response is: {
+  "flights": [
+    {
+      "flight0": {
+        "airline": "American",
+        "id": 3,
+        "code": "ER40sd",
+        "origin": "LAX",
+        "destination": "CLE",
+        "departureDate": "Jul 28, 2017",
+        "price": 350,
+        "availableSeats": "12",
+        "plane": {
+          "type": "Boeing 739",
+          "totalSeats": "250"
+        }
+      }
+    }
+  ]
+}
+2018-01-08 09:52:56,361 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'american_flights_api'                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-08 09:52:56,532 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-08 09:52:56,628 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-08 09:52:56,727 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-08 09:52:56,728 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-08 09:52:56,793 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@532721fd: startup date [Mon Jan 08 09:52:56 IST 2018]; root of context hierarchy
+2018-01-08 09:52:58,026 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [api.properties]
+2018-01-08 09:52:58,032 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [api.properties]
+2018-01-08 09:52:58,049 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-08 09:52:58,372 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-08 09:52:58,372 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-08 09:52:58,372 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-08 09:52:58,372 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-08 09:52:59,056 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-08 09:52:59,791 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\american_flights_api\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\american_flights_api\queue-tx-log\tx2.log
+2018-01-08 09:52:59,807 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\american_flights_api\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\american_flights_api\queue-xa-tx-log\tx2.log
+2018-01-08 09:52:59,889 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-08 09:52:59,893 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: api-main
+2018-01-08 09:52:59,894 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2018-01-08 09:52:59,895 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2018-01-08 09:52:59,895 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2018-01-08 09:52:59,896 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2018-01-08 09:52:59,896 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2018-01-08 09:52:59,916 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: api-main.stage1
+2018-01-08 09:52:59,925 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: api-console
+2018-01-08 09:52:59,925 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5c18d6d4
+2018-01-08 09:52:59,929 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: api-console.stage1
+2018-01-08 09:52:59,932 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/flights:apiConfig
+2018-01-08 09:52:59,932 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6ee5f485
+2018-01-08 09:52:59,935 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/flights:apiConfig.stage1
+2018-01-08 09:52:59,939 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/flights/{ID}:apiConfig
+2018-01-08 09:52:59,939 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@677ce519
+2018-01-08 09:52:59,942 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/flights/{ID}:apiConfig.stage1
+2018-01-08 09:52:59,942 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/flights:apiConfig
+2018-01-08 09:52:59,943 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@68a305eb
+2018-01-08 09:52:59,946 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/flights:apiConfig.stage1
+2018-01-08 09:53:00,275 [main] WARN  org.mule.module.apikit.Configuration - Action-Resource pair has no implementation -> delete:/flights/{ID} 
+2018-01-08 09:53:00,285 [main] WARN  org.mule.module.apikit.Configuration - Action-Resource-ContentType triplet has no implementation -> put:/flights/{ID}:application/json 
+2018-01-08 09:53:00,294 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2018-01-08 09:53:00,469 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\american_flights_api\american_flights_api.xml'}]"
+2018-01-08 09:53:00,469 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\american_flights_api\american_flights_api.xml'}]"
+2018-01-08 09:53:03,508 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'american_flights_api'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-08 09:53:03,520 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-08 09:53:03,520 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-08 09:53:03,575 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:7070
+2018-01-08 09:53:03,578 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-08 09:53:03,582 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-08 09:53:03,584 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: api-main
+2018-01-08 09:53:03,585 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: api-main.stage1
+2018-01-08 09:53:03,598 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://127.0.0.1:7070/console                            *
+********************************************************************************
+2018-01-08 09:53:03,598 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: api-console
+2018-01-08 09:53:03,598 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: api-console.stage1
+2018-01-08 09:53:03,601 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/flights:apiConfig
+2018-01-08 09:53:03,601 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/flights:apiConfig.stage1
+2018-01-08 09:53:03,603 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/flights/{ID}:apiConfig
+2018-01-08 09:53:03,604 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/flights/{ID}:apiConfig.stage1
+2018-01-08 09:53:03,606 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/flights:apiConfig
+2018-01-08 09:53:03,606 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/flights:apiConfig.stage1
+2018-01-08 09:53:03,658 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-08 09:53:03,681 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: american_flights_api                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-08 09:53:26,873 [[american_flights_api].httpListenerConfig.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [3]
+2018-01-08 09:53:26,884 [[american_flights_api].httpListenerConfig.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=250, planeId=3, type=Boeing 739}]
+2018-01-08 09:53:26,895 [[american_flights_api].httpListenerConfig.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - PayloadList from planes is: [{totalSeats=250, planeId=3, type=Boeing 739}]
+2018-01-08 09:53:26,895 [[american_flights_api].httpListenerConfig.worker.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2018-01-08 09:53:27,397 [[american_flights_api].httpListenerConfig.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Proper JSON response is: {
+  "flights": [
+    {
+      "flight0": {
+        "airline": "American",
+        "id": 3,
+        "code": "ER40sd",
+        "origin": "LAX",
+        "destination": "CLE",
+        "departureDate": "Jul 28, 2017",
+        "price": 350,
+        "availableSeats": "12",
+        "plane": {
+          "type": "Boeing 739",
+          "totalSeats": "250"
+        }
+      }
+    }
+  ]
+}
+2018-01-08 09:53:39,906 [[american_flights_api].httpListenerConfig.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [3]
+2018-01-08 09:53:39,913 [[american_flights_api].httpListenerConfig.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=250, planeId=3, type=Boeing 739}]
+2018-01-08 09:53:39,914 [[american_flights_api].httpListenerConfig.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - PayloadList from planes is: [{totalSeats=250, planeId=3, type=Boeing 739}]
+2018-01-08 09:53:39,914 [[american_flights_api].httpListenerConfig.worker.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2018-01-08 09:53:39,920 [[american_flights_api].httpListenerConfig.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Proper JSON response is: {
+  "flights": [
+    {
+      "flight0": {
+        "airline": "American",
+        "id": 3,
+        "code": "ER40sd",
+        "origin": "LAX",
+        "destination": "CLE",
+        "departureDate": "Jul 28, 2017",
+        "price": 350,
+        "availableSeats": "12",
+        "plane": {
+          "type": "Boeing 739",
+          "totalSeats": "250"
+        }
+      }
+    }
+  ]
+}
+2018-01-08 09:53:44,828 [[american_flights_api].httpListenerConfig.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [3]
+2018-01-08 09:53:44,835 [[american_flights_api].httpListenerConfig.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=250, planeId=3, type=Boeing 739}]
+2018-01-08 09:53:44,836 [[american_flights_api].httpListenerConfig.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - PayloadList from planes is: [{totalSeats=250, planeId=3, type=Boeing 739}]
+2018-01-08 09:53:44,836 [[american_flights_api].httpListenerConfig.worker.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2018-01-08 09:53:44,842 [[american_flights_api].httpListenerConfig.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Proper JSON response is: {
+  "flights": [
+    {
+      "flight0": {
+        "airline": "American",
+        "id": 3,
+        "code": "ER40sd",
+        "origin": "LAX",
+        "destination": "CLE",
+        "departureDate": "Jul 28, 2017",
+        "price": 350,
+        "availableSeats": "12",
+        "plane": {
+          "type": "Boeing 739",
+          "totalSeats": "250"
+        }
+      }
+    }
+  ]
+}
+2018-01-08 17:06:13,334 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'american_flights_api'                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-08 17:06:13,544 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-08 17:06:13,652 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-08 17:06:13,765 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-08 17:06:13,766 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-08 17:06:13,838 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@532721fd: startup date [Mon Jan 08 17:06:13 IST 2018]; root of context hierarchy
+2018-01-08 17:06:15,168 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [api.properties]
+2018-01-08 17:06:15,173 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [api.properties]
+2018-01-08 17:06:15,194 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-08 17:06:15,531 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-08 17:06:15,531 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-08 17:06:15,531 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-08 17:06:15,532 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-08 17:06:16,246 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-08 17:06:16,987 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\american_flights_api\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\american_flights_api\queue-tx-log\tx2.log
+2018-01-08 17:06:17,002 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\american_flights_api\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\american_flights_api\queue-xa-tx-log\tx2.log
+2018-01-08 17:06:17,085 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-08 17:06:17,090 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: api-main
+2018-01-08 17:06:17,091 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2018-01-08 17:06:17,092 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2018-01-08 17:06:17,093 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2018-01-08 17:06:17,093 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2018-01-08 17:06:17,093 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2018-01-08 17:06:17,117 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: api-main.stage1
+2018-01-08 17:06:17,126 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: api-console
+2018-01-08 17:06:17,126 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5c18d6d4
+2018-01-08 17:06:17,131 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: api-console.stage1
+2018-01-08 17:06:17,134 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/flights:apiConfig
+2018-01-08 17:06:17,134 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6ee5f485
+2018-01-08 17:06:17,138 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/flights:apiConfig.stage1
+2018-01-08 17:06:17,142 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/flights/{ID}:apiConfig
+2018-01-08 17:06:17,142 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@677ce519
+2018-01-08 17:06:17,149 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/flights/{ID}:apiConfig.stage1
+2018-01-08 17:06:17,150 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/flights:apiConfig
+2018-01-08 17:06:17,150 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@68a305eb
+2018-01-08 17:06:17,153 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/flights:apiConfig.stage1
+2018-01-08 17:06:17,840 [main] WARN  org.mule.module.apikit.Configuration - Action-Resource pair has no implementation -> delete:/flights/{ID} 
+2018-01-08 17:06:17,853 [main] WARN  org.mule.module.apikit.Configuration - Action-Resource-ContentType triplet has no implementation -> put:/flights/{ID}:application/json 
+2018-01-08 17:06:17,983 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2018-01-08 17:06:18,165 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\american_flights_api\american_flights_api.xml'}]"
+2018-01-08 17:06:18,166 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\american_flights_api\american_flights_api.xml'}]"
+2018-01-08 17:06:21,201 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'american_flights_api'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-08 17:06:21,237 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-08 17:06:21,237 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-08 17:06:21,282 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:7070
+2018-01-08 17:06:21,287 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-08 17:06:21,291 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-08 17:06:21,293 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: api-main
+2018-01-08 17:06:21,293 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: api-main.stage1
+2018-01-08 17:06:21,306 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://127.0.0.1:7070/console                            *
+********************************************************************************
+2018-01-08 17:06:21,307 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: api-console
+2018-01-08 17:06:21,307 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: api-console.stage1
+2018-01-08 17:06:21,312 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/flights:apiConfig
+2018-01-08 17:06:21,312 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/flights:apiConfig.stage1
+2018-01-08 17:06:21,314 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/flights/{ID}:apiConfig
+2018-01-08 17:06:21,315 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/flights/{ID}:apiConfig.stage1
+2018-01-08 17:06:21,318 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/flights:apiConfig
+2018-01-08 17:06:21,319 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/flights:apiConfig.stage1
+2018-01-08 17:06:21,363 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-08 17:06:21,419 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: american_flights_api                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-08 17:06:29,586 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1]
+2018-01-08 17:06:29,599 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 17:06:29,609 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13]
+2018-01-08 17:06:29,616 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=13, type=Boeing 741}]
+2018-01-08 17:06:29,616 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14]
+2018-01-08 17:06:29,623 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=250, planeId=14, type=Boeing 742}]
+2018-01-08 17:06:29,624 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14]
+2018-01-08 17:06:29,632 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=250, planeId=14, type=Boeing 742}]
+2018-01-08 17:06:29,634 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1]
+2018-01-08 17:06:29,643 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 17:06:29,644 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1]
+2018-01-08 17:06:29,651 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 17:06:29,652 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1]
+2018-01-08 17:06:29,661 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 17:06:29,662 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1, 1]
+2018-01-08 17:06:29,670 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 17:06:29,671 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1, 1, 1]
+2018-01-08 17:06:29,678 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=1, type=Boeing 737}]
+2018-01-08 17:06:29,679 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Plane id is : [1, 13, 14, 14, 1, 1, 1, 1, 1, 18]
+2018-01-08 17:06:29,684 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload afte converting to Json: [{totalSeats=150, planeId=18, type=Boeing 743}]
+2018-01-08 17:06:29,689 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - PayloadList from planes is: [{totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=13, type=Boeing 741}, {totalSeats=250, planeId=14, type=Boeing 742}, {totalSeats=250, planeId=14, type=Boeing 742}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=1, type=Boeing 737}, {totalSeats=150, planeId=18, type=Boeing 743}]
+2018-01-08 17:06:29,725 [[american_flights_api].httpListenerConfig.worker.02] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2018-01-08 17:06:31,172 [[american_flights_api].httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Proper JSON response is: {
+  "flights": [
+    {
+      "flight0": {
+        "airline": "American",
+        "id": 1,
+        "code": "ER38sd",
+        "origin": "CLE",
+        "destination": "SFO",
+        "departureDate": "Jul 26, 2017",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight1": {
+        "airline": "American",
+        "id": 5,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 741",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight2": {
+        "airline": "American",
+        "id": 6,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 742",
+          "totalSeats": "250"
+        }
+      }
+    },
+    {
+      "flight3": {
+        "airline": "American",
+        "id": 7,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 742",
+          "totalSeats": "250"
+        }
+      }
+    },
+    {
+      "flight4": {
+        "airline": "American",
+        "id": 8,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight5": {
+        "airline": "American",
+        "id": 9,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight6": {
+        "airline": "American",
+        "id": 10,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight7": {
+        "airline": "American",
+        "id": 11,
+        "code": "ER38sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight8": {
+        "airline": "American",
+        "id": 12,
+        "code": "ER41sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 737",
+          "totalSeats": "150"
+        }
+      }
+    },
+    {
+      "flight9": {
+        "airline": "American",
+        "id": 13,
+        "code": "ER42sd",
+        "origin": "MUA",
+        "destination": "SFO",
+        "departureDate": "Mar 20, 2016",
+        "price": 400,
+        "availableSeats": "0",
+        "plane": {
+          "type": "Boeing 743",
+          "totalSeats": "150"
+        }
+      }
+    }
+  ]
+}

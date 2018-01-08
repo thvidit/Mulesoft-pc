@@ -1,0 +1,117 @@
+#%RAML 1.0
+baseUri: https://mocksvc.mulesoft.com/mocks/f74148b0-0c02-446e-8643-cd5507cfbc76 # baseUri: https://mocksvc.mulesoft.com/mocks/908eb157-5000-43bf-8846-0babe2fbba4f # baseUri: https://mocksvc.mulesoft.com/mocks/04fa5ea6-6264-4aba-90f9-7da585660ade # 
+title: Orchard
+version: 1.0
+/orchard:
+  /campusminds:
+    description: Get details of all campus minds!
+    get:
+      responses: 
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                "MID":1,
+                "name":"Vidit Kumar",
+                "leadId":2
+                }
+    post:
+      body:
+        application/json:
+          example: |
+            {
+            "MID":1,
+            "name":"Vidit Kumar",
+            "leadId":2
+            }
+      responses: 
+        201:
+          body:
+            application/json:
+              example: |
+                {"message":"Added CampusMind details!"}
+  /leads:
+    description: Get details of all leads!
+    get:
+      responses: 
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                "leadsId":1,
+                "mId":1,
+                "name":"Smruti Singh",
+                "trackId":1
+                }
+    post:
+      body:
+        application/json:
+          example: |
+           {
+           "leadsId":1,
+           "mId":1,
+           "name":"Smruti Singh",
+           "trackId":1
+           }
+      responses: 
+        201:
+          body:
+            application/json:
+              example: |
+                {"message": "Added Lead Details!"}
+  /tracks:
+    description: Get deails of all tracks!
+    get:
+      responses: 
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  "trackId": 39,
+                  "trackName": "Linkin Park"
+                }
+    post:
+      body:
+        application/json:
+          example: |
+              {
+                  "trackId": 39,
+                  "trackName": "Linkin Park"
+              }
+      responses: 
+        201:
+          body: 
+            application/json:
+              example: |
+                {"message": "Added track successfully!"}
+  /checktrack:
+    description: Just for checking purpose!
+    post:
+      queryParameters: 
+        trackId:
+        trackName:
+      responses: 
+        201:
+          body:
+            application/json:
+              example: |
+                {
+                  "message": "Okay working good!"
+                }
+  /checkcampusmind:
+    description: "Only allowed if lead exists!"
+    post:
+      queryParameters:
+        "MID":
+        "name":
+        "leadId":    
+      responses: 
+        201:
+          body:
+            application/json:
+              example: |
+                {"messages": "Details Added!" }
+        

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
+    <db:mysql-config name="MySQL_Configuration1" host="localhost" port="3306" user="root" password="Welcome123" database="orchard3" doc:name="MySQL Configuration"/>
+    <flow name="orchard-get-campusmindsFlow">
+        <db:select config-ref="MySQL_Configuration1" doc:name="Database">
+            <db:parameterized-query><![CDATA[SELECT *
+FROM
+CAMPUSMINDS]]></db:parameterized-query>
+        </db:select>
+        <json:object-to-json-transformer doc:name="Object to JSON"/>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/java
+---
+{
+	MID: sum payload.MID 
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <logger message="After Dataweave: #[payload]" level="INFO" doc:name="Logger"/>
+    </flow>
+    <flow name="orchard-get-leadsFlow">
+        <db:select config-ref="MySQL_Configuration1" doc:name="Database">
+            <db:parameterized-query><![CDATA[SELECT  *
+FROM 
+LEADS]]></db:parameterized-query>
+        </db:select>
+        <json:object-to-json-transformer doc:name="Object to JSON"/>
+    </flow>
+    <flow name="orchard-get-tracksFlow">
+        <db:select config-ref="MySQL_Configuration1" doc:name="Database">
+            <db:parameterized-query><![CDATA[SELECT *
+FROM
+TRACKS]]></db:parameterized-query>
+        </db:select>
+        <json:object-to-json-transformer doc:name="Object to JSON"/>
+    </flow>
+    <flow name="orchard-post-campusmindFlow">
+        <db:insert config-ref="MySQL_Configuration1" doc:name="Database">
+            <db:parameterized-query><![CDATA[INSERT INTO
+CAMPUSMINDS
+(name,leadId)
+VALUES (#[json:name], #[json:leadId])]]></db:parameterized-query>
+        </db:insert>
+    </flow>
+    <flow name="orchard-post-leadFlow">
+        <db:insert config-ref="MySQL_Configuration1" doc:name="Database">
+            <db:parameterized-query><![CDATA[INSERT INTO
+LEADS
+(mId,name,trackId)
+VALUES (#[json:mId], #[json:name],#[json:trackId])]]></db:parameterized-query>
+        </db:insert>
+    </flow>
+    <flow name="orchard-post-trackFlow">
+        <db:insert config-ref="MySQL_Configuration1" doc:name="Database">
+            <db:parameterized-query><![CDATA[INSERT INTO
+TRACKS
+(trackId, trackName)
+VALUES (#[json:trackId], #[json:trackName])]]></db:parameterized-query>
+        </db:insert>
+    </flow>
+    <flow name="orchard-post-checkcampusmind-flow">
+        <db:insert config-ref="MySQL_Configuration1" doc:name="Database">
+            <db:parameterized-query><![CDATA[INSERT INTO 
+CAMPUSMINDS 
+(mId,name,leadId)
+VALUES 
+(#[payload.MID],#[payload.name],#[payload.leadId])]]></db:parameterized-query>
+        </db:insert>
+    </flow>
+</mule>

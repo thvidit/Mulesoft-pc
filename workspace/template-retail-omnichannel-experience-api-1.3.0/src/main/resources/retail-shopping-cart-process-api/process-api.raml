@@ -1,0 +1,134 @@
+#%RAML 1.0
+title: Retail Shopping Cart Process API
+version: dev
+baseUri: https://localhost:8082/api
+
+types:
+  
+  Item: 
+    type: object
+    properties: 
+      productId: 
+        type: string
+        description: | 
+          Identifier of product
+      variantId: 
+        type: string
+        description: | 
+          Identifier of variant
+      location?: 
+        type: Location
+        description: 
+          Location information
+      quantity:  
+        type: integer
+        description: |
+          Number of product (variant)
+        
+  Location: 
+    type: object
+    properties:      
+      locationId?: 
+        type: string?
+        description: | 
+          Identifier of location (storeId or warehouseId or partnerId)
+      locationType?:
+        type: string
+        enum: [STORE, WAREHOUSE, PARTNER]
+        description: |
+          Type of location 
+      deliveryMethod?: 
+        type: string
+        enum: [SHIPMENT, PICKUP]
+        description: |
+          Type of delivery   
+           
+  ShoppingCart: 
+    type: object
+    properties:
+      shoppingCardId?:
+        type: string
+        description: | 
+          Identifier of shopping cart
+      customerId?:
+        type: string
+        description: | 
+          Identifier of customer
+      items?: 
+        type: Item[]
+        description: | 
+          Items of shopping cart
+      created?: 
+        type: datetime
+        description: | 
+          timestamp of creating the shopping cart
+          
+      
+/shoppingCarts:
+  post:
+    description: Create shopping Cart
+    body:
+      application/json:
+          type: ShoppingCart[]
+          example: !include examples/shopping-carts_post_request.raml
+              
+    responses:
+      201:
+        body: 
+          application/json: 
+            example: 
+              {
+                "message": "Shopping cart was created"
+              }
+              
+  /{shoppingCartId}:          
+    get:
+      description: Return shopping cart 
+      responses:
+        200:
+          body: 
+            application/json: 
+              example: !include examples/shopping-cart_get_response.raml
+                
+
+    put:
+      description: Update shopping cart  
+      body:
+        application/json:
+          type: ShoppingCart
+          example:  !include examples/shopping-cart_put_request.raml  
+            
+                
+      responses:
+        200:
+          body: 
+            application/json: 
+              example: 
+                {
+                  "message": "Shopping cart was updated"
+                }
+            
+    delete:
+      description: Remove shopping cart
+      responses:
+        200:
+          body:
+            application/json: 
+              example: 
+                {
+                  "message": "Shopping Cart was deleted"
+                }
+
+/customers:
+  /{customerId}: 
+    /shoppingCarts: 
+      get: 
+        description: Return Shopping Cards of customer
+        responses:
+            200:
+              body:
+                application/json:
+                  type: ShoppingCart[]
+                  example: !include examples/shopping-cart_customer_get_response.raml
+                    
+              

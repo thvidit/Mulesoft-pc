@@ -1,0 +1,49 @@
+#%RAML 1.0 Library
+
+usage: |
+  reusable sales order data types
+
+uses:
+  common: common-types.raml
+  meta: metadata-types.raml
+  hyper: hypermedia-types.raml
+  money: monetary-types.raml
+  price: pricing-types.raml
+  quantity: quantity-types.raml
+  product: product-types.raml
+
+types:
+
+  Location:
+    type: object
+    properties:      
+      locationId: 
+        type: string?
+        description: | 
+          Identifier of location (storeId or warehouseId or partnerId)
+      locationType:
+        type: string
+        enum: [STORE, WAREHOUSE, PARTNER]
+        description: |
+          Type of location 
+      deliveryMethod: 
+        type: string
+        enum: [SHIPMENT, PICKUP]
+        description: |
+          Type of delivery 
+
+  OrderItem:
+    description: |
+      an individual component of an order
+    type: common.Identified
+    properties:
+      quantity:
+        type: quantity.Quantity
+      location: Location
+      item:
+        type: product.ProductVariant
+      itemUnitPrice:
+        type: price.Price
+      itemExtendedPrice?:
+        type: money.MonetaryValue?
+        

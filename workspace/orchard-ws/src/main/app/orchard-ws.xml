@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="localhost" port="6969" basePath="/orchard" doc:name="HTTP Listener Configuration"/>
+    <db:mysql-config name="MySQL_Configuration" host="localhost" port="3306" user="root" password="Welcome123" doc:name="MySQL Configuration"/>
+    <db:mysql-config name="MySQL_Configuration1" host="localhost" port="3306" user="root" password="Welcome123" database="orchard3" doc:name="MySQL Configuration"/>
+    <http:listener-config name="HTTP_Listener_Configuration1" host="0.0.0.0" port="6868" doc:name="HTTP Listener Configuration"/>
+    <flow name="orchard-campusmindsFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/campusminds" allowedMethods="GET,POST" doc:name="HTTP">
+            <http:response-builder statusCode="200"/>
+        </http:listener>
+        <db:select config-ref="MySQL_Configuration1" doc:name="Database">
+            <db:parameterized-query><![CDATA[SELECT *
+FROM
+CAMPUSMINDS]]></db:parameterized-query>
+        </db:select>
+        <json:object-to-json-transformer doc:name="Object to JSON"/>
+    </flow>
+    <flow name="orchard-leadsFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/leads" doc:name="HTTP"/>
+        <db:select config-ref="MySQL_Configuration1" doc:name="Database">
+            <db:parameterized-query><![CDATA[SELECT  *
+FROM 
+LEADS]]></db:parameterized-query>
+        </db:select>
+        <json:object-to-json-transformer doc:name="Object to JSON"/>
+    </flow>
+    <flow name="orchard-tracksFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/tracks" doc:name="HTTP"/>
+        <db:select config-ref="MySQL_Configuration1" doc:name="Database">
+            <db:parameterized-query><![CDATA[SELECT *
+FROM
+TRACKS]]></db:parameterized-query>
+        </db:select>
+        <json:object-to-json-transformer doc:name="Object to JSON"/>
+    </flow>
+</mule>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:apikit="http://www.mulesoft.org/schema/mule/apikit" xmlns:context="http://www.springframework.org/schema/context" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:spring="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/apikit http://www.mulesoft.org/schema/mule/apikit/current/mule-apikit.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-current.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+    <http:listener-config name="httpListenerConfig" host="0.0.0.0" port="7070" doc:name="HTTP Listener Configuration"/>
+    <apikit:config name="apiConfig" raml="american-flights-api.raml" consoleEnabled="false" doc:name="Router"/>
+    <context:property-placeholder location="api.properties" />
+    <db:mysql-config name="MySQL_Configuration" host="localhost" port="3306" user="root" password="Welcome123" database="training" doc:name="MySQL Configuration"/>
+    <flow name="api-main">
+        <http:listener config-ref="httpListenerConfig" path="/api/*" doc:name="HTTP"/>
+        <apikit:router config-ref="apiConfig" doc:name="APIkit Router"/>
+        <exception-strategy ref="apiKitGlobalExceptionMapping" doc:name="Reference Exception Strategy"/>
+    </flow>
+    <flow name="api-console">
+        <http:listener config-ref="httpListenerConfig" path="/console/*" doc:name="HTTP"/>
+        <apikit:console config-ref="apiConfig" doc:name="APIkit Console"/>
+    </flow>
+    <flow name="get:/flights:apiConfig">
+        <db:select config-ref="MySQL_Configuration" doc:name="American table">
+            <db:parameterized-query><![CDATA[SELECT *
+FROM AMERICAN where destination = #[message.inboundProperties.'http.query.params'.code]]]></db:parameterized-query>
+        </db:select>
+        <set-variable variableName="planeIdList" value="#[new java.util.ArrayList()]" doc:name="PlaneId List"/>
+        <set-variable variableName="payloadList" value="#[new java.util.ArrayList()]" doc:name="Plane Attributes"/>
+        <flow-ref name="ForEachFlow" doc:name="For Each flow"/>
+        <logger message="PayloadList from planes is: #[flowVars.payloadList]" level="INFO" doc:name="Logger"/>
+        <dw:transform-message doc:name="Transform Message" metadata:id="38513764-2279-4b33-9ea9-091381cf5791">
+            <dw:input-payload doc:sample="sample_data\list_map.dwl"/>
+            <dw:input-variable variableName="planeIdList"/>
+            <dw:input-variable doc:sample="sample_data\payload.dwl" variableName="payloadList" mimeType="application/java"/>
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+payload map ((payload01 , indexOfPayload01) -> {
+	ID: payload01.ID,
+	code: payload01.code,
+	price: payload01.price,
+	departureDate: payload01.departureDate,
+	origin: payload01.origin,
+	destination: payload01.destination,
+	emptySeats: payload01.emptySeats,
+	plane: {
+		type: flowVars.payloadList.type[indexOfPayload01],
+		totalSeats: flowVars.payloadList.totalSeats[indexOfPayload01]
+	}
+})]]></dw:set-payload>
+            <dw:set-variable variableName="jsonResponse"><![CDATA[%dw 1.0
+%output application/json
+---
+flights:
+	payload map {
+		'flight$$':{
+			airline: "American",
+			id: $.ID,
+			code: $.code,
+			origin: $.origin,
+			destination: $.destination,
+			departureDate: $.departureDate as :date {format:"yyyy/MM/dd"}
+			as :string {format: "MMM dd, yyyy"},
+			price: $.price as :number {class:"java.lang.Double"},
+			availableSeats: $.emptySeats,
+			plane:{
+				type: flowVars.payloadList.type[$$],
+				totalSeats: flowVars.payloadList.totalSeats[$$]
+			}
+		
+		
+	}
+}]]></dw:set-variable>
+        </dw:transform-message>
+        <set-payload value="#[flowVars.jsonResponse]" doc:name="Set Payload"/>
+        <logger message="Proper JSON response is: #[flowVars.jsonResponse]" level="INFO" doc:name="Logger"/>
+
+    </flow>
+
+    <flow name="get:/flights/{ID}:apiConfig">
+        <db:select config-ref="MySQL_Configuration" doc:name="American table">
+            <db:parameterized-query><![CDATA[SELECT *
+FROM AMERICAN where ID = #[message.inboundProperties.'http.uri.params'.ID]]]></db:parameterized-query>
+        </db:select>
+        <set-variable variableName="planeIdList" value="#[new java.util.ArrayList()]" doc:name="PlaneId List"/>
+        <set-variable variableName="payloadList" value="#[new java.util.ArrayList()]" doc:name="Plane Attributes"/>
+        <flow-ref name="ForEachFlow" doc:name="For Each flow"/>
+        <logger message="PayloadList from planes is: #[flowVars.payloadList]" level="INFO" doc:name="Logger"/>
+        <dw:transform-message doc:name="Transform Message" metadata:id="38513764-2279-4b33-9ea9-091381cf5791">
+            <dw:input-payload doc:sample="sample_data\list_map.dwl"/>
+            <dw:input-variable variableName="planeIdList"/>
+            <dw:input-variable doc:sample="sample_data\payload.dwl" mimeType="application/java" variableName="payloadList"/>
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+flights:
+	payload map {
+		'flight$$':{
+			airline: "American",
+			id: $.ID,
+			code: $.code,
+			origin: $.origin,
+			destination: $.destination,
+			departureDate: $.departureDate as :date {format:"yyyy/MM/dd"}
+			as :string {format: "MMM dd, yyyy"},
+			price: $.price as :number {class:"java.lang.Double"},
+			availableSeats: $.emptySeats,
+			plane:{
+				type: flowVars.payloadList.type[$$],
+				totalSeats: flowVars.payloadList.totalSeats[$$]
+			}
+		
+		
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+
+    </flow>
+    <flow name="post:/flights:apiConfig">
+        <logger message="JSON Value: #[message.payloadAs(java.lang.String)]" level="INFO" doc:name="Logger"/>
+        <set-variable variableName="jsonData" value="#[message.payload]" mimeType="application/json" doc:name="Save JSON Data"/>
+        <flow-ref name="CheckIfValueExists" doc:name="CheckIfValueExists"/>
+        <logger message="Planes payload is: #[flowVars.americanPayload], American payload is : #[flowVars.planePayload]" level="INFO" doc:name="Logger"/>
+        <choice doc:name="Choice">
+            <when expression="#[flowVars.americanPayload == empty &amp;&amp; flowVars.planePayload == empty]">
+                <flow-ref name="SubFlow1" doc:name="SubFlow1"/>
+            </when>
+            <when expression="#[flowVars.planePayload != empty &amp;&amp; flowVars.americanPayload == empty]">
+                <flow-ref name="SubFlow2" doc:name="SubFlow2"/>
+            </when>
+            <otherwise>
+                <logger level="INFO" doc:name="Logger"/>
+                <set-payload value="{
+&quot;message&quot;: &quot;Details Already present!&quot;
+}" doc:name="Set Payload"/>
+            </otherwise>
+        </choice>
+    </flow>
+    <sub-flow name="ForEachFlow">
+        <foreach collection="#[payload]" doc:name="For Each">
+            <set-variable variableName="planeId" value="#[flowVars.planeIdList.add(payload.planeId)]" doc:name="Setting planeId"/>
+            <logger message="Plane id is : #[flowVars.planeIdList]" level="INFO" doc:name="Logger"/>
+            <db:select config-ref="MySQL_Configuration" doc:name="Planes table">
+                <db:parameterized-query><![CDATA[SELECT *
+FROM PLANES 
+WHERE planeId =#[payload.planeId]]]></db:parameterized-query>
+            </db:select>
+            <logger message="Payload afte converting to Json: #[payload]" level="INFO" doc:name="Logger"/>
+            <set-variable variableName="payload" value="#[flowVars.payloadList.add(payload.get(0))]" mimeType="application/json" doc:name="Setting Plane Attributes"/>
+        </foreach>
+    </sub-flow>
+    <sub-flow name="SubFlow1">
+        <set-payload value="#[flowVars.jsonData]" mimeType="application/json" doc:name="Set Payload"/>
+        <db:insert config-ref="MySQL_Configuration" doc:name="Planes Database">
+            <db:parameterized-query><![CDATA[INSERT INTO PLANES (type, totalSeats)
+VALUES (#[json:plane/type], #[json:plane/totalSeats])]]></db:parameterized-query>
+        </db:insert>
+        <set-payload value="#[flowVars.jsonData]" mimeType="application/json" doc:name="Set Payload"/>
+        <flow-ref name="AddToDatabase" doc:name="Flow Reference"/>
+    </sub-flow>
+    <sub-flow name="SubFlow2">
+        <set-payload value="#[flowVars.jsonData]" mimeType="application/json" doc:name="Set Payload"/>
+        <logger level="INFO" doc:name="Logger"/>
+        <flow-ref name="AddToDatabase" doc:name="Flow Reference"/>
+    </sub-flow>
+    <sub-flow name="AddToDatabase">
+        <db:select config-ref="MySQL_Configuration" doc:name="Get PlaneId">
+            <db:parameterized-query><![CDATA[SELECT planeId
+FROM PLANES WHERE type = #[json:plane/type]]]></db:parameterized-query>
+        </db:select>
+        <set-variable variableName="planeId" value="#[payload.get(0).planeId]" doc:name="Set planeId"/>
+        <logger message="Plane Id in post is: #[flowVars.planeId]" level="INFO" doc:name="Logger"/>
+        <set-payload value="#[flowVars.jsonData]" mimeType="application/json" doc:name="Set Payload"/>
+        <db:insert config-ref="MySQL_Configuration" doc:name="American Database">
+            <db:parameterized-query><![CDATA[INSERT INTO
+AMERICAN (code, price, departureDate, origin, destination, emptySeats, planeId)
+VALUES (#[json:code], #[json:price], #[json:departureDate], #[json:origin], #[json:destination],
+#[json:emptySeats], #[flowVars.planeId])]]></db:parameterized-query>
+        </db:insert>
+        <set-payload value="{ &quot;message&quot;: &quot;Details Added Successfully!&quot; }" mimeType="application/json" doc:name="Set Payload"/>
+    </sub-flow>
+    <sub-flow name="CheckIfValueExists">
+        <set-payload value="#[flowVars.jsonData]" mimeType="application/json" doc:name="Set Payload"/>
+        <db:select config-ref="MySQL_Configuration" doc:name="Check in american">
+            <db:parameterized-query><![CDATA[SELECT * 
+FROM AMERICAN
+WHERE code=#[json:code]]]></db:parameterized-query>
+        </db:select>
+        <set-variable variableName="americanPayload" value="#[payload]" doc:name="American Payload"/>
+        <set-payload value="#[flowVars.jsonData]" doc:name="Set Payload"/>
+        <db:select config-ref="MySQL_Configuration" doc:name="Check in planes">
+            <db:parameterized-query><![CDATA[SELECT *
+FROM PLANES
+WHERE type = #[json:plane/type]]]></db:parameterized-query>
+        </db:select>
+        <set-variable variableName="planePayload" value="#[payload]" doc:name="Planes payload"/>
+    </sub-flow>
+
+    <apikit:mapping-exception-strategy name="apiKitGlobalExceptionMapping">
+        <apikit:mapping statusCode="404">
+            <apikit:exception value="org.mule.module.apikit.exception.NotFoundException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Resource not found&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+        <apikit:mapping statusCode="405">
+            <apikit:exception value="org.mule.module.apikit.exception.MethodNotAllowedException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Method not allowed&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+        <apikit:mapping statusCode="415">
+            <apikit:exception value="org.mule.module.apikit.exception.UnsupportedMediaTypeException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Unsupported media type&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+        <apikit:mapping statusCode="406">
+            <apikit:exception value="org.mule.module.apikit.exception.NotAcceptableException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Not acceptable&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+        <apikit:mapping statusCode="400">
+            <apikit:exception value="org.mule.module.apikit.exception.BadRequestException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Bad request&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+    </apikit:mapping-exception-strategy>
+</mule>

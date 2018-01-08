@@ -1,0 +1,19 @@
+{
+    "inputMessageMetadata": {
+        "flowVariables": {
+            "planeIdList": {},
+            "payloadList": {
+                "connectorName": "#_custom_mule_metadata_type_#",
+                "typeId": "payload"
+            }
+        }
+    },
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "output"
+        }
+    },
+    "id": "38513764-2279-4b33-9ea9-091381cf5791",
+    "version": "5.2.0.0"
+}

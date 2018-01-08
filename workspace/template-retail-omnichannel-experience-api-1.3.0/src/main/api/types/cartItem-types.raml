@@ -1,0 +1,43 @@
+#%RAML 1.0 Library
+
+usage: |
+  reusable cart order data types
+
+uses:
+  common: common-types.raml
+  meta: metadata-types.raml
+  quantity: quantity-types.raml
+  hyper: hypermedia-types.raml
+  product: product-types.raml
+
+types:
+
+  CartItem:
+    description: |
+      an individual component of an order
+    properties:
+      quantity:
+        type: quantity.Quantity
+      item:
+        type: product.ProductVariant
+      location: 
+        type: Location
+        
+  Location:
+    type: object
+    properties:      
+      locationId: 
+        type: string?
+        description: | 
+          Identifier of location (storeId or warehouseId or partnerId)
+      locationType:
+        type: string
+        enum: [STORE, WAREHOUSE, PARTNER]
+        description: |
+          Type of location 
+      deliveryMethod: 
+        type: string
+        enum: [SHIPMENT, PICKUP]
+        description: |
+          Type of delivery      
+        
