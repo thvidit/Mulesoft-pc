@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:ws="http://www.mulesoft.org/schema/mule/ws" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ws http://www.mulesoft.org/schema/mule/ws/current/mule-ws.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="localhost" port="6767"  doc:name="HTTP Listener Configuration" basePath="/matches"/>
+    <ws:consumer-config name="Web_Service_Consumer" wsdlLocation="D:/soap.wsdl" service="MethodsInterfaceService" port="MethodsInterfacePort" serviceAddress="http://localhost:7171/soap" doc:name="Web Service Consumer"/>
+    <http:request-config name="HTTP_Request_Configuration" host="localhost" port="80" doc:name="HTTP Request Configuration">
+        <http:proxy host="172.17.2.218" port="8085" username="M1043142" password="Shonit&amp;singh93"/>
+    </http:request-config>
+    <flow name="football-soap-consume-wsFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/getallmatches" doc:name="HTTP" allowedMethods="GET"/>
+        <ws:consumer config-ref="Web_Service_Consumer" operation="getAllMatches" doc:name="Web Service Consumer"/>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:input-payload doc:sample="sample_data\getAllMatchesResponse.xml"/>
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+%namespace ns0 http://java.football.com/
+---
+matches: payload.ns0#getAllMatchesResponse.*return map {
+	matchId: $.match_id,
+	Team1: $.fTeam,
+	Team2: $.sTeam,
+	Goals1: $.fGoals,
+	Goals2: $.sGoals
+} when payload.ns0#getAllMatchesResponse.*return != null otherwise {
+	message: "Some exception occurred!"
+}]]></dw:set-payload>
+        </dw:transform-message>
+    </flow>
+    <flow name="football-soap-ws-consumeFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/getmatches" allowedMethods="GET" doc:name="HTTP"/>
+        <set-variable variableName="team" value="#[message.inboundProperties.'http.query.params'.team]" doc:name="Set team"/>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://java.football.com/
+---
+{
+	ns0#getMatches: {
+		arg0: flowVars.team as :string
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <ws:consumer config-ref="Web_Service_Consumer" operation="getMatches" doc:name="Web Service Consumer"/>
+        <logger message="Payload from service is: #[payload]" level="INFO" doc:name="Logger"/>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+%namespace ns0 http://java.football.com/
+---
+matches: payload.ns0#getMatchesResponse.*return map {
+	matchId: $.match_id,
+	Team1: $.fTeam,
+	Team2: $.sTeam,
+	Goals1: $.fGoals,
+	Goals2: $.sGoals
+} when payload.ns0#getMatchesResponse.*return != null otherwise {
+	message: "No matches for entered Team!"
+}]]></dw:set-payload>
+        </dw:transform-message>
+    </flow>
+    <flow name="postSoap-ws">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/" allowedMethods="POST" doc:name="HTTP"/>
+        <dw:transform-message doc:name="Transform Message" metadata:id="9e609478-1422-4668-8624-4f980969aa71">
+            <dw:input-payload mimeType="application/json"/>
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://java.football.com/
+---
+{
+	ns0#addMatch: {
+		arg0: {
+			match_id: payload.matchId as :number,
+			fGoals: payload.Goals1 as :number,
+			fTeam: payload.Team1,
+			sGoals: payload.Goals2 as :number,
+			sTeam: payload.Team2
+		}
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <ws:consumer config-ref="Web_Service_Consumer" operation="addMatch" doc:name="Web Service Consumer"/>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+%namespace ns0 http://java.football.com/
+---
+{
+'Added Match Details are': {(
+payload.ns0#addMatchResponse.return
+
+)}} when payload.ns0#addMatchResponse.return != null otherwise {
+	message: "Match Details not added! Exception occured!"
+}]]></dw:set-payload>
+        </dw:transform-message>
+    </flow>
+</mule>

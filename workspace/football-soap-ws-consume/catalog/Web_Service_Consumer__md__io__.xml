@@ -3,7 +3,7 @@
   <connectorName>Web_Service_Consumer</connectorName>
   <metadataIo class="tree-map">
     <entry>
-      <string>addMatch</string>
+      <string>getAllMatches</string>
       <map>
         <entry>
           <string>__default__</string>
@@ -11,7 +11,7 @@
             <input class="org.mule.common.metadata.DefaultMetaData">
               <payload class="org.mule.tooling.metadata.api.TypeRefMetaDataModel">
                 <connectorName>Web_Service_Consumer</connectorName>
-                <typeId>addMatch</typeId>
+                <typeId>getAllMatches</typeId>
                 <category>DEFAULT</category>
               </payload>
               <properties class="tree-map">
@@ -60,7 +60,7 @@
             <output class="org.mule.common.metadata.DefaultMetaData">
               <payload class="org.mule.tooling.metadata.api.TypeRefMetaDataModel">
                 <connectorName>Web_Service_Consumer</connectorName>
-                <typeId>addMatchResponse</typeId>
+                <typeId>getAllMatchesResponse</typeId>
                 <category>DEFAULT</category>
               </payload>
               <properties class="tree-map">

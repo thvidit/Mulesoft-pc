@@ -3834,3 +3834,1279 @@ Message properties:
 *   Batch module default engine                                      *
 *   Wrapper Manager                                                  *
 **********************************************************************
+2018-01-09 08:44:04,303 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'muelsoft-week5'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 08:44:04,309 [main] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app american_flights_api
+2018-01-09 08:44:04,312 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 08:44:04,318 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 08:44:04,362 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 08:44:04,366 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 08:44:04,374 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@1454339d: startup date [Tue Jan 09 08:44:04 IST 2018]; root of context hierarchy
+2018-01-09 08:44:04,690 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [mule.properties]
+2018-01-09 08:44:04,695 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [mule.properties]
+2018-01-09 08:44:04,698 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 08:44:04,876 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-tx-log\tx2.log
+2018-01-09 08:44:04,880 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-xa-tx-log\tx2.log
+2018-01-09 08:44:04,893 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 08:44:04,895 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: muelsoft-week5Flow
+2018-01-09 08:44:04,895 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@7ef34eb3
+2018-01-09 08:44:04,895 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@2719139f
+2018-01-09 08:44:04,896 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5dfc7b3f
+2018-01-09 08:44:04,903 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: muelsoft-week5Flow.stage1
+2018-01-09 08:44:04,913 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getUnitedFlightsFlow
+2018-01-09 08:44:04,914 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@4e58eda2
+2018-01-09 08:44:04,914 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@75f9a35a
+2018-01-09 08:44:04,914 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7acbd3d0
+2018-01-09 08:44:04,918 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getUnitedFlightsFlow.stage1
+2018-01-09 08:44:04,927 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getAmericanFlightsFlow
+2018-01-09 08:44:04,927 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@33fc92d6
+2018-01-09 08:44:04,927 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@6e2e11ee
+2018-01-09 08:44:04,927 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@189f9f9f
+2018-01-09 08:44:04,933 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getAmericanFlightsFlow.stage1
+2018-01-09 08:44:04,934 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getDeltaFlightsFlow
+2018-01-09 08:44:04,934 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3db145f7
+2018-01-09 08:44:04,943 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getDeltaFlightsFlow.stage1
+2018-01-09 08:44:06,092 [main] WARN  org.mule.util.xmlsecurity.DefaultXMLSecureFactories - Can't configure XML entity expansion for TransformerFactory (org.apache.xalan.processor.TransformerFactoryImpl), this could introduce XXE and BL vulnerabilities
+2018-01-09 08:44:06,603 [main] INFO  org.mule.module.ws.consumer.RequestBodyGenerator - The selected operation does not require input parameters, the payload will be ignored
+2018-01-09 08:44:07,456 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getDeltaFindFlights
+2018-01-09 08:44:07,456 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@41413c5a
+2018-01-09 08:44:07,456 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@306a9cd8
+2018-01-09 08:44:07,457 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7c52df60
+2018-01-09 08:44:07,467 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getDeltaFindFlights.stage1
+2018-01-09 08:44:08,228 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getAllAirlineFlights
+2018-01-09 08:44:08,228 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@641001c2
+2018-01-09 08:44:08,234 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getAllAirlineFlights.stage1
+2018-01-09 08:44:08,239 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostFlightFlow
+2018-01-09 08:44:08,239 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@50e7d8ba
+2018-01-09 08:44:08,245 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostFlightFlow.stage1
+2018-01-09 08:44:08,246 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostFlightFromXmlFlow
+2018-01-09 08:44:08,246 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1cb4cad0
+2018-01-09 08:44:08,251 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostFlightFromXmlFlow.stage1
+2018-01-09 08:44:08,251 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostFlightFromXmlToJava
+2018-01-09 08:44:08,251 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@e38b953
+2018-01-09 08:44:08,257 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostFlightFromXmlToJava.stage1
+2018-01-09 08:44:08,311 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\muelsoft-week5\muelsoft-week5.xml'}]"
+2018-01-09 08:44:08,312 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\muelsoft-week5\muelsoft-week5.xml'}]"
+2018-01-09 08:44:11,321 [main] WARN  org.mule.config.spring.SpringRegistry - Spring registry already contains an object named 'gateway-message-source:http://0.0.0.0:8081/flights'. The previous object will be overwritten.
+2018-01-09 08:44:11,323 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'muelsoft-week5'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 08:44:11,344 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 08:44:11,344 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 08:44:11,392 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-09 08:44:11,396 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 08:44:11,399 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 08:44:11,411 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: muelsoft-week5Flow
+2018-01-09 08:44:11,412 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: muelsoft-week5Flow.stage1
+2018-01-09 08:44:11,415 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getUnitedFlightsFlow
+2018-01-09 08:44:11,416 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getUnitedFlightsFlow.stage1
+2018-01-09 08:44:11,419 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getAmericanFlightsFlow
+2018-01-09 08:44:11,419 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getAmericanFlightsFlow.stage1
+2018-01-09 08:44:11,422 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getDeltaFlightsFlow
+2018-01-09 08:44:11,422 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getDeltaFlightsFlow.stage1
+2018-01-09 08:44:11,425 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getDeltaFindFlights
+2018-01-09 08:44:11,425 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getDeltaFindFlights.stage1
+2018-01-09 08:44:11,427 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getAllAirlineFlights
+2018-01-09 08:44:11,427 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getAllAirlineFlights.stage1
+2018-01-09 08:44:11,430 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostFlightFlow
+2018-01-09 08:44:11,430 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostFlightFlow.stage1
+2018-01-09 08:44:11,432 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostFlightFromXmlFlow
+2018-01-09 08:44:11,432 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostFlightFromXmlFlow.stage1
+2018-01-09 08:44:11,434 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostFlightFromXmlToJava
+2018-01-09 08:44:11,434 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostFlightFromXmlToJava.stage1
+2018-01-09 08:44:11,545 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 08:44:11,551 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: muelsoft-week5                                        *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 08:44:59,520 [[muelsoft-week5].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The code is: CLE
+2018-01-09 08:44:59,840 [[muelsoft-week5].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=466c6410-f4eb-11e7-9106-98eecb1e3fce
+  payload=java.util.ArrayList
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    airline=american
+    americanResponse={}
+    code=CLE
+  INBOUND scoped properties:
+    content-length=376
+    content-type=application/json;charset=UTF-8
+    date=Tue, 09 Jan 2018 03:14:59 GMT
+    http.reason=
+    http.status=200
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2018-01-09 08:44:59,890 [[muelsoft-week5].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=466c6410-f4eb-11e7-9106-98eecb1e3fce
+  payload=com.mulesoft.weave.reader.ByteArraySeekableStream
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    airline=american
+    americanResponse={}
+    code=CLE
+  INBOUND scoped properties:
+    content-length=376
+    content-type=application/json;charset=UTF-8
+    date=Tue, 09 Jan 2018 03:14:59 GMT
+    http.reason=
+    http.status=200
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2018-01-09 08:45:05,141 [[muelsoft-week5].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The code is: SFO
+2018-01-09 08:45:05,257 [[muelsoft-week5].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=49d6df40-f4eb-11e7-9106-98eecb1e3fce
+  payload=java.util.ArrayList
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    airline=american
+    americanResponse={}
+    code=SFO
+  INBOUND scoped properties:
+    content-length=3565
+    content-type=application/json;charset=UTF-8
+    date=Tue, 09 Jan 2018 03:15:05 GMT
+    http.reason=
+    http.status=200
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2018-01-09 08:45:05,274 [[muelsoft-week5].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=49d6df40-f4eb-11e7-9106-98eecb1e3fce
+  payload=com.mulesoft.weave.reader.ByteArraySeekableStream
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    airline=american
+    americanResponse={}
+    code=SFO
+  INBOUND scoped properties:
+    content-length=3565
+    content-type=application/json;charset=UTF-8
+    date=Tue, 09 Jan 2018 03:15:05 GMT
+    http.reason=
+    http.status=200
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2018-01-09 08:52:10,994 [[muelsoft-week5].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The code is: SFO
+2018-01-09 08:52:12,090 [[muelsoft-week5].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=47aa93f0-f4ec-11e7-9106-98eecb1e3fce
+  payload=java.util.ArrayList
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    airline=united
+    code=SFO
+  INBOUND scoped properties:
+    connection=keep-alive
+    content-length=486
+    content-type=application/json
+    date=Tue, 09 Jan 2018 03:22:58 GMT
+    http.reason=OK
+    http.status=200
+    server=nginx/1.4.6 (Ubuntu)
+    via=1.0 virtue (squid/3.1.10)
+    x-cache=MISS from virtue
+    x-cache-lookup=MISS from virtue:8085
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2018-01-09 08:52:12,095 [[muelsoft-week5].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=47aa93f0-f4ec-11e7-9106-98eecb1e3fce
+  payload=com.mulesoft.weave.reader.ByteArraySeekableStream
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    airline=united
+    code=SFO
+  INBOUND scoped properties:
+    connection=keep-alive
+    content-length=486
+    content-type=application/json
+    date=Tue, 09 Jan 2018 03:22:58 GMT
+    http.reason=OK
+    http.status=200
+    server=nginx/1.4.6 (Ubuntu)
+    via=1.0 virtue (squid/3.1.10)
+    x-cache=MISS from virtue
+    x-cache-lookup=MISS from virtue:8085
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2018-01-09 09:00:07,861 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'muelsoft-week5'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 09:00:07,864 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: muelsoft-week5Flow
+2018-01-09 09:00:07,867 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: muelsoft-week5Flow.stage1
+2018-01-09 09:00:07,926 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: getUnitedFlightsFlow
+2018-01-09 09:00:07,926 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: getUnitedFlightsFlow.stage1
+2018-01-09 09:00:08,125 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: getAmericanFlightsFlow
+2018-01-09 09:00:08,125 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: getAmericanFlightsFlow.stage1
+2018-01-09 09:00:08,326 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: getDeltaFlightsFlow
+2018-01-09 09:00:08,326 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: getDeltaFlightsFlow.stage1
+2018-01-09 09:00:08,527 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: getDeltaFindFlights
+2018-01-09 09:00:08,527 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: getDeltaFindFlights.stage1
+2018-01-09 09:00:08,727 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: getAllAirlineFlights
+2018-01-09 09:00:08,727 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: getAllAirlineFlights.stage1
+2018-01-09 09:00:08,928 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: PostFlightFlow
+2018-01-09 09:00:08,929 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: PostFlightFlow.stage1
+2018-01-09 09:00:09,128 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: PostFlightFromXmlFlow
+2018-01-09 09:00:09,129 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: PostFlightFromXmlFlow.stage1
+2018-01-09 09:00:09,329 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: PostFlightFromXmlToJava
+2018-01-09 09:00:09,330 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: PostFlightFromXmlToJava.stage1
+2018-01-09 09:00:09,533 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2018-01-09 09:00:09,551 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2018-01-09 09:00:09,557 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2018-01-09 09:00:09,558 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2018-01-09 09:00:09,582 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'muelsoft-week5'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 09:00:09,585 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2018-01-09 09:00:09,588 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: muelsoft-week5Flow
+2018-01-09 09:00:09,588 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: muelsoft-week5Flow.stage1
+2018-01-09 09:00:09,592 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: getUnitedFlightsFlow
+2018-01-09 09:00:09,592 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: getUnitedFlightsFlow.stage1
+2018-01-09 09:00:09,593 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: getAmericanFlightsFlow
+2018-01-09 09:00:09,593 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: getAmericanFlightsFlow.stage1
+2018-01-09 09:00:09,594 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: getDeltaFlightsFlow
+2018-01-09 09:00:09,594 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: getDeltaFlightsFlow.stage1
+2018-01-09 09:00:09,594 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: getDeltaFindFlights
+2018-01-09 09:00:09,594 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: getDeltaFindFlights.stage1
+2018-01-09 09:00:09,595 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: getAllAirlineFlights
+2018-01-09 09:00:09,595 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: getAllAirlineFlights.stage1
+2018-01-09 09:00:09,596 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: PostFlightFlow
+2018-01-09 09:00:09,596 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: PostFlightFlow.stage1
+2018-01-09 09:00:09,597 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: PostFlightFromXmlFlow
+2018-01-09 09:00:09,597 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: PostFlightFromXmlFlow.stage1
+2018-01-09 09:00:09,597 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: PostFlightFromXmlToJava
+2018-01-09 09:00:09,598 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: PostFlightFromXmlToJava.stage1
+2018-01-09 09:00:09,599 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2018-01-09 09:00:09,859 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@1454339d: startup date [Tue Jan 09 08:44:04 IST 2018]; root of context hierarchy
+2018-01-09 09:00:10,042 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "muelsoft-week5" shut down normally on: 1/9/18 9:00 AM *
+* Up for: 0 days, 0 hours, 15 mins, 58.717 sec                       *
+**********************************************************************
+2018-01-09 09:00:10,145 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'muelsoft-week5'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 09:00:10,151 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app american_flights_api
+2018-01-09 09:00:10,151 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app muelsoft-week5
+2018-01-09 09:00:10,155 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 09:00:10,159 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 09:00:10,172 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 09:00:10,174 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 09:00:10,179 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@b8c8f3e: startup date [Tue Jan 09 09:00:10 IST 2018]; root of context hierarchy
+2018-01-09 09:00:10,417 [Mule.app.deployer.monitor.1.thread.1] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [mule.properties]
+2018-01-09 09:00:10,420 [Mule.app.deployer.monitor.1.thread.1] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [mule.properties]
+2018-01-09 09:00:10,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 09:00:10,546 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-tx-log\tx2.log
+2018-01-09 09:00:10,577 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-xa-tx-log\tx2.log
+2018-01-09 09:00:10,601 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 09:00:10,610 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: muelsoft-week5Flow
+2018-01-09 09:00:10,611 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@3d53a9d
+2018-01-09 09:00:10,612 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@232d618b
+2018-01-09 09:00:10,613 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@165d0b81
+2018-01-09 09:00:10,631 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: muelsoft-week5Flow.stage1
+2018-01-09 09:00:10,636 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getUnitedFlightsFlow
+2018-01-09 09:00:10,638 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@4b8c759
+2018-01-09 09:00:10,639 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@14925cd5
+2018-01-09 09:00:10,640 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@26337927
+2018-01-09 09:00:10,656 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getUnitedFlightsFlow.stage1
+2018-01-09 09:00:10,658 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getAmericanFlightsFlow
+2018-01-09 09:00:10,660 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@3594793e
+2018-01-09 09:00:10,665 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@7306776a
+2018-01-09 09:00:10,666 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6236df9b
+2018-01-09 09:00:10,674 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getAmericanFlightsFlow.stage1
+2018-01-09 09:00:10,676 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getDeltaFlightsFlow
+2018-01-09 09:00:10,677 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6713e9d7
+2018-01-09 09:00:10,690 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getDeltaFlightsFlow.stage1
+2018-01-09 09:00:11,445 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.ws.consumer.RequestBodyGenerator - The selected operation does not require input parameters, the payload will be ignored
+2018-01-09 09:00:11,466 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getDeltaFindFlights
+2018-01-09 09:00:11,466 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@23284db1
+2018-01-09 09:00:11,466 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@57c441f0
+2018-01-09 09:00:11,466 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@9b9b154
+2018-01-09 09:00:11,471 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getDeltaFindFlights.stage1
+2018-01-09 09:00:12,233 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getAllAirlineFlights
+2018-01-09 09:00:12,233 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3680b877
+2018-01-09 09:00:12,240 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getAllAirlineFlights.stage1
+2018-01-09 09:00:12,244 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostFlightFlow
+2018-01-09 09:00:12,244 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7418b093
+2018-01-09 09:00:12,250 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostFlightFlow.stage1
+2018-01-09 09:00:12,250 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostFlightFromXmlFlow
+2018-01-09 09:00:12,251 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@463beb2b
+2018-01-09 09:00:12,257 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostFlightFromXmlFlow.stage1
+2018-01-09 09:00:12,257 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostFlightFromXmlToJava
+2018-01-09 09:00:12,257 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6ec4af24
+2018-01-09 09:00:12,263 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostFlightFromXmlToJava.stage1
+2018-01-09 09:00:12,298 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\muelsoft-week5\muelsoft-week5.xml'}]"
+2018-01-09 09:00:12,298 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\muelsoft-week5\muelsoft-week5.xml'}]"
+2018-01-09 09:00:15,304 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.config.spring.SpringRegistry - Spring registry already contains an object named 'gateway-message-source:http://0.0.0.0:8081/flights'. The previous object will be overwritten.
+2018-01-09 09:00:15,306 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'muelsoft-week5'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 09:00:15,321 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 09:00:15,321 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 09:00:15,366 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-09 09:00:15,370 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 09:00:15,375 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 09:00:15,376 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: muelsoft-week5Flow
+2018-01-09 09:00:15,376 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: muelsoft-week5Flow.stage1
+2018-01-09 09:00:15,380 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getUnitedFlightsFlow
+2018-01-09 09:00:15,380 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getUnitedFlightsFlow.stage1
+2018-01-09 09:00:15,383 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getAmericanFlightsFlow
+2018-01-09 09:00:15,383 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getAmericanFlightsFlow.stage1
+2018-01-09 09:00:15,385 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getDeltaFlightsFlow
+2018-01-09 09:00:15,386 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getDeltaFlightsFlow.stage1
+2018-01-09 09:00:15,388 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getDeltaFindFlights
+2018-01-09 09:00:15,388 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getDeltaFindFlights.stage1
+2018-01-09 09:00:15,391 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getAllAirlineFlights
+2018-01-09 09:00:15,391 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getAllAirlineFlights.stage1
+2018-01-09 09:00:15,397 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostFlightFlow
+2018-01-09 09:00:15,397 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostFlightFlow.stage1
+2018-01-09 09:00:15,399 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostFlightFromXmlFlow
+2018-01-09 09:00:15,399 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostFlightFromXmlFlow.stage1
+2018-01-09 09:00:15,403 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostFlightFromXmlToJava
+2018-01-09 09:00:15,403 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostFlightFromXmlToJava.stage1
+2018-01-09 09:00:15,474 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 09:00:15,481 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: muelsoft-week5                                        *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 09:19:04,016 [[muelsoft-week5].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The code is: SFO
+2018-01-09 09:19:04,033 [[muelsoft-week5].ScatterGatherWorkManager.03] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2018-01-09 09:19:04,184 [[muelsoft-week5].ScatterGatherWorkManager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=0906f9f0-f4f0-11e7-9106-98eecb1e3fce
+  payload=java.util.ArrayList
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    americanResponse={}
+    code=SFO
+  INBOUND scoped properties:
+    content-length=3565
+    content-type=application/json;charset=UTF-8
+    date=Tue, 09 Jan 2018 03:49:04 GMT
+    http.reason=
+    http.status=200
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2018-01-09 09:19:05,005 [[muelsoft-week5].ScatterGatherWorkManager.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=0906f9f0-f4f0-11e7-9106-98eecb1e3fce
+  payload=java.util.ArrayList
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    code=SFO
+  INBOUND scoped properties:
+    connection=keep-alive
+    content-length=486
+    content-type=application/json
+    date=Tue, 09 Jan 2018 03:49:51 GMT
+    http.reason=OK
+    http.status=200
+    server=nginx/1.4.6 (Ubuntu)
+    via=1.0 virtue (squid/3.1.10)
+    x-cache=MISS from virtue
+    x-cache-lookup=MISS from virtue:8085
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2018-01-09 09:19:05,636 [[muelsoft-week5].ScatterGatherWorkManager.03] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=0906f9f0-f4f0-11e7-9106-98eecb1e3fce
+  payload=java.util.ArrayList
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    code=SFO
+  INBOUND scoped properties:
+    connection=keep-alive
+    content-length=919
+    content-type=text/xml; charset=UTF-8
+    date=Tue, 09 Jan 2018 03:49:04 GMT
+    http.reason=OK
+    http.status=200
+    mule_encoding=UTF-8
+    server=nginx
+    via=1.0 virtue (squid/3.1.10)
+    x-cache=MISS from virtue
+    x-cache-lookup=MISS from virtue:8085
+  OUTBOUND scoped properties:
+    http.status=200
+  SESSION scoped properties:
+}
+2018-01-09 09:19:05,662 [[muelsoft-week5].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=0a122860-f4f0-11e7-9106-98eecb1e3fce
+  payload=java.util.ArrayList
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    code=SFO
+  INBOUND scoped properties:
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2018-01-09 09:19:05,674 [[muelsoft-week5].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=0a122860-f4f0-11e7-9106-98eecb1e3fce
+  payload=com.mulesoft.weave.reader.ByteArraySeekableStream
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    code=SFO
+  INBOUND scoped properties:
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2018-01-09 09:21:21,825 [[muelsoft-week5].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The code is: SFO
+2018-01-09 09:21:21,851 [[muelsoft-week5].ScatterGatherWorkManager.05] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2018-01-09 09:21:21,973 [[muelsoft-week5].ScatterGatherWorkManager.03] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=5b3e7e00-f4f0-11e7-9106-98eecb1e3fce
+  payload=java.util.ArrayList
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    americanResponse={}
+    code=SFO
+  INBOUND scoped properties:
+    content-length=3565
+    content-type=application/json;charset=UTF-8
+    date=Tue, 09 Jan 2018 03:51:21 GMT
+    http.reason=
+    http.status=200
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2018-01-09 09:21:22,792 [[muelsoft-week5].ScatterGatherWorkManager.05] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=5b3e7e00-f4f0-11e7-9106-98eecb1e3fce
+  payload=java.util.ArrayList
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    code=SFO
+  INBOUND scoped properties:
+    connection=keep-alive
+    content-length=919
+    content-type=text/xml; charset=UTF-8
+    date=Tue, 09 Jan 2018 03:51:21 GMT
+    http.reason=OK
+    http.status=200
+    mule_encoding=UTF-8
+    server=nginx
+    via=1.0 virtue (squid/3.1.10)
+    x-cache=MISS from virtue
+    x-cache-lookup=MISS from virtue:8085
+  OUTBOUND scoped properties:
+    http.status=200
+  SESSION scoped properties:
+}
+2018-01-09 09:21:22,917 [[muelsoft-week5].ScatterGatherWorkManager.04] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=5b3e7e00-f4f0-11e7-9106-98eecb1e3fce
+  payload=java.util.ArrayList
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    code=SFO
+  INBOUND scoped properties:
+    connection=keep-alive
+    content-length=486
+    content-type=application/json
+    date=Tue, 09 Jan 2018 03:52:09 GMT
+    http.reason=OK
+    http.status=200
+    server=nginx/1.4.6 (Ubuntu)
+    via=1.0 virtue (squid/3.1.10)
+    x-cache=MISS from virtue
+    x-cache-lookup=MISS from virtue:8085
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2018-01-09 09:21:22,922 [[muelsoft-week5].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=5be59370-f4f0-11e7-9106-98eecb1e3fce
+  payload=java.util.ArrayList
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    code=SFO
+  INBOUND scoped properties:
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2018-01-09 09:21:22,939 [[muelsoft-week5].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=5be59370-f4f0-11e7-9106-98eecb1e3fce
+  payload=com.mulesoft.weave.reader.ByteArraySeekableStream
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    code=SFO
+  INBOUND scoped properties:
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2018-01-09 09:38:35,637 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'muelsoft-week5'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 09:38:35,642 [main] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app american_flights_api
+2018-01-09 09:38:35,644 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 09:38:35,648 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 09:38:35,658 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 09:38:35,658 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 09:38:35,664 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@101a461c: startup date [Tue Jan 09 09:38:35 IST 2018]; root of context hierarchy
+2018-01-09 09:38:35,948 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [mule.properties]
+2018-01-09 09:38:35,953 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [mule.properties]
+2018-01-09 09:38:35,956 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 09:38:36,557 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-09 09:38:37,128 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-tx-log\tx2.log
+2018-01-09 09:38:37,136 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-xa-tx-log\tx2.log
+2018-01-09 09:38:37,475 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 09:38:37,479 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: muelsoft-week5Flow
+2018-01-09 09:38:37,480 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@6a8a551e
+2018-01-09 09:38:37,480 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@3cc9632d
+2018-01-09 09:38:37,480 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@53982523
+2018-01-09 09:38:37,497 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: muelsoft-week5Flow.stage1
+2018-01-09 09:38:37,515 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getUnitedFlightsFlow
+2018-01-09 09:38:37,516 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@3111631d
+2018-01-09 09:38:37,517 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@2d70f312
+2018-01-09 09:38:37,517 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4c7d7430
+2018-01-09 09:38:37,520 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getUnitedFlightsFlow.stage1
+2018-01-09 09:38:37,525 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getAmericanFlightsFlow
+2018-01-09 09:38:37,525 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@134a8ead
+2018-01-09 09:38:37,525 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@427308f8
+2018-01-09 09:38:37,526 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@54247647
+2018-01-09 09:38:37,534 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getAmericanFlightsFlow.stage1
+2018-01-09 09:38:37,536 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getDeltaFlightsFlow
+2018-01-09 09:38:37,536 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5882b202
+2018-01-09 09:38:37,540 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getDeltaFlightsFlow.stage1
+2018-01-09 09:38:38,759 [main] WARN  org.mule.util.xmlsecurity.DefaultXMLSecureFactories - Can't configure XML entity expansion for TransformerFactory (org.apache.xalan.processor.TransformerFactoryImpl), this could introduce XXE and BL vulnerabilities
+2018-01-09 09:38:39,079 [main] INFO  org.mule.module.ws.consumer.RequestBodyGenerator - The selected operation does not require input parameters, the payload will be ignored
+2018-01-09 09:38:39,488 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getDeltaFindFlights
+2018-01-09 09:38:39,488 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@2aac8ad7
+2018-01-09 09:38:39,488 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@6a4a2090
+2018-01-09 09:38:39,488 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@778c2e7c
+2018-01-09 09:38:39,494 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getDeltaFindFlights.stage1
+2018-01-09 09:38:40,282 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getAllAirlineFlights
+2018-01-09 09:38:40,282 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4d8056bf
+2018-01-09 09:38:40,285 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getAllAirlineFlights.stage1
+2018-01-09 09:38:40,289 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostFlightFlow
+2018-01-09 09:38:40,289 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7417ef4f
+2018-01-09 09:38:40,295 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostFlightFlow.stage1
+2018-01-09 09:38:40,296 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostFlightFromXmlFlow
+2018-01-09 09:38:40,296 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6728370a
+2018-01-09 09:38:40,302 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostFlightFromXmlFlow.stage1
+2018-01-09 09:38:40,302 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostFlightFromXmlToJava
+2018-01-09 09:38:40,302 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4b32465
+2018-01-09 09:38:40,307 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostFlightFromXmlToJava.stage1
+2018-01-09 09:38:40,501 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\muelsoft-week5\muelsoft-week5.xml'}]"
+2018-01-09 09:38:40,501 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\muelsoft-week5\muelsoft-week5.xml'}]"
+2018-01-09 09:38:43,538 [main] WARN  org.mule.config.spring.SpringRegistry - Spring registry already contains an object named 'gateway-message-source:http://0.0.0.0:8081/flights'. The previous object will be overwritten.
+2018-01-09 09:38:43,542 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'muelsoft-week5'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 09:38:43,551 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 09:38:43,551 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 09:38:43,607 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-09 09:38:43,611 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 09:38:43,616 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 09:38:43,617 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: muelsoft-week5Flow
+2018-01-09 09:38:43,618 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: muelsoft-week5Flow.stage1
+2018-01-09 09:38:43,621 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getUnitedFlightsFlow
+2018-01-09 09:38:43,621 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getUnitedFlightsFlow.stage1
+2018-01-09 09:38:43,632 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getAmericanFlightsFlow
+2018-01-09 09:38:43,632 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getAmericanFlightsFlow.stage1
+2018-01-09 09:38:43,637 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getDeltaFlightsFlow
+2018-01-09 09:38:43,637 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getDeltaFlightsFlow.stage1
+2018-01-09 09:38:43,641 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getDeltaFindFlights
+2018-01-09 09:38:43,641 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getDeltaFindFlights.stage1
+2018-01-09 09:38:43,644 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getAllAirlineFlights
+2018-01-09 09:38:43,644 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getAllAirlineFlights.stage1
+2018-01-09 09:38:43,650 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostFlightFlow
+2018-01-09 09:38:43,650 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostFlightFlow.stage1
+2018-01-09 09:38:43,653 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostFlightFromXmlFlow
+2018-01-09 09:38:43,653 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostFlightFromXmlFlow.stage1
+2018-01-09 09:38:43,658 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostFlightFromXmlToJava
+2018-01-09 09:38:43,658 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostFlightFromXmlToJava.stage1
+2018-01-09 09:38:43,800 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 09:38:43,827 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: muelsoft-week5                                        *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 09:41:49,580 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'muelsoft-week5'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 09:41:49,584 [main] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app american_flights_api
+2018-01-09 09:41:49,586 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 09:41:49,590 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 09:41:49,599 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 09:41:49,599 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 09:41:49,607 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@101a461c: startup date [Tue Jan 09 09:41:49 IST 2018]; root of context hierarchy
+2018-01-09 09:41:49,925 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [mule.properties]
+2018-01-09 09:41:49,929 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [mule.properties]
+2018-01-09 09:41:49,934 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 09:41:50,467 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-09 09:41:50,990 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-tx-log\tx2.log
+2018-01-09 09:41:51,000 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-xa-tx-log\tx2.log
+2018-01-09 09:41:51,399 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 09:41:51,403 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: muelsoft-week5Flow
+2018-01-09 09:41:51,405 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@4245bf68
+2018-01-09 09:41:51,405 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@45bbc52f
+2018-01-09 09:41:51,405 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6a8a551e
+2018-01-09 09:41:51,424 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: muelsoft-week5Flow.stage1
+2018-01-09 09:41:51,445 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getUnitedFlightsFlow
+2018-01-09 09:41:51,446 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@3e9beef2
+2018-01-09 09:41:51,447 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@2f15a964
+2018-01-09 09:41:51,447 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3111631d
+2018-01-09 09:41:51,451 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getUnitedFlightsFlow.stage1
+2018-01-09 09:41:51,458 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getAmericanFlightsFlow
+2018-01-09 09:41:51,458 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@6aff97d6
+2018-01-09 09:41:51,458 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@1d60059f
+2018-01-09 09:41:51,458 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@134a8ead
+2018-01-09 09:41:51,462 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getAmericanFlightsFlow.stage1
+2018-01-09 09:41:51,464 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getDeltaFlightsFlow
+2018-01-09 09:41:51,464 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6bce4140
+2018-01-09 09:41:51,467 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getDeltaFlightsFlow.stage1
+2018-01-09 09:41:52,642 [main] WARN  org.mule.util.xmlsecurity.DefaultXMLSecureFactories - Can't configure XML entity expansion for TransformerFactory (org.apache.xalan.processor.TransformerFactoryImpl), this could introduce XXE and BL vulnerabilities
+2018-01-09 09:41:52,967 [main] INFO  org.mule.module.ws.consumer.RequestBodyGenerator - The selected operation does not require input parameters, the payload will be ignored
+2018-01-09 09:41:53,360 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getDeltaFindFlights
+2018-01-09 09:41:53,360 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@7c5c20ed
+2018-01-09 09:41:53,360 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@6113a26f
+2018-01-09 09:41:53,360 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2aac8ad7
+2018-01-09 09:41:53,365 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getDeltaFindFlights.stage1
+2018-01-09 09:41:54,084 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getAllAirlineFlights
+2018-01-09 09:41:54,084 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@ba562e0
+2018-01-09 09:41:54,088 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getAllAirlineFlights.stage1
+2018-01-09 09:41:54,092 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostFlightFlow
+2018-01-09 09:41:54,092 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@59127611
+2018-01-09 09:41:54,098 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostFlightFlow.stage1
+2018-01-09 09:41:54,099 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostFlightFromXmlFlow
+2018-01-09 09:41:54,099 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@38ef1a0a
+2018-01-09 09:41:54,103 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostFlightFromXmlFlow.stage1
+2018-01-09 09:41:54,104 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostFlightFromXmlToJava
+2018-01-09 09:41:54,104 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4af70b83
+2018-01-09 09:41:54,108 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostFlightFromXmlToJava.stage1
+2018-01-09 09:41:54,343 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\muelsoft-week5\muelsoft-week5.xml'}]"
+2018-01-09 09:41:54,343 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\muelsoft-week5\muelsoft-week5.xml'}]"
+2018-01-09 09:41:57,364 [main] WARN  org.mule.config.spring.SpringRegistry - Spring registry already contains an object named 'gateway-message-source:http://0.0.0.0:8081/flights'. The previous object will be overwritten.
+2018-01-09 09:41:57,369 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'muelsoft-week5'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 09:41:57,378 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 09:41:57,378 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 09:41:57,432 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-09 09:41:57,438 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 09:41:57,442 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 09:41:57,443 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: muelsoft-week5Flow
+2018-01-09 09:41:57,444 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: muelsoft-week5Flow.stage1
+2018-01-09 09:41:57,449 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getUnitedFlightsFlow
+2018-01-09 09:41:57,449 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getUnitedFlightsFlow.stage1
+2018-01-09 09:41:57,452 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getAmericanFlightsFlow
+2018-01-09 09:41:57,452 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getAmericanFlightsFlow.stage1
+2018-01-09 09:41:57,457 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getDeltaFlightsFlow
+2018-01-09 09:41:57,457 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getDeltaFlightsFlow.stage1
+2018-01-09 09:41:57,460 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getDeltaFindFlights
+2018-01-09 09:41:57,460 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getDeltaFindFlights.stage1
+2018-01-09 09:41:57,464 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getAllAirlineFlights
+2018-01-09 09:41:57,465 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getAllAirlineFlights.stage1
+2018-01-09 09:41:57,471 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostFlightFlow
+2018-01-09 09:41:57,471 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostFlightFlow.stage1
+2018-01-09 09:41:57,475 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostFlightFromXmlFlow
+2018-01-09 09:41:57,475 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostFlightFromXmlFlow.stage1
+2018-01-09 09:41:57,479 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostFlightFromXmlToJava
+2018-01-09 09:41:57,479 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostFlightFromXmlToJava.stage1
+2018-01-09 09:41:57,668 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 09:41:57,689 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: muelsoft-week5                                        *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 09:42:35,874 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'muelsoft-week5'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 09:42:35,878 [main] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app american_flights_api
+2018-01-09 09:42:35,880 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 09:42:35,883 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 09:42:35,892 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 09:42:35,892 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 09:42:35,897 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@101a461c: startup date [Tue Jan 09 09:42:35 IST 2018]; root of context hierarchy
+2018-01-09 09:42:36,202 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [mule.properties]
+2018-01-09 09:42:36,208 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [mule.properties]
+2018-01-09 09:42:36,219 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 09:42:36,796 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-09 09:42:37,330 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-tx-log\tx2.log
+2018-01-09 09:42:37,338 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-xa-tx-log\tx2.log
+2018-01-09 09:42:37,407 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 09:42:37,413 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: muelsoft-week5Flow
+2018-01-09 09:42:37,416 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@6a8a551e
+2018-01-09 09:42:37,416 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@3cc9632d
+2018-01-09 09:42:37,416 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@53982523
+2018-01-09 09:42:37,437 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: muelsoft-week5Flow.stage1
+2018-01-09 09:42:37,457 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getUnitedFlightsFlow
+2018-01-09 09:42:37,457 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@3111631d
+2018-01-09 09:42:37,457 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@2d70f312
+2018-01-09 09:42:37,457 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4c7d7430
+2018-01-09 09:42:37,462 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getUnitedFlightsFlow.stage1
+2018-01-09 09:42:37,468 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getAmericanFlightsFlow
+2018-01-09 09:42:37,468 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@134a8ead
+2018-01-09 09:42:37,469 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@427308f8
+2018-01-09 09:42:37,469 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@54247647
+2018-01-09 09:42:37,477 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getAmericanFlightsFlow.stage1
+2018-01-09 09:42:37,478 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getDeltaFlightsFlow
+2018-01-09 09:42:37,478 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5882b202
+2018-01-09 09:42:37,482 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getDeltaFlightsFlow.stage1
+2018-01-09 09:42:38,322 [main] WARN  org.mule.util.xmlsecurity.DefaultXMLSecureFactories - Can't configure XML entity expansion for TransformerFactory (org.apache.xalan.processor.TransformerFactoryImpl), this could introduce XXE and BL vulnerabilities
+2018-01-09 09:42:38,699 [main] INFO  org.mule.module.ws.consumer.RequestBodyGenerator - The selected operation does not require input parameters, the payload will be ignored
+2018-01-09 09:42:39,556 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getDeltaFindFlights
+2018-01-09 09:42:39,556 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@2aac8ad7
+2018-01-09 09:42:39,558 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@6a4a2090
+2018-01-09 09:42:39,559 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@778c2e7c
+2018-01-09 09:42:39,567 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getDeltaFindFlights.stage1
+2018-01-09 09:42:40,272 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getAllAirlineFlights
+2018-01-09 09:42:40,272 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4d8056bf
+2018-01-09 09:42:40,277 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getAllAirlineFlights.stage1
+2018-01-09 09:42:40,280 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostFlightFlow
+2018-01-09 09:42:40,280 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7417ef4f
+2018-01-09 09:42:40,286 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostFlightFlow.stage1
+2018-01-09 09:42:40,286 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostFlightFromXmlFlow
+2018-01-09 09:42:40,286 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6728370a
+2018-01-09 09:42:40,291 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostFlightFromXmlFlow.stage1
+2018-01-09 09:42:40,291 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostFlightFromXmlToJava
+2018-01-09 09:42:40,292 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4b32465
+2018-01-09 09:42:40,297 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostFlightFromXmlToJava.stage1
+2018-01-09 09:42:40,536 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\muelsoft-week5\muelsoft-week5.xml'}]"
+2018-01-09 09:42:40,536 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\muelsoft-week5\muelsoft-week5.xml'}]"
+2018-01-09 09:42:43,561 [main] WARN  org.mule.config.spring.SpringRegistry - Spring registry already contains an object named 'gateway-message-source:http://0.0.0.0:8081/flights'. The previous object will be overwritten.
+2018-01-09 09:42:43,566 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'muelsoft-week5'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 09:42:43,576 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 09:42:43,577 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 09:42:43,631 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-09 09:42:43,635 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 09:42:43,639 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 09:42:43,641 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: muelsoft-week5Flow
+2018-01-09 09:42:43,641 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: muelsoft-week5Flow.stage1
+2018-01-09 09:42:43,646 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getUnitedFlightsFlow
+2018-01-09 09:42:43,646 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getUnitedFlightsFlow.stage1
+2018-01-09 09:42:43,649 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getAmericanFlightsFlow
+2018-01-09 09:42:43,649 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getAmericanFlightsFlow.stage1
+2018-01-09 09:42:43,652 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getDeltaFlightsFlow
+2018-01-09 09:42:43,652 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getDeltaFlightsFlow.stage1
+2018-01-09 09:42:43,654 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getDeltaFindFlights
+2018-01-09 09:42:43,654 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getDeltaFindFlights.stage1
+2018-01-09 09:42:43,657 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getAllAirlineFlights
+2018-01-09 09:42:43,657 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getAllAirlineFlights.stage1
+2018-01-09 09:42:43,662 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostFlightFlow
+2018-01-09 09:42:43,662 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostFlightFlow.stage1
+2018-01-09 09:42:43,664 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostFlightFromXmlFlow
+2018-01-09 09:42:43,664 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostFlightFromXmlFlow.stage1
+2018-01-09 09:42:43,666 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostFlightFromXmlToJava
+2018-01-09 09:42:43,666 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostFlightFromXmlToJava.stage1
+2018-01-09 09:42:43,801 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 09:42:43,823 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: muelsoft-week5                                        *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 09:43:00,119 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'muelsoft-week5'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 09:43:00,124 [main] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app american_flights_api
+2018-01-09 09:43:00,126 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 09:43:00,131 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 09:43:00,141 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 09:43:00,141 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 09:43:00,149 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@101a461c: startup date [Tue Jan 09 09:43:00 IST 2018]; root of context hierarchy
+2018-01-09 09:43:00,428 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [mule.properties]
+2018-01-09 09:43:00,432 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [mule.properties]
+2018-01-09 09:43:00,437 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 09:43:00,958 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-09 09:43:01,500 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-tx-log\tx2.log
+2018-01-09 09:43:01,856 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-xa-tx-log\tx2.log
+2018-01-09 09:43:01,951 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 09:43:01,956 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: muelsoft-week5Flow
+2018-01-09 09:43:01,959 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@6a8a551e
+2018-01-09 09:43:01,959 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@3cc9632d
+2018-01-09 09:43:01,960 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@53982523
+2018-01-09 09:43:01,983 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: muelsoft-week5Flow.stage1
+2018-01-09 09:43:02,010 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getUnitedFlightsFlow
+2018-01-09 09:43:02,016 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@3111631d
+2018-01-09 09:43:02,019 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@2d70f312
+2018-01-09 09:43:02,026 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4c7d7430
+2018-01-09 09:43:02,031 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getUnitedFlightsFlow.stage1
+2018-01-09 09:43:02,037 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getAmericanFlightsFlow
+2018-01-09 09:43:02,038 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@134a8ead
+2018-01-09 09:43:02,039 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@427308f8
+2018-01-09 09:43:02,041 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@54247647
+2018-01-09 09:43:02,047 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getAmericanFlightsFlow.stage1
+2018-01-09 09:43:02,048 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getDeltaFlightsFlow
+2018-01-09 09:43:02,049 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5882b202
+2018-01-09 09:43:02,052 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getDeltaFlightsFlow.stage1
+2018-01-09 09:43:02,905 [main] WARN  org.mule.util.xmlsecurity.DefaultXMLSecureFactories - Can't configure XML entity expansion for TransformerFactory (org.apache.xalan.processor.TransformerFactoryImpl), this could introduce XXE and BL vulnerabilities
+2018-01-09 09:43:03,263 [main] INFO  org.mule.module.ws.consumer.RequestBodyGenerator - The selected operation does not require input parameters, the payload will be ignored
+2018-01-09 09:43:03,732 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getDeltaFindFlights
+2018-01-09 09:43:03,733 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@2aac8ad7
+2018-01-09 09:43:03,733 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@6a4a2090
+2018-01-09 09:43:03,733 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@778c2e7c
+2018-01-09 09:43:03,739 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getDeltaFindFlights.stage1
+2018-01-09 09:43:04,484 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getAllAirlineFlights
+2018-01-09 09:43:04,484 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4d8056bf
+2018-01-09 09:43:04,489 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getAllAirlineFlights.stage1
+2018-01-09 09:43:04,493 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostFlightFlow
+2018-01-09 09:43:04,493 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7417ef4f
+2018-01-09 09:43:04,499 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostFlightFlow.stage1
+2018-01-09 09:43:04,500 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostFlightFromXmlFlow
+2018-01-09 09:43:04,500 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6728370a
+2018-01-09 09:43:04,504 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostFlightFromXmlFlow.stage1
+2018-01-09 09:43:04,504 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostFlightFromXmlToJava
+2018-01-09 09:43:04,504 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4b32465
+2018-01-09 09:43:04,516 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostFlightFromXmlToJava.stage1
+2018-01-09 09:43:04,750 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\muelsoft-week5\muelsoft-week5.xml'}]"
+2018-01-09 09:43:04,751 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\muelsoft-week5\muelsoft-week5.xml'}]"
+2018-01-09 09:43:07,776 [main] WARN  org.mule.config.spring.SpringRegistry - Spring registry already contains an object named 'gateway-message-source:http://0.0.0.0:8081/flights'. The previous object will be overwritten.
+2018-01-09 09:43:07,784 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'muelsoft-week5'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 09:43:07,791 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 09:43:07,791 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 09:43:07,841 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-09 09:43:07,846 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 09:43:07,850 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 09:43:07,851 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: muelsoft-week5Flow
+2018-01-09 09:43:07,851 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: muelsoft-week5Flow.stage1
+2018-01-09 09:43:07,855 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getUnitedFlightsFlow
+2018-01-09 09:43:07,855 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getUnitedFlightsFlow.stage1
+2018-01-09 09:43:07,858 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getAmericanFlightsFlow
+2018-01-09 09:43:07,858 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getAmericanFlightsFlow.stage1
+2018-01-09 09:43:07,860 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getDeltaFlightsFlow
+2018-01-09 09:43:07,862 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getDeltaFlightsFlow.stage1
+2018-01-09 09:43:07,865 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getDeltaFindFlights
+2018-01-09 09:43:07,865 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getDeltaFindFlights.stage1
+2018-01-09 09:43:07,869 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getAllAirlineFlights
+2018-01-09 09:43:07,869 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getAllAirlineFlights.stage1
+2018-01-09 09:43:07,874 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostFlightFlow
+2018-01-09 09:43:07,874 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostFlightFlow.stage1
+2018-01-09 09:43:07,877 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostFlightFromXmlFlow
+2018-01-09 09:43:07,877 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostFlightFromXmlFlow.stage1
+2018-01-09 09:43:07,880 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostFlightFromXmlToJava
+2018-01-09 09:43:07,880 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostFlightFromXmlToJava.stage1
+2018-01-09 09:43:08,016 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 09:43:08,038 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: muelsoft-week5                                        *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 09:48:10,310 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'muelsoft-week5'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 09:48:10,313 [main] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app american_flights_api
+2018-01-09 09:48:10,316 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 09:48:10,320 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 09:48:10,328 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 09:48:10,328 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 09:48:10,332 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@1b0fc8b: startup date [Tue Jan 09 09:48:10 IST 2018]; root of context hierarchy
+2018-01-09 09:48:10,676 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [mule.properties]
+2018-01-09 09:48:10,681 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [mule.properties]
+2018-01-09 09:48:10,689 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 09:48:11,216 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-tx-log\tx2.log
+2018-01-09 09:48:11,219 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\muelsoft-week5\queue-xa-tx-log\tx2.log
+2018-01-09 09:48:11,235 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 09:48:11,237 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: muelsoft-week5Flow
+2018-01-09 09:48:11,238 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@289b7efe
+2018-01-09 09:48:11,238 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@34ac72c3
+2018-01-09 09:48:11,238 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6cd8c373
+2018-01-09 09:48:11,244 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: muelsoft-week5Flow.stage1
+2018-01-09 09:48:11,288 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getUnitedFlightsFlow
+2018-01-09 09:48:11,300 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@f36c8b1
+2018-01-09 09:48:11,302 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@251db193
+2018-01-09 09:48:11,303 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@109f95b1
+2018-01-09 09:48:11,309 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getUnitedFlightsFlow.stage1
+2018-01-09 09:48:11,317 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getAmericanFlightsFlow
+2018-01-09 09:48:11,318 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@2e41b65a
+2018-01-09 09:48:11,318 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@4d25943d
+2018-01-09 09:48:11,319 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2eea0775
+2018-01-09 09:48:11,327 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getAmericanFlightsFlow.stage1
+2018-01-09 09:48:11,329 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getDeltaFlightsFlow
+2018-01-09 09:48:11,330 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7695184b
+2018-01-09 09:48:11,335 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getDeltaFlightsFlow.stage1
+2018-01-09 09:48:12,481 [main] WARN  org.mule.util.xmlsecurity.DefaultXMLSecureFactories - Can't configure XML entity expansion for TransformerFactory (org.apache.xalan.processor.TransformerFactoryImpl), this could introduce XXE and BL vulnerabilities
+2018-01-09 09:48:12,837 [main] INFO  org.mule.module.ws.consumer.RequestBodyGenerator - The selected operation does not require input parameters, the payload will be ignored
+2018-01-09 09:48:13,206 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getDeltaFindFlights
+2018-01-09 09:48:13,206 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@26864891
+2018-01-09 09:48:13,206 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@5946e540
+2018-01-09 09:48:13,207 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@651a399
+2018-01-09 09:48:13,211 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getDeltaFindFlights.stage1
+2018-01-09 09:48:13,976 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getAllAirlineFlights
+2018-01-09 09:48:13,976 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@556a5e70
+2018-01-09 09:48:13,980 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getAllAirlineFlights.stage1
+2018-01-09 09:48:13,985 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostFlightFlow
+2018-01-09 09:48:13,985 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@75c36570
+2018-01-09 09:48:13,993 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostFlightFlow.stage1
+2018-01-09 09:48:13,993 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostFlightFromXmlFlow
+2018-01-09 09:48:13,994 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3b303b78
+2018-01-09 09:48:13,998 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostFlightFromXmlFlow.stage1
+2018-01-09 09:48:13,999 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PostFlightFromXmlToJava
+2018-01-09 09:48:13,999 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2f349170
+2018-01-09 09:48:14,003 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PostFlightFromXmlToJava.stage1
+2018-01-09 09:48:14,050 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\muelsoft-week5\muelsoft-week5.xml'}]"
+2018-01-09 09:48:14,050 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\muelsoft-week5\muelsoft-week5.xml'}]"
+2018-01-09 09:48:17,060 [main] WARN  org.mule.config.spring.SpringRegistry - Spring registry already contains an object named 'gateway-message-source:http://0.0.0.0:8081/flights'. The previous object will be overwritten.
+2018-01-09 09:48:17,062 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'muelsoft-week5'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 09:48:17,071 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 09:48:17,071 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 09:48:17,105 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-09 09:48:17,109 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 09:48:17,115 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 09:48:17,118 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: muelsoft-week5Flow
+2018-01-09 09:48:17,118 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: muelsoft-week5Flow.stage1
+2018-01-09 09:48:17,123 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getUnitedFlightsFlow
+2018-01-09 09:48:17,123 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getUnitedFlightsFlow.stage1
+2018-01-09 09:48:17,126 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getAmericanFlightsFlow
+2018-01-09 09:48:17,126 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getAmericanFlightsFlow.stage1
+2018-01-09 09:48:17,129 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getDeltaFlightsFlow
+2018-01-09 09:48:17,129 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getDeltaFlightsFlow.stage1
+2018-01-09 09:48:17,132 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getDeltaFindFlights
+2018-01-09 09:48:17,132 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getDeltaFindFlights.stage1
+2018-01-09 09:48:17,135 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getAllAirlineFlights
+2018-01-09 09:48:17,135 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getAllAirlineFlights.stage1
+2018-01-09 09:48:17,139 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostFlightFlow
+2018-01-09 09:48:17,139 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostFlightFlow.stage1
+2018-01-09 09:48:17,141 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostFlightFromXmlFlow
+2018-01-09 09:48:17,141 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostFlightFromXmlFlow.stage1
+2018-01-09 09:48:17,142 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: PostFlightFromXmlToJava
+2018-01-09 09:48:17,142 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: PostFlightFromXmlToJava.stage1
+2018-01-09 09:48:17,237 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 09:48:17,243 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: muelsoft-week5                                        *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 09:48:22,357 [[muelsoft-week5].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The code is: SFO
+2018-01-09 09:48:22,421 [[muelsoft-week5].ScatterGatherWorkManager.03] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2018-01-09 09:48:23,504 [[muelsoft-week5].ScatterGatherWorkManager.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=2115e4d0-f4f4-11e7-b6ac-98eecb1e3fce
+  payload=java.util.ArrayList
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    code=SFO
+  INBOUND scoped properties:
+    connection=keep-alive
+    content-length=486
+    content-type=application/json
+    date=Tue, 09 Jan 2018 04:19:09 GMT
+    http.reason=OK
+    http.status=200
+    server=nginx/1.4.6 (Ubuntu)
+    via=1.0 virtue (squid/3.1.10)
+    x-cache=MISS from virtue
+    x-cache-lookup=MISS from virtue:8085
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2018-01-09 09:48:23,622 [[muelsoft-week5].ScatterGatherWorkManager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=2115e4d0-f4f4-11e7-b6ac-98eecb1e3fce
+  payload=java.util.ArrayList
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    americanResponse={}
+    code=SFO
+  INBOUND scoped properties:
+    content-length=3565
+    content-type=application/json;charset=UTF-8
+    date=Tue, 09 Jan 2018 04:18:23 GMT
+    http.reason=
+    http.status=200
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2018-01-09 09:48:24,541 [[muelsoft-week5].ScatterGatherWorkManager.03] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=2115e4d0-f4f4-11e7-b6ac-98eecb1e3fce
+  payload=java.util.ArrayList
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    code=SFO
+  INBOUND scoped properties:
+    connection=keep-alive
+    content-length=919
+    content-type=text/xml; charset=UTF-8
+    date=Tue, 09 Jan 2018 04:18:23 GMT
+    http.reason=OK
+    http.status=200
+    mule_encoding=UTF-8
+    server=nginx
+    via=1.0 virtue (squid/3.1.10)
+    x-cache=MISS from virtue
+    x-cache-lookup=MISS from virtue:8085
+  OUTBOUND scoped properties:
+    http.status=200
+  SESSION scoped properties:
+}
+2018-01-09 09:48:24,561 [[muelsoft-week5].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=2275c2f0-f4f4-11e7-b6ac-98eecb1e3fce
+  payload=java.util.ArrayList
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    code=SFO
+  INBOUND scoped properties:
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2018-01-09 09:48:24,607 [[muelsoft-week5].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=2275c2f0-f4f4-11e7-b6ac-98eecb1e3fce
+  payload=com.mulesoft.weave.reader.ByteArraySeekableStream
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=windows-1252
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    code=SFO
+  INBOUND scoped properties:
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2018-01-09 10:19:24,100 [[muelsoft-week5].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/soap
+2018-01-09 10:19:24,100 [[muelsoft-week5].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [(*)/flights/java/, ([get])/flights/, (*)/flights/xml/, ([post])/flights/]

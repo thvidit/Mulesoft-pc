@@ -5,7 +5,6 @@
 <stringAttribute key="launch_mule_server_version" value="org.mule.tooling.server.3.8.5.ee"/>
 <listAttribute key="mule-project-names">
 <listEntry value="american_flights_api"/>
-<listEntry value="muelsoft-week5"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="american_flights_api"/>
 <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-XX:PermSize=128M -XX:MaxPermSize=256M"/>
