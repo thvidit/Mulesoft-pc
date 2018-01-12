@@ -11687,3 +11687,1581 @@ java.lang.NullPointerException
 *   DevKit Extension Information                                     *
 *   Wrapper Manager                                                  *
 **********************************************************************
+2018-01-09 10:45:30,239 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'LoginValidation'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 10:45:30,411 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 10:45:30,498 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 10:45:30,583 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 10:45:30,584 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 10:45:30,629 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6bc248ed: startup date [Tue Jan 09 10:45:30 IST 2018]; root of context hierarchy
+2018-01-09 10:45:31,709 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 10:45:31,986 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 10:45:31,986 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 10:45:31,986 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 10:45:31,986 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 10:45:32,391 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-09 10:45:32,937 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx2.log
+2018-01-09 10:45:32,948 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx2.log
+2018-01-09 10:45:33,015 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 10:45:33,020 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: LoginFlow
+2018-01-09 10:45:33,020 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@11b32a14
+2018-01-09 10:45:33,041 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: LoginFlow.stage1
+2018-01-09 10:45:33,048 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.759564454
+2018-01-09 10:45:33,050 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SignupFlow
+2018-01-09 10:45:33,050 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2693c618
+2018-01-09 10:45:33,053 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SignupFlow.stage1
+2018-01-09 10:45:33,054 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1115349385
+2018-01-09 10:45:33,482 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 10:45:33,483 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 10:45:36,516 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 10:45:36,522 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 10:45:36,522 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 10:45:36,588 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-09 10:45:36,591 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 10:45:36,594 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 10:45:36,595 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: LoginFlow
+2018-01-09 10:45:36,595 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: LoginFlow.stage1
+2018-01-09 10:45:36,599 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.759564454
+2018-01-09 10:45:36,602 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SignupFlow
+2018-01-09 10:45:36,602 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SignupFlow.stage1
+2018-01-09 10:45:36,604 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1115349385
+2018-01-09 10:45:36,634 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 10:45:36,650 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: LoginValidation                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 10:47:31,178 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'LoginValidation'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 10:47:31,355 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 10:47:31,433 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 10:47:31,515 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 10:47:31,515 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 10:47:31,560 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6bc248ed: startup date [Tue Jan 09 10:47:31 IST 2018]; root of context hierarchy
+2018-01-09 10:47:32,672 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 10:47:32,953 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 10:47:32,953 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 10:47:32,953 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 10:47:32,953 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 10:47:33,341 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-09 10:47:33,892 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx2.log
+2018-01-09 10:47:33,902 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx2.log
+2018-01-09 10:47:33,964 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 10:47:33,967 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: LoginFlow
+2018-01-09 10:47:33,967 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@11b32a14
+2018-01-09 10:47:33,989 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: LoginFlow.stage1
+2018-01-09 10:47:33,997 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.759564454
+2018-01-09 10:47:33,999 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SignupFlow
+2018-01-09 10:47:33,999 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2693c618
+2018-01-09 10:47:34,004 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SignupFlow.stage1
+2018-01-09 10:47:34,004 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1115349385
+2018-01-09 10:47:34,444 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 10:47:34,444 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 10:47:37,475 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 10:47:37,479 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 10:47:37,479 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 10:47:37,545 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-09 10:47:37,547 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 10:47:37,550 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 10:47:37,551 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: LoginFlow
+2018-01-09 10:47:37,551 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: LoginFlow.stage1
+2018-01-09 10:47:37,555 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.759564454
+2018-01-09 10:47:37,558 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SignupFlow
+2018-01-09 10:47:37,558 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SignupFlow.stage1
+2018-01-09 10:47:37,560 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1115349385
+2018-01-09 10:47:37,589 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 10:47:37,606 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: LoginValidation                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 10:47:46,427 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'LoginValidation'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 10:47:46,597 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 10:47:46,676 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 10:47:46,753 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 10:47:46,753 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 10:47:46,797 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6bc248ed: startup date [Tue Jan 09 10:47:46 IST 2018]; root of context hierarchy
+2018-01-09 10:47:47,924 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 10:47:48,218 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 10:47:48,218 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 10:47:48,219 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 10:47:48,219 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 10:47:48,670 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-09 10:47:49,224 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx2.log
+2018-01-09 10:47:49,235 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx2.log
+2018-01-09 10:47:49,301 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 10:47:49,305 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: LoginFlow
+2018-01-09 10:47:49,305 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@11b32a14
+2018-01-09 10:47:49,328 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: LoginFlow.stage1
+2018-01-09 10:47:49,336 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.759564454
+2018-01-09 10:47:49,339 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SignupFlow
+2018-01-09 10:47:49,339 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2693c618
+2018-01-09 10:47:49,343 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SignupFlow.stage1
+2018-01-09 10:47:49,343 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1115349385
+2018-01-09 10:47:49,746 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 10:47:49,746 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 10:47:52,780 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 10:47:52,786 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 10:47:52,786 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 10:47:52,849 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-09 10:47:52,851 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 10:47:52,854 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 10:47:52,855 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: LoginFlow
+2018-01-09 10:47:52,855 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: LoginFlow.stage1
+2018-01-09 10:47:52,859 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.759564454
+2018-01-09 10:47:52,863 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SignupFlow
+2018-01-09 10:47:52,863 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SignupFlow.stage1
+2018-01-09 10:47:52,865 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1115349385
+2018-01-09 10:47:52,898 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 10:47:52,915 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: LoginValidation                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 10:49:03,013 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 10:49:03,015 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: LoginFlow
+2018-01-09 10:49:03,016 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: LoginFlow.stage1
+2018-01-09 10:49:03,073 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.759564454
+2018-01-09 10:49:03,073 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SignupFlow
+2018-01-09 10:49:03,073 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SignupFlow.stage1
+2018-01-09 10:49:03,268 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.1115349385
+2018-01-09 10:49:03,269 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2018-01-09 10:49:03,275 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2018-01-09 10:49:03,276 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2018-01-09 10:49:03,276 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2018-01-09 10:49:03,280 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'LoginValidation'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 10:49:03,280 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2018-01-09 10:49:03,281 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: LoginFlow
+2018-01-09 10:49:03,281 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: LoginFlow.stage1
+2018-01-09 10:49:03,281 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.759564454
+2018-01-09 10:49:03,282 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SignupFlow
+2018-01-09 10:49:03,282 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SignupFlow.stage1
+2018-01-09 10:49:03,282 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.1115349385
+2018-01-09 10:49:03,283 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2018-01-09 10:49:03,412 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@6bc248ed: startup date [Tue Jan 09 10:47:46 IST 2018]; root of context hierarchy
+2018-01-09 10:49:03,484 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "LoginValidation" shut down normally on: 1/9/18 10:49  *
+* AM                                                                 *
+* Up for: 0 days, 0 hours, 1 mins, 10.701 sec                        *
+**********************************************************************
+2018-01-09 10:49:03,545 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.module.launcher.artifact.DefaultResourceReleaser - Unable to shutdown MySql's AbandonedConnectionCleanupThread
+java.lang.ClassNotFoundException: com.mysql.jdbc.AbandonedConnectionCleanupThread
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_102]
+	at org.mule.module.launcher.FineGrainedControlClassLoader.findClass(FineGrainedControlClassLoader.java:181) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.MuleApplicationClassLoader.findClass(MuleApplicationClassLoader.java:138) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.FineGrainedControlClassLoader.loadClass(FineGrainedControlClassLoader.java:117) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_102]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.shutdownMySqlAbandonedConnectionCleanupThread(DefaultResourceReleaser.java:197) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.doDeregisterDriver(DefaultResourceReleaser.java:133) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.deregisterJdbcDrivers(DefaultResourceReleaser.java:84) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.release(DefaultResourceReleaser.java:38) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.AbstractArtifactClassLoader.dispose(AbstractArtifactClassLoader.java:67) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.application.CompositeApplicationClassLoader.dispose(CompositeApplicationClassLoader.java:285) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.application.DefaultMuleApplication.dispose(DefaultMuleApplication.java:310) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.ArtifactWrapper$1.execute(ArtifactWrapper.java:40) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.executeWithinArtifactClassLoader(ArtifactWrapper.java:136) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.dispose(ArtifactWrapper.java:35) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArtifactDeployer.tryToDisposeArtifact(DefaultArtifactDeployer.java:65) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArtifactDeployer.undeploy(DefaultArtifactDeployer.java:47) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:458) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedArtifacts(DeploymentDirectoryWatcher.java:562) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedApplications(DeploymentDirectoryWatcher.java:539) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.run(DeploymentDirectoryWatcher.java:352) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_102]
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source) ~[?:1.8.0_102]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source) ~[?:1.8.0_102]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_102]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_102]
+2018-01-09 10:49:03,621 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'LoginValidation'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 10:49:03,628 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app LoginValidation
+2018-01-09 10:49:03,631 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 10:49:03,643 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 10:49:03,666 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 10:49:03,668 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 10:49:03,674 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@24545324: startup date [Tue Jan 09 10:49:03 IST 2018]; root of context hierarchy
+2018-01-09 10:49:03,930 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 10:49:03,962 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 10:49:03,962 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 10:49:03,962 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 10:49:03,962 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 10:49:04,035 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx2.log
+2018-01-09 10:49:04,037 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx2.log
+2018-01-09 10:49:04,047 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 10:49:04,048 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: LoginFlow
+2018-01-09 10:49:04,049 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4cb362f7
+2018-01-09 10:49:04,053 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: LoginFlow.stage1
+2018-01-09 10:49:04,054 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1798723596
+2018-01-09 10:49:04,055 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SignupFlow
+2018-01-09 10:49:04,056 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@135e90cb
+2018-01-09 10:49:04,060 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SignupFlow.stage1
+2018-01-09 10:49:04,060 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.180164835
+2018-01-09 10:49:04,087 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 10:49:04,087 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 10:49:07,098 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 10:49:07,102 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 10:49:07,102 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 10:49:07,155 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-09 10:49:07,158 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 10:49:07,161 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 10:49:07,162 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: LoginFlow
+2018-01-09 10:49:07,162 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: LoginFlow.stage1
+2018-01-09 10:49:07,165 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1798723596
+2018-01-09 10:49:07,166 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SignupFlow
+2018-01-09 10:49:07,166 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SignupFlow.stage1
+2018-01-09 10:49:07,169 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.180164835
+2018-01-09 10:49:07,177 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 10:49:07,182 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: LoginValidation                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 11:11:16,433 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'LoginValidation'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:11:16,597 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 11:11:16,678 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 11:11:16,764 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 11:11:16,764 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 11:11:16,814 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6bc248ed: startup date [Tue Jan 09 11:11:16 IST 2018]; root of context hierarchy
+2018-01-09 11:11:18,237 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 11:11:18,679 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:11:18,679 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:11:18,679 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:11:18,679 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:11:19,183 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-09 11:11:19,772 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx2.log
+2018-01-09 11:11:19,783 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx2.log
+2018-01-09 11:11:19,855 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 11:11:19,860 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: LoginFlow
+2018-01-09 11:11:19,860 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@11b32a14
+2018-01-09 11:11:19,879 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: LoginFlow.stage1
+2018-01-09 11:11:19,886 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.759564454
+2018-01-09 11:11:19,889 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SignupFlow
+2018-01-09 11:11:19,889 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2693c618
+2018-01-09 11:11:19,892 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SignupFlow.stage1
+2018-01-09 11:11:19,892 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1115349385
+2018-01-09 11:11:20,342 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 11:11:20,342 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 11:11:23,403 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:11:23,404 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 11:11:23,405 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 11:11:23,448 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-09 11:11:23,450 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:11:23,452 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 11:11:23,454 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: LoginFlow
+2018-01-09 11:11:23,454 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: LoginFlow.stage1
+2018-01-09 11:11:23,458 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.759564454
+2018-01-09 11:11:23,461 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SignupFlow
+2018-01-09 11:11:23,461 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SignupFlow.stage1
+2018-01-09 11:11:23,464 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1115349385
+2018-01-09 11:11:23,494 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 11:11:23,510 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: LoginValidation                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 11:11:33,600 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:11:33,604 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: LoginFlow
+2018-01-09 11:11:33,605 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: LoginFlow.stage1
+2018-01-09 11:11:33,747 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.759564454
+2018-01-09 11:11:33,747 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SignupFlow
+2018-01-09 11:11:33,747 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SignupFlow.stage1
+2018-01-09 11:11:33,945 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.1115349385
+2018-01-09 11:11:33,946 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2018-01-09 11:11:33,966 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2018-01-09 11:11:33,967 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2018-01-09 11:11:33,967 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2018-01-09 11:11:33,971 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'LoginValidation'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:11:33,972 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2018-01-09 11:11:33,973 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: LoginFlow
+2018-01-09 11:11:33,974 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: LoginFlow.stage1
+2018-01-09 11:11:33,974 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.759564454
+2018-01-09 11:11:33,974 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SignupFlow
+2018-01-09 11:11:33,974 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SignupFlow.stage1
+2018-01-09 11:11:33,974 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.1115349385
+2018-01-09 11:11:33,977 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2018-01-09 11:11:34,093 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@6bc248ed: startup date [Tue Jan 09 11:11:16 IST 2018]; root of context hierarchy
+2018-01-09 11:11:34,148 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "LoginValidation" shut down normally on: 1/9/18 11:11  *
+* AM                                                                 *
+* Up for: 0 days, 0 hours, 0 mins, 10.743 sec                        *
+**********************************************************************
+2018-01-09 11:11:34,180 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.module.launcher.artifact.DefaultResourceReleaser - Unable to shutdown MySql's AbandonedConnectionCleanupThread
+java.lang.ClassNotFoundException: com.mysql.jdbc.AbandonedConnectionCleanupThread
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_102]
+	at org.mule.module.launcher.FineGrainedControlClassLoader.findClass(FineGrainedControlClassLoader.java:181) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.MuleApplicationClassLoader.findClass(MuleApplicationClassLoader.java:138) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.FineGrainedControlClassLoader.loadClass(FineGrainedControlClassLoader.java:117) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_102]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.shutdownMySqlAbandonedConnectionCleanupThread(DefaultResourceReleaser.java:197) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.doDeregisterDriver(DefaultResourceReleaser.java:133) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.deregisterJdbcDrivers(DefaultResourceReleaser.java:84) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.release(DefaultResourceReleaser.java:38) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.AbstractArtifactClassLoader.dispose(AbstractArtifactClassLoader.java:67) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.application.CompositeApplicationClassLoader.dispose(CompositeApplicationClassLoader.java:285) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.application.DefaultMuleApplication.dispose(DefaultMuleApplication.java:310) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.ArtifactWrapper$1.execute(ArtifactWrapper.java:40) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.executeWithinArtifactClassLoader(ArtifactWrapper.java:136) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.dispose(ArtifactWrapper.java:35) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArtifactDeployer.tryToDisposeArtifact(DefaultArtifactDeployer.java:65) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArtifactDeployer.undeploy(DefaultArtifactDeployer.java:47) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:458) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedArtifacts(DeploymentDirectoryWatcher.java:562) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedApplications(DeploymentDirectoryWatcher.java:539) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.run(DeploymentDirectoryWatcher.java:352) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_102]
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source) ~[?:1.8.0_102]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source) ~[?:1.8.0_102]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_102]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_102]
+2018-01-09 11:11:34,229 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'LoginValidation'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:11:34,235 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app LoginValidation
+2018-01-09 11:11:34,237 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 11:11:34,240 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 11:11:34,249 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 11:11:34,251 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 11:11:34,256 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5241f270: startup date [Tue Jan 09 11:11:34 IST 2018]; root of context hierarchy
+2018-01-09 11:11:34,511 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 11:11:34,546 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:11:34,547 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:11:34,548 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:11:34,548 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:11:34,617 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx2.log
+2018-01-09 11:11:34,618 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx2.log
+2018-01-09 11:11:34,627 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 11:11:34,628 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: LoginFlow
+2018-01-09 11:11:34,629 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2c988f93
+2018-01-09 11:11:34,634 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: LoginFlow.stage1
+2018-01-09 11:11:34,635 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.2127891801
+2018-01-09 11:11:34,636 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SignupFlow
+2018-01-09 11:11:34,636 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7619ff95
+2018-01-09 11:11:34,640 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SignupFlow.stage1
+2018-01-09 11:11:34,640 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.96196293
+2018-01-09 11:11:34,662 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 11:11:34,662 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 11:11:37,670 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:11:37,674 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 11:11:37,674 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 11:11:37,711 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-09 11:11:37,714 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:11:37,717 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 11:11:37,718 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: LoginFlow
+2018-01-09 11:11:37,718 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: LoginFlow.stage1
+2018-01-09 11:11:37,720 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.2127891801
+2018-01-09 11:11:37,721 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SignupFlow
+2018-01-09 11:11:37,722 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SignupFlow.stage1
+2018-01-09 11:11:37,724 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.96196293
+2018-01-09 11:11:37,735 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 11:11:37,741 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: LoginValidation                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 11:11:46,077 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'LoginValidation'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:11:46,265 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 11:11:46,353 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 11:11:46,430 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 11:11:46,431 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 11:11:46,475 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6bc248ed: startup date [Tue Jan 09 11:11:46 IST 2018]; root of context hierarchy
+2018-01-09 11:11:47,878 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 11:11:48,192 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:11:48,193 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:11:48,193 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:11:48,193 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:11:48,618 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-09 11:11:49,005 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx2.log
+2018-01-09 11:11:49,018 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx2.log
+2018-01-09 11:11:49,120 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 11:11:49,123 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: LoginFlow
+2018-01-09 11:11:49,123 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@11b32a14
+2018-01-09 11:11:49,152 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: LoginFlow.stage1
+2018-01-09 11:11:49,162 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.759564454
+2018-01-09 11:11:49,165 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SignupFlow
+2018-01-09 11:11:49,165 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2693c618
+2018-01-09 11:11:49,169 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SignupFlow.stage1
+2018-01-09 11:11:49,169 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1115349385
+2018-01-09 11:11:49,635 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 11:11:49,635 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 11:11:52,667 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:11:52,671 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 11:11:52,671 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 11:11:52,726 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-09 11:11:52,728 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:11:52,731 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 11:11:52,732 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: LoginFlow
+2018-01-09 11:11:52,732 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: LoginFlow.stage1
+2018-01-09 11:11:52,736 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.759564454
+2018-01-09 11:11:52,739 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SignupFlow
+2018-01-09 11:11:52,739 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SignupFlow.stage1
+2018-01-09 11:11:52,740 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1115349385
+2018-01-09 11:11:52,769 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 11:11:52,785 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: LoginValidation                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 11:13:34,726 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/flights
+2018-01-09 11:13:34,726 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [([post])/signup/, (*)/login/]
+2018-01-09 11:13:48,299 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 9/mcfEpdS8umLy4hStEOM4r1Vho=
+2018-01-09 11:14:31,693 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 9/mcfEpdS8umLy4hStEOM4r1Vho=
+2018-01-09 11:14:39,747 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload from database is:1, user: shubham8, password : null
+2018-01-09 11:14:39,762 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Password from database: null
+2018-01-09 11:14:43,913 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload from database is:1, user: shubham8, password : null
+2018-01-09 11:14:43,921 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Password from database: null
+2018-01-09 11:14:48,766 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload from database is:1, user: shubham8, password : null
+2018-01-09 11:14:48,774 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Password from database: null
+2018-01-09 11:16:12,966 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'LoginValidation'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:16:13,150 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 11:16:13,313 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 11:16:13,612 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 11:16:13,612 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 11:16:13,670 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@3d49fd31: startup date [Tue Jan 09 11:16:13 IST 2018]; root of context hierarchy
+2018-01-09 11:16:15,240 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 11:16:15,661 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:16:15,661 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:16:15,661 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:16:15,661 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:16:16,293 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-09 11:16:16,924 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx2.log
+2018-01-09 11:16:16,937 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx2.log
+2018-01-09 11:16:17,021 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 11:16:17,025 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: LoginFlow
+2018-01-09 11:16:17,026 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@bf2aa32
+2018-01-09 11:16:17,053 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: LoginFlow.stage1
+2018-01-09 11:16:17,063 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.521311335
+2018-01-09 11:16:17,069 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SignupFlow
+2018-01-09 11:16:17,069 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@16ac4d3d
+2018-01-09 11:16:17,075 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SignupFlow.stage1
+2018-01-09 11:16:17,075 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1035361293
+2018-01-09 11:16:17,497 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 11:16:17,497 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 11:16:20,538 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:16:20,542 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 11:16:20,542 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 11:16:20,595 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-09 11:16:20,598 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:16:20,601 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 11:16:20,603 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: LoginFlow
+2018-01-09 11:16:20,603 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: LoginFlow.stage1
+2018-01-09 11:16:20,608 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.521311335
+2018-01-09 11:16:20,612 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SignupFlow
+2018-01-09 11:16:20,612 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SignupFlow.stage1
+2018-01-09 11:16:20,614 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1035361293
+2018-01-09 11:16:20,654 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 11:16:20,678 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: LoginValidation                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 11:17:23,417 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'LoginValidation'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:17:23,585 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 11:17:23,671 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 11:17:23,753 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 11:17:23,753 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 11:17:23,798 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6bc248ed: startup date [Tue Jan 09 11:17:23 IST 2018]; root of context hierarchy
+2018-01-09 11:17:24,898 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 11:17:25,187 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:17:25,187 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:17:25,187 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:17:25,187 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:17:25,586 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-09 11:17:26,143 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx2.log
+2018-01-09 11:17:26,155 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx2.log
+2018-01-09 11:17:26,236 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 11:17:26,244 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: LoginFlow
+2018-01-09 11:17:26,245 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@11b32a14
+2018-01-09 11:17:26,275 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: LoginFlow.stage1
+2018-01-09 11:17:26,283 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.759564454
+2018-01-09 11:17:26,286 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SignupFlow
+2018-01-09 11:17:26,286 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2693c618
+2018-01-09 11:17:26,290 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SignupFlow.stage1
+2018-01-09 11:17:26,291 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1115349385
+2018-01-09 11:17:26,703 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 11:17:26,703 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 11:17:29,740 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:17:29,747 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 11:17:29,747 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 11:17:29,821 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-09 11:17:29,823 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:17:29,826 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 11:17:29,827 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: LoginFlow
+2018-01-09 11:17:29,827 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: LoginFlow.stage1
+2018-01-09 11:17:29,830 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.759564454
+2018-01-09 11:17:29,833 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SignupFlow
+2018-01-09 11:17:29,833 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SignupFlow.stage1
+2018-01-09 11:17:29,835 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1115349385
+2018-01-09 11:17:29,864 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 11:17:29,880 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: LoginValidation                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 11:17:51,258 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload from database is: 1, user: shubham8, password : null
+2018-01-09 11:17:51,272 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Password from database: null
+2018-01-09 11:17:54,414 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload from database is: 1, user: shubham8, password : null
+2018-01-09 11:17:54,421 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Password from database: null
+2018-01-09 11:17:58,849 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload from database is: 0, user: shubham, password : null
+2018-01-09 11:17:58,852 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=a5ca6780-f500-11e7-9d3c-98eecb1e3fce
+  payload=java.lang.String
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    password=****
+    user=shubham
+  INBOUND scoped properties:
+    accept=*/*
+    accept-encoding=gzip, deflate
+    cache-control=no-cache
+    connection=keep-alive
+    content-length=0
+    host=localhost:8081
+    http.listener.path=/login
+    http.method=POST
+    http.query.params=ParameterMap{[user=[shubham], pass=[gerrard8]]}
+    http.query.string=user=shubham&pass=gerrard8
+    http.relative.path=/login
+    http.remote.address=/127.0.0.1:53031
+    http.request.path=/login
+    http.request.uri=/login?user=shubham&pass=gerrard8
+    http.scheme=http
+    http.uri.params=ParameterMap{[]}
+    http.version=HTTP/1.1
+    postman-token=b0a0484c-57c5-473a-b904-3b3c51e0c5f5
+    user-agent=PostmanRuntime/7.1.1
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2018-01-09 11:18:18,521 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload from database is: 1, user: shubham8, password : null
+2018-01-09 11:18:18,529 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Password from database: null
+2018-01-09 11:19:05,007 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:19:05,010 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: LoginFlow
+2018-01-09 11:19:05,012 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: LoginFlow.stage1
+2018-01-09 11:19:05,119 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.759564454
+2018-01-09 11:19:05,120 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SignupFlow
+2018-01-09 11:19:05,121 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SignupFlow.stage1
+2018-01-09 11:19:05,317 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.1115349385
+2018-01-09 11:19:05,318 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2018-01-09 11:19:05,323 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2018-01-09 11:19:05,324 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2018-01-09 11:19:05,324 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2018-01-09 11:19:05,328 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'LoginValidation'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:19:05,328 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2018-01-09 11:19:05,329 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: LoginFlow
+2018-01-09 11:19:05,329 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: LoginFlow.stage1
+2018-01-09 11:19:05,329 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.759564454
+2018-01-09 11:19:05,330 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SignupFlow
+2018-01-09 11:19:05,330 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SignupFlow.stage1
+2018-01-09 11:19:05,330 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.1115349385
+2018-01-09 11:19:05,332 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2018-01-09 11:19:05,598 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@6bc248ed: startup date [Tue Jan 09 11:17:23 IST 2018]; root of context hierarchy
+2018-01-09 11:19:05,613 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "LoginValidation" shut down normally on: 1/9/18 11:19  *
+* AM                                                                 *
+* Up for: 0 days, 0 hours, 1 mins, 35.871 sec                        *
+**********************************************************************
+2018-01-09 11:19:05,678 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.module.launcher.artifact.DefaultResourceReleaser - Unable to shutdown MySql's AbandonedConnectionCleanupThread
+java.lang.ClassNotFoundException: com.mysql.jdbc.AbandonedConnectionCleanupThread
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_102]
+	at org.mule.module.launcher.FineGrainedControlClassLoader.findClass(FineGrainedControlClassLoader.java:181) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.MuleApplicationClassLoader.findClass(MuleApplicationClassLoader.java:138) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.FineGrainedControlClassLoader.loadClass(FineGrainedControlClassLoader.java:117) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_102]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.shutdownMySqlAbandonedConnectionCleanupThread(DefaultResourceReleaser.java:197) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.doDeregisterDriver(DefaultResourceReleaser.java:133) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.deregisterJdbcDrivers(DefaultResourceReleaser.java:84) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.release(DefaultResourceReleaser.java:38) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.AbstractArtifactClassLoader.dispose(AbstractArtifactClassLoader.java:67) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.application.CompositeApplicationClassLoader.dispose(CompositeApplicationClassLoader.java:285) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.application.DefaultMuleApplication.dispose(DefaultMuleApplication.java:310) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.ArtifactWrapper$1.execute(ArtifactWrapper.java:40) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.executeWithinArtifactClassLoader(ArtifactWrapper.java:136) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.dispose(ArtifactWrapper.java:35) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArtifactDeployer.tryToDisposeArtifact(DefaultArtifactDeployer.java:65) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArtifactDeployer.undeploy(DefaultArtifactDeployer.java:47) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:458) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedArtifacts(DeploymentDirectoryWatcher.java:562) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedApplications(DeploymentDirectoryWatcher.java:539) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.run(DeploymentDirectoryWatcher.java:352) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_102]
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source) ~[?:1.8.0_102]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source) ~[?:1.8.0_102]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_102]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_102]
+2018-01-09 11:19:05,735 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'LoginValidation'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:19:05,739 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app LoginValidation
+2018-01-09 11:19:05,741 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 11:19:05,745 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 11:19:05,754 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 11:19:05,755 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 11:19:05,761 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@3c714989: startup date [Tue Jan 09 11:19:05 IST 2018]; root of context hierarchy
+2018-01-09 11:19:05,975 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 11:19:06,008 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:19:06,009 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:19:06,009 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:19:06,009 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:19:06,092 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx2.log
+2018-01-09 11:19:06,094 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx2.log
+2018-01-09 11:19:06,106 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 11:19:06,108 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: LoginFlow
+2018-01-09 11:19:06,108 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@28615f1a
+2018-01-09 11:19:06,113 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: LoginFlow.stage1
+2018-01-09 11:19:06,113 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.350194798
+2018-01-09 11:19:06,114 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SignupFlow
+2018-01-09 11:19:06,114 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@53417f95
+2018-01-09 11:19:06,118 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SignupFlow.stage1
+2018-01-09 11:19:06,118 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1811260601
+2018-01-09 11:19:06,141 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 11:19:06,141 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 11:19:09,148 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:19:09,153 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 11:19:09,153 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 11:19:09,195 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-09 11:19:09,198 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:19:09,201 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 11:19:09,202 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: LoginFlow
+2018-01-09 11:19:09,202 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: LoginFlow.stage1
+2018-01-09 11:19:09,203 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.350194798
+2018-01-09 11:19:09,204 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SignupFlow
+2018-01-09 11:19:09,204 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SignupFlow.stage1
+2018-01-09 11:19:09,206 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1811260601
+2018-01-09 11:19:09,214 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 11:19:09,220 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: LoginValidation                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 11:21:25,789 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'LoginValidation'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:21:25,990 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 11:21:26,075 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 11:21:26,153 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 11:21:26,153 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 11:21:26,197 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6bc248ed: startup date [Tue Jan 09 11:21:26 IST 2018]; root of context hierarchy
+2018-01-09 11:21:27,315 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 11:21:27,602 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:21:27,602 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:21:27,602 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:21:27,602 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:21:28,010 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-09 11:21:28,566 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx2.log
+2018-01-09 11:21:28,576 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx2.log
+2018-01-09 11:21:28,643 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 11:21:28,647 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: LoginFlow
+2018-01-09 11:21:28,647 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@11b32a14
+2018-01-09 11:21:28,667 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: LoginFlow.stage1
+2018-01-09 11:21:28,674 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.759564454
+2018-01-09 11:21:28,677 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SignupFlow
+2018-01-09 11:21:28,677 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2693c618
+2018-01-09 11:21:28,680 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SignupFlow.stage1
+2018-01-09 11:21:28,680 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1115349385
+2018-01-09 11:21:28,902 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 11:21:28,902 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 11:21:31,936 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:21:31,941 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 11:21:31,941 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 11:21:31,993 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-09 11:21:31,995 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:21:31,998 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 11:21:31,999 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: LoginFlow
+2018-01-09 11:21:31,999 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: LoginFlow.stage1
+2018-01-09 11:21:32,003 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.759564454
+2018-01-09 11:21:32,006 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SignupFlow
+2018-01-09 11:21:32,006 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SignupFlow.stage1
+2018-01-09 11:21:32,007 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1115349385
+2018-01-09 11:21:32,036 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 11:21:32,052 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: LoginValidation                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 11:21:52,096 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:21:52,104 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: LoginFlow
+2018-01-09 11:21:52,106 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: LoginFlow.stage1
+2018-01-09 11:21:52,258 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.759564454
+2018-01-09 11:21:52,259 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SignupFlow
+2018-01-09 11:21:52,259 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SignupFlow.stage1
+2018-01-09 11:21:52,451 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.1115349385
+2018-01-09 11:21:52,455 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2018-01-09 11:21:52,504 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2018-01-09 11:21:52,506 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2018-01-09 11:21:52,507 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2018-01-09 11:21:52,514 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'LoginValidation'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:21:52,515 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2018-01-09 11:21:52,516 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: LoginFlow
+2018-01-09 11:21:52,517 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: LoginFlow.stage1
+2018-01-09 11:21:52,517 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.759564454
+2018-01-09 11:21:52,518 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SignupFlow
+2018-01-09 11:21:52,518 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SignupFlow.stage1
+2018-01-09 11:21:52,518 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.1115349385
+2018-01-09 11:21:52,521 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2018-01-09 11:21:52,631 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@6bc248ed: startup date [Tue Jan 09 11:21:26 IST 2018]; root of context hierarchy
+2018-01-09 11:21:52,653 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "LoginValidation" shut down normally on: 1/9/18 11:21  *
+* AM                                                                 *
+* Up for: 0 days, 0 hours, 0 mins, 20.714 sec                        *
+**********************************************************************
+2018-01-09 11:21:52,684 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.module.launcher.artifact.DefaultResourceReleaser - Unable to shutdown MySql's AbandonedConnectionCleanupThread
+java.lang.ClassNotFoundException: com.mysql.jdbc.AbandonedConnectionCleanupThread
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_102]
+	at org.mule.module.launcher.FineGrainedControlClassLoader.findClass(FineGrainedControlClassLoader.java:181) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.MuleApplicationClassLoader.findClass(MuleApplicationClassLoader.java:138) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.FineGrainedControlClassLoader.loadClass(FineGrainedControlClassLoader.java:117) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_102]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.shutdownMySqlAbandonedConnectionCleanupThread(DefaultResourceReleaser.java:197) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.doDeregisterDriver(DefaultResourceReleaser.java:133) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.deregisterJdbcDrivers(DefaultResourceReleaser.java:84) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.release(DefaultResourceReleaser.java:38) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.AbstractArtifactClassLoader.dispose(AbstractArtifactClassLoader.java:67) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.application.CompositeApplicationClassLoader.dispose(CompositeApplicationClassLoader.java:285) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.application.DefaultMuleApplication.dispose(DefaultMuleApplication.java:310) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.ArtifactWrapper$1.execute(ArtifactWrapper.java:40) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.executeWithinArtifactClassLoader(ArtifactWrapper.java:136) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.dispose(ArtifactWrapper.java:35) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArtifactDeployer.tryToDisposeArtifact(DefaultArtifactDeployer.java:65) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArtifactDeployer.undeploy(DefaultArtifactDeployer.java:47) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:458) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedArtifacts(DeploymentDirectoryWatcher.java:562) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedApplications(DeploymentDirectoryWatcher.java:539) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.run(DeploymentDirectoryWatcher.java:352) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_102]
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source) ~[?:1.8.0_102]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source) ~[?:1.8.0_102]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_102]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_102]
+2018-01-09 11:21:52,754 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'LoginValidation'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:21:52,772 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app LoginValidation
+2018-01-09 11:21:52,780 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 11:21:52,789 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 11:21:52,810 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 11:21:52,811 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 11:21:52,817 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@768ae726: startup date [Tue Jan 09 11:21:52 IST 2018]; root of context hierarchy
+2018-01-09 11:21:53,054 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 11:21:53,092 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:21:53,093 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:21:53,093 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:21:53,094 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:21:53,163 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx2.log
+2018-01-09 11:21:53,165 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx2.log
+2018-01-09 11:21:53,174 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 11:21:53,176 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: LoginFlow
+2018-01-09 11:21:53,176 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@669f2f55
+2018-01-09 11:21:53,206 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: LoginFlow.stage1
+2018-01-09 11:21:53,208 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1765978426
+2018-01-09 11:21:53,209 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SignupFlow
+2018-01-09 11:21:53,209 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5ab4fe24
+2018-01-09 11:21:53,214 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SignupFlow.stage1
+2018-01-09 11:21:53,222 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.296272281
+2018-01-09 11:21:53,251 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 11:21:53,252 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 11:21:58,482 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'LoginValidation'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:21:58,673 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 11:21:58,763 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 11:21:58,850 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 11:21:58,850 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 11:21:58,895 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6bc248ed: startup date [Tue Jan 09 11:21:58 IST 2018]; root of context hierarchy
+2018-01-09 11:22:00,019 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 11:22:00,359 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:22:00,359 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:22:00,359 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:22:00,359 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:22:00,837 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-09 11:22:01,401 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx2.log
+2018-01-09 11:22:01,411 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx2.log
+2018-01-09 11:22:01,480 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 11:22:01,484 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: LoginFlow
+2018-01-09 11:22:01,484 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@11b32a14
+2018-01-09 11:22:01,507 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: LoginFlow.stage1
+2018-01-09 11:22:01,515 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.759564454
+2018-01-09 11:22:01,517 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SignupFlow
+2018-01-09 11:22:01,517 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2693c618
+2018-01-09 11:22:01,521 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SignupFlow.stage1
+2018-01-09 11:22:01,521 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1115349385
+2018-01-09 11:22:01,751 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 11:22:01,751 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 11:22:04,786 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:22:04,791 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 11:22:04,791 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 11:22:04,843 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-09 11:22:04,846 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:22:04,848 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 11:22:04,850 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: LoginFlow
+2018-01-09 11:22:04,850 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: LoginFlow.stage1
+2018-01-09 11:22:04,853 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.759564454
+2018-01-09 11:22:04,856 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SignupFlow
+2018-01-09 11:22:04,856 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SignupFlow.stage1
+2018-01-09 11:22:04,858 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1115349385
+2018-01-09 11:22:04,888 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 11:22:04,905 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: LoginValidation                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 11:22:08,565 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload from database is: 1, user: shubham8, password : gerrard8$
+2018-01-09 11:22:08,579 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Password from database: null
+2018-01-09 11:22:14,560 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload from database is: 1, user: shubham8, password : gerrard8$
+2018-01-09 11:22:14,569 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Password from database: null
+2018-01-09 11:23:33,544 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'LoginValidation'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:23:33,692 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 11:23:33,769 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 11:23:33,849 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 11:23:33,849 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 11:23:33,893 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6bc248ed: startup date [Tue Jan 09 11:23:33 IST 2018]; root of context hierarchy
+2018-01-09 11:23:35,081 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 11:23:35,366 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:23:35,366 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:23:35,366 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:23:35,366 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 11:23:35,789 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-09 11:23:36,354 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx2.log
+2018-01-09 11:23:36,364 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx2.log
+2018-01-09 11:23:36,429 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 11:23:36,432 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: LoginFlow
+2018-01-09 11:23:36,433 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@11b32a14
+2018-01-09 11:23:36,452 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: LoginFlow.stage1
+2018-01-09 11:23:36,460 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.759564454
+2018-01-09 11:23:36,463 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SignupFlow
+2018-01-09 11:23:36,463 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2693c618
+2018-01-09 11:23:36,467 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SignupFlow.stage1
+2018-01-09 11:23:36,467 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1115349385
+2018-01-09 11:23:36,909 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 11:23:36,909 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 11:23:39,943 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:23:39,949 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 11:23:39,949 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 11:23:40,014 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-09 11:23:40,017 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 11:23:40,020 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 11:23:40,021 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: LoginFlow
+2018-01-09 11:23:40,021 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: LoginFlow.stage1
+2018-01-09 11:23:40,025 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.759564454
+2018-01-09 11:23:40,027 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SignupFlow
+2018-01-09 11:23:40,027 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SignupFlow.stage1
+2018-01-09 11:23:40,029 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1115349385
+2018-01-09 11:23:40,059 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 11:23:40,077 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: LoginValidation                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 11:23:44,091 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload from database is: 1, user: shubham8, password : gerrard8$
+2018-01-09 11:23:44,106 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Password from database: 9/mcfEpdS8umLy4hStEOM4r1Vho=
+2018-01-09 14:07:24,868 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'LoginValidation'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 14:07:25,061 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 14:07:25,157 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 14:07:25,241 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 14:07:25,241 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 14:07:25,285 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6bc248ed: startup date [Tue Jan 09 14:07:25 IST 2018]; root of context hierarchy
+2018-01-09 14:07:26,415 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 14:07:26,705 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 14:07:26,705 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 14:07:26,705 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 14:07:26,705 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 14:07:27,131 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-09 14:07:27,680 [main] INFO  org.mule.api.security.tls.TlsProperties - Loading configuration file: tls-default.conf
+2018-01-09 14:07:27,895 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx2.log
+2018-01-09 14:07:27,906 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx2.log
+2018-01-09 14:07:27,969 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 14:07:27,972 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: LoginFlow
+2018-01-09 14:07:27,972 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2668c286
+2018-01-09 14:07:27,993 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: LoginFlow.stage1
+2018-01-09 14:07:28,001 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1983063045
+2018-01-09 14:07:28,004 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SignupFlow
+2018-01-09 14:07:28,004 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@14422d9d
+2018-01-09 14:07:28,008 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SignupFlow.stage1
+2018-01-09 14:07:28,008 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.203854885
+2018-01-09 14:07:28,418 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 14:07:28,418 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 14:07:31,453 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 14:07:31,458 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 14:07:31,458 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 14:07:31,520 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on https://0.0.0.0:8081
+2018-01-09 14:07:31,523 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 14:07:31,526 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 14:07:31,527 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: LoginFlow
+2018-01-09 14:07:31,527 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: LoginFlow.stage1
+2018-01-09 14:07:31,531 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1983063045
+2018-01-09 14:07:31,536 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SignupFlow
+2018-01-09 14:07:31,536 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SignupFlow.stage1
+2018-01-09 14:07:31,538 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.203854885
+2018-01-09 14:07:31,568 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 14:07:31,585 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: LoginValidation                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 14:07:58,023 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload from database is: 1, user: shubham8, password : gerrard8$
+2018-01-09 14:07:58,038 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Password from database: 9/mcfEpdS8umLy4hStEOM4r1Vho=
+2018-01-09 14:08:09,086 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload from database is: 1, user: shubham8, password : gerrard8$
+2018-01-09 14:08:09,096 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Password from database: 9/mcfEpdS8umLy4hStEOM4r1Vho=
+2018-01-09 14:08:13,146 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload from database is: 1, user: shubham8, password : gerrard8
+2018-01-09 14:08:13,153 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Password from database: 9/mcfEpdS8umLy4hStEOM4r1Vho=
+2018-01-09 14:08:19,208 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload from database is: 1, user: shubham8, password : gerrard8$
+2018-01-09 14:08:19,220 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Password from database: 9/mcfEpdS8umLy4hStEOM4r1Vho=
+2018-01-09 14:11:31,883 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 14:11:31,894 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: LoginFlow
+2018-01-09 14:11:31,902 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: LoginFlow.stage1
+2018-01-09 14:11:32,104 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.1983063045
+2018-01-09 14:11:32,105 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SignupFlow
+2018-01-09 14:11:32,105 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SignupFlow.stage1
+2018-01-09 14:11:32,305 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.203854885
+2018-01-09 14:11:32,310 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2018-01-09 14:11:32,324 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on https://0.0.0.0:8081
+2018-01-09 14:11:32,327 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2018-01-09 14:11:32,328 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2018-01-09 14:11:32,339 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'LoginValidation'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 14:11:32,341 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2018-01-09 14:11:32,342 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: LoginFlow
+2018-01-09 14:11:32,343 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: LoginFlow.stage1
+2018-01-09 14:11:32,343 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.1983063045
+2018-01-09 14:11:32,344 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SignupFlow
+2018-01-09 14:11:32,344 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SignupFlow.stage1
+2018-01-09 14:11:32,344 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.203854885
+2018-01-09 14:11:32,346 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2018-01-09 14:11:32,473 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@6bc248ed: startup date [Tue Jan 09 14:07:25 IST 2018]; root of context hierarchy
+2018-01-09 14:11:32,557 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "LoginValidation" shut down normally on: 1/9/18 2:11   *
+* PM                                                                 *
+* Up for: 0 days, 0 hours, 4 mins, 1.102 sec                         *
+**********************************************************************
+2018-01-09 14:11:32,596 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.module.launcher.artifact.DefaultResourceReleaser - Unable to shutdown MySql's AbandonedConnectionCleanupThread
+java.lang.ClassNotFoundException: com.mysql.jdbc.AbandonedConnectionCleanupThread
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_102]
+	at org.mule.module.launcher.FineGrainedControlClassLoader.findClass(FineGrainedControlClassLoader.java:181) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.MuleApplicationClassLoader.findClass(MuleApplicationClassLoader.java:138) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.FineGrainedControlClassLoader.loadClass(FineGrainedControlClassLoader.java:117) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_102]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.shutdownMySqlAbandonedConnectionCleanupThread(DefaultResourceReleaser.java:197) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.doDeregisterDriver(DefaultResourceReleaser.java:133) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.deregisterJdbcDrivers(DefaultResourceReleaser.java:84) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.release(DefaultResourceReleaser.java:38) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.AbstractArtifactClassLoader.dispose(AbstractArtifactClassLoader.java:67) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.application.CompositeApplicationClassLoader.dispose(CompositeApplicationClassLoader.java:285) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.application.DefaultMuleApplication.dispose(DefaultMuleApplication.java:310) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.ArtifactWrapper$1.execute(ArtifactWrapper.java:40) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.executeWithinArtifactClassLoader(ArtifactWrapper.java:136) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.dispose(ArtifactWrapper.java:35) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArtifactDeployer.tryToDisposeArtifact(DefaultArtifactDeployer.java:65) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArtifactDeployer.undeploy(DefaultArtifactDeployer.java:47) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:458) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedArtifacts(DeploymentDirectoryWatcher.java:562) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedApplications(DeploymentDirectoryWatcher.java:539) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.run(DeploymentDirectoryWatcher.java:352) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_102]
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source) ~[?:1.8.0_102]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source) ~[?:1.8.0_102]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_102]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_102]
+2018-01-09 14:11:32,704 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'LoginValidation'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 14:11:32,708 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app LoginValidation
+2018-01-09 14:11:32,712 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 14:11:32,723 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 14:11:32,738 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 14:11:32,740 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 14:11:32,747 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@788f8e1d: startup date [Tue Jan 09 14:11:32 IST 2018]; root of context hierarchy
+2018-01-09 14:11:33,007 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 14:11:33,039 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 14:11:33,039 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 14:11:33,039 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 14:11:33,039 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 14:11:33,126 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.api.security.tls.TlsProperties - Loading configuration file: tls-default.conf
+2018-01-09 14:11:33,148 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx2.log
+2018-01-09 14:11:33,150 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx2.log
+2018-01-09 14:11:33,160 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 14:11:33,163 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: LoginFlow
+2018-01-09 14:11:33,163 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3a4cbed
+2018-01-09 14:11:33,169 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: LoginFlow.stage1
+2018-01-09 14:11:33,169 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.880115237
+2018-01-09 14:11:33,170 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SignupFlow
+2018-01-09 14:11:33,170 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@66c6b47d
+2018-01-09 14:11:33,175 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SignupFlow.stage1
+2018-01-09 14:11:33,176 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.539491886
+2018-01-09 14:11:33,200 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 14:11:33,200 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 14:11:36,209 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 14:11:36,214 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 14:11:36,214 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 14:11:36,283 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on https://0.0.0.0:8081
+2018-01-09 14:11:36,286 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 14:11:36,289 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 14:11:36,291 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: LoginFlow
+2018-01-09 14:11:36,291 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: LoginFlow.stage1
+2018-01-09 14:11:36,294 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.880115237
+2018-01-09 14:11:36,295 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SignupFlow
+2018-01-09 14:11:36,295 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SignupFlow.stage1
+2018-01-09 14:11:36,297 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.539491886
+2018-01-09 14:11:36,306 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 14:11:36,312 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: LoginValidation                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 14:12:13,334 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/signup
+2018-01-09 14:12:13,334 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [([post])/signup/, (*)/login/]
+2018-01-09 14:12:18,141 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - B3ddlT0L0CXflTmk+d07jL023S8=
+2018-01-09 14:12:48,655 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'LoginValidation'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 14:12:48,833 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 14:12:48,923 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 14:12:49,006 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 14:12:49,006 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 14:12:49,051 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6bc248ed: startup date [Tue Jan 09 14:12:49 IST 2018]; root of context hierarchy
+2018-01-09 14:12:50,341 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 14:12:50,661 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 14:12:50,661 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 14:12:50,661 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 14:12:50,661 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 14:12:51,060 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-09 14:12:51,568 [main] INFO  org.mule.api.security.tls.TlsProperties - Loading configuration file: tls-default.conf
+2018-01-09 14:12:51,676 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx2.log
+2018-01-09 14:12:51,687 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx2.log
+2018-01-09 14:12:51,749 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 14:12:51,752 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: LoginFlow
+2018-01-09 14:12:51,752 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2668c286
+2018-01-09 14:12:51,771 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: LoginFlow.stage1
+2018-01-09 14:12:51,779 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1983063045
+2018-01-09 14:12:51,782 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SignupFlow
+2018-01-09 14:12:51,782 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@14422d9d
+2018-01-09 14:12:51,785 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SignupFlow.stage1
+2018-01-09 14:12:51,786 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.203854885
+2018-01-09 14:12:52,140 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 14:12:52,140 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 14:12:55,176 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 14:12:55,181 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 14:12:55,182 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 14:12:55,245 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on https://0.0.0.0:8081
+2018-01-09 14:12:55,247 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 14:12:55,250 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 14:12:55,251 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: LoginFlow
+2018-01-09 14:12:55,252 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: LoginFlow.stage1
+2018-01-09 14:12:55,256 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1983063045
+2018-01-09 14:12:55,259 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SignupFlow
+2018-01-09 14:12:55,259 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SignupFlow.stage1
+2018-01-09 14:12:55,260 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.203854885
+2018-01-09 14:12:55,289 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 14:12:55,305 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: LoginValidation                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 14:13:00,325 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 14:13:00,326 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: LoginFlow
+2018-01-09 14:13:00,326 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: LoginFlow.stage1
+2018-01-09 14:13:00,476 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.1983063045
+2018-01-09 14:13:00,477 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SignupFlow
+2018-01-09 14:13:00,477 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SignupFlow.stage1
+2018-01-09 14:13:04,049 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'LoginValidation'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 14:13:04,243 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 14:13:04,331 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 14:13:04,409 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 14:13:04,409 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 14:13:04,451 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6bc248ed: startup date [Tue Jan 09 14:13:04 IST 2018]; root of context hierarchy
+2018-01-09 14:13:05,567 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 14:13:05,849 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 14:13:05,849 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 14:13:05,849 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 14:13:05,849 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 14:13:06,256 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-09 14:13:06,796 [main] INFO  org.mule.api.security.tls.TlsProperties - Loading configuration file: tls-default.conf
+2018-01-09 14:13:06,909 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx2.log
+2018-01-09 14:13:06,920 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx2.log
+2018-01-09 14:13:06,981 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 14:13:06,984 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: LoginFlow
+2018-01-09 14:13:06,984 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2668c286
+2018-01-09 14:13:07,006 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: LoginFlow.stage1
+2018-01-09 14:13:07,014 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1983063045
+2018-01-09 14:13:07,018 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SignupFlow
+2018-01-09 14:13:07,018 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@14422d9d
+2018-01-09 14:13:07,021 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SignupFlow.stage1
+2018-01-09 14:13:07,021 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.203854885
+2018-01-09 14:13:07,430 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 14:13:07,430 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 14:13:10,457 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 14:13:10,461 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 14:13:10,461 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 14:13:10,510 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on https://0.0.0.0:8081
+2018-01-09 14:13:10,513 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 14:13:10,516 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 14:13:10,517 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: LoginFlow
+2018-01-09 14:13:10,517 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: LoginFlow.stage1
+2018-01-09 14:13:10,521 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1983063045
+2018-01-09 14:13:10,526 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SignupFlow
+2018-01-09 14:13:10,526 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SignupFlow.stage1
+2018-01-09 14:13:10,528 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.203854885
+2018-01-09 14:13:10,569 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 14:13:10,592 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: LoginValidation                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 14:13:25,785 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (POST)/login
+2018-01-09 14:13:25,785 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [([post])/signup/, ([get])/login/]
+2018-01-09 14:13:29,744 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload from database is: 1, user: nikhilPraveen, password : iamactive
+2018-01-09 14:13:29,758 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Password from database: B3ddlT0L0CXflTmk+d07jL023S8=
+2018-01-09 14:16:16,491 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - AHyRr7UMDQTQ65NJRC9WK5SXYNM=
+2018-01-09 14:16:34,785 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload from database is: 1, user: mahesh, password : 4227
+2018-01-09 14:16:34,800 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Password from database: AHyRr7UMDQTQ65NJRC9WK5SXYNM=
+2018-01-09 14:16:38,563 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload from database is: 1, user: mahesh, password : 422
+2018-01-09 14:16:38,570 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Password from database: AHyRr7UMDQTQ65NJRC9WK5SXYNM=
+2018-01-09 14:16:47,156 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload from database is: 0, user: mahsh, password : 422
+2018-01-09 14:16:47,161 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=a05c23b0-f519-11e7-b952-98eecb1e3fce
+  payload=java.lang.String
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    password=****
+    user=mahsh
+  INBOUND scoped properties:
+    accept=*/*
+    accept-encoding=gzip, deflate
+    cache-control=no-cache
+    connection=keep-alive
+    host=localhost:8081
+    http.listener.path=/login
+    http.method=GET
+    http.query.params=ParameterMap{[user=[mahsh], pass=[422]]}
+    http.query.string=user=mahsh&pass=422
+    http.relative.path=/login
+    http.remote.address=/127.0.0.1:55516
+    http.request.path=/login
+    http.request.uri=/login?user=mahsh&pass=422
+    http.scheme=https
+    http.uri.params=ParameterMap{[]}
+    http.version=HTTP/1.1
+    postman-token=91ea06ea-54d0-4c96-828c-baecc4b2448e
+    user-agent=PostmanRuntime/7.1.1
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2018-01-09 17:19:35,435 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'LoginValidation'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 17:19:35,620 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-09 17:19:35,754 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-09 17:19:35,851 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-09 17:19:35,851 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-09 17:19:35,907 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6bc248ed: startup date [Tue Jan 09 17:19:35 IST 2018]; root of context hierarchy
+2018-01-09 17:19:37,133 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-09 17:19:37,441 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 17:19:37,441 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 17:19:37,441 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 17:19:37,441 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-09 17:19:38,117 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-09 17:19:38,880 [main] INFO  org.mule.api.security.tls.TlsProperties - Loading configuration file: tls-default.conf
+2018-01-09 17:19:39,035 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-tx-log\tx2.log
+2018-01-09 17:19:39,063 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\LoginValidation\queue-xa-tx-log\tx2.log
+2018-01-09 17:19:39,141 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-09 17:19:39,149 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: LoginFlow
+2018-01-09 17:19:39,149 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7ea2412c
+2018-01-09 17:19:39,173 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: LoginFlow.stage1
+2018-01-09 17:19:39,180 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1983063045
+2018-01-09 17:19:39,183 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SignupFlow
+2018-01-09 17:19:39,183 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2a02e34b
+2018-01-09 17:19:39,187 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SignupFlow.stage1
+2018-01-09 17:19:39,187 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.203854885
+2018-01-09 17:19:39,580 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 17:19:39,581 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\LoginValidation\loginvalidation.xml'}]"
+2018-01-09 17:19:42,611 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'LoginValidation'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 17:19:42,614 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-09 17:19:42,614 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-09 17:19:42,679 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on https://0.0.0.0:8081
+2018-01-09 17:19:42,682 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-09 17:19:42,684 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-09 17:19:42,686 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: LoginFlow
+2018-01-09 17:19:42,686 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: LoginFlow.stage1
+2018-01-09 17:19:42,689 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1983063045
+2018-01-09 17:19:42,693 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SignupFlow
+2018-01-09 17:19:42,693 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SignupFlow.stage1
+2018-01-09 17:19:42,694 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.203854885
+2018-01-09 17:19:42,750 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-09 17:19:42,767 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: LoginValidation                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-09 17:19:56,635 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload from database is: 0, user: mahsh, password : 422
+2018-01-09 17:19:56,640 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=36673480-f533-11e7-b3de-98eecb1e3fce
+  payload=java.lang.String
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    password=****
+    user=mahsh
+  INBOUND scoped properties:
+    accept=*/*
+    accept-encoding=gzip, deflate
+    cache-control=no-cache
+    connection=keep-alive
+    host=localhost:8081
+    http.listener.path=/login
+    http.method=GET
+    http.query.params=ParameterMap{[user=[mahsh], pass=[422]]}
+    http.query.string=user=mahsh&pass=422
+    http.relative.path=/login
+    http.remote.address=/127.0.0.1:51362
+    http.request.path=/login
+    http.request.uri=/login?user=mahsh&pass=422
+    http.scheme=https
+    http.uri.params=ParameterMap{[]}
+    http.version=HTTP/1.1
+    postman-token=f8ba6a40-c83d-43fb-87f4-ff4403b8be8b
+    user-agent=PostmanRuntime/7.1.1
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2018-01-09 17:20:15,055 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Payload from database is: 1, user: mahesh, password : 4227
+2018-01-09 17:20:15,071 [[LoginValidation].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Password from database: AHyRr7UMDQTQ65NJRC9WK5SXYNM=

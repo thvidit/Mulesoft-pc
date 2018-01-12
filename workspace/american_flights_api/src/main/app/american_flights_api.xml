@@ -141,6 +141,7 @@ flights:
     <sub-flow name="ForEachFlow">
         <foreach collection="#[payload]" doc:name="For Each">
             <set-variable variableName="planeId" value="#[flowVars.planeIdList.add(payload.planeId)]" doc:name="Setting planeId"/>
+
             <logger message="Plane id is : #[flowVars.planeIdList]" level="INFO" doc:name="Logger"/>
             <db:select config-ref="MySQL_Configuration" doc:name="Planes table">
                 <db:parameterized-query><![CDATA[SELECT *
@@ -189,6 +190,7 @@ FROM AMERICAN
 WHERE code=#[json:code]]]></db:parameterized-query>
         </db:select>
         <set-variable variableName="americanPayload" value="#[payload]" doc:name="American Payload"/>
+
         <set-payload value="#[flowVars.jsonData]" doc:name="Set Payload"/>
         <db:select config-ref="MySQL_Configuration" doc:name="Check in planes">
             <db:parameterized-query><![CDATA[SELECT *

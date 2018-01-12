@@ -1,0 +1,17 @@
+{
+    "inputMessageMetadata": {
+        "flowVariables": {
+            "mealList": {
+                "connectorName": "#_custom_mule_metadata_type_#",
+                "typeId": "mealList"
+            },
+            "foodDataList": {
+                "connectorName": "#_custom_mule_metadata_type_#",
+                "typeId": "foodDataList"
+            }
+        }
+    },
+    "outputMessageMetadata": {},
+    "id": "24c53bbb-62a4-4013-9738-a081385ff113",
+    "version": "5.2.0.0"
+}

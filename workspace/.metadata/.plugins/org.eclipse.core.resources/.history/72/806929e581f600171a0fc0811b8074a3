@@ -1,0 +1,99 @@
+#%RAML 1.0
+title: Ecart customer Api
+version: 1.0
+
+types:
+  address:
+    type: object
+    properties:
+      house no.?: string?
+      street?: string?
+      city?: string?
+      zipCode?: string?
+      state?: string?
+      country?: string?
+  contact:
+    type: object
+    properties:
+      customerId?: string?
+      name?: string?
+      phone?: string?
+      email?: string?
+      deliveryAddress?: address?
+      postalAddress?: address?
+
+/customers:
+  post:
+  description: Add new Customer
+  body:
+      application/json:
+        type: contact
+        example: |
+					{
+						"customerId": "provider|0123456789",
+						"name": "John",
+						"phone": "+91-8130587533"
+						"email": "thvidt@gmail.com"
+						"postalAddress": 
+							{
+								"house no.": "122"
+								"street": "44 Shirley Ave.",
+						        "city": "West Chicago",
+						        "zipCode": "60185",
+						        "state": "IL",
+						        "country": "USA"
+						    }
+						"deliveryAddress": 
+							{
+								"house no.": "122"
+						        "street": "44 Shirley Ave.",
+						        "city": "West Chicago",
+						        "postalCode": "60185",
+						        "state": "IL",
+						        "country": "USA"
+						    }
+					}
+		responses:
+			201:
+				body:
+					application/json:
+						example: |
+							{
+								"message": "Details Added Successfully in our database!" 
+							}
+	/{customerId}
+		get:
+			description: Get customer by Id
+			body:
+				application/json:
+					type:
+						contact
+							example: |
+								{
+									"customerId": "provider|0123456789",
+									"name": "John",
+									"phone": "+91-8130587533"
+									"email": "thvidt@gmail.com"
+									"postalAddress": 
+										{
+											"house no.": "122"
+											"street": "44 Shirley Ave.",
+									        "city": "West Chicago",
+									        "zipCode": "60185",
+									        "state": "IL",
+									        "country": "USA"
+									    }
+									"deliveryAddress": 
+										{
+											"house no.": "122"
+									        "street": "44 Shirley Ave.",
+									        "city": "West Chicago",
+									        "postalCode": "60185",
+									        "state": "IL",
+									        "country": "USA"
+									    }
+								}
+
+
+
+

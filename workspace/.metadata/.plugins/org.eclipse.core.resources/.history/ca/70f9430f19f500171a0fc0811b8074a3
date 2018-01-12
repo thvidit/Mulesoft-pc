@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:tls="http://www.mulesoft.org/schema/mule/tls" xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
+http://www.mulesoft.org/schema/mule/tls http://www.mulesoft.org/schema/mule/tls/current/mule-tls.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration" protocol="HTTPS">
+        <tls:context>
+            <tls:key-store type="jks" path="D:/server.jks" keyPassword="tvb161" password="tvb161"/>
+        </tls:context>
+    </http:listener-config>
+    <db:mysql-config name="MySQL_Configuration" host="localhost" port="3306" user="root" password="Welcome123" database="loginCredentials" doc:name="MySQL Configuration"/>
+    <flow name="LoginFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/login" doc:name="HTTP"/>
+        <set-variable variableName="user" value="#[message.inboundProperties.'http.query.params'.user == empty ? 'null' : message.inboundProperties.'http.query.params'.user]" doc:name="Check username"/>
+        <set-variable variableName="password" value="#[message.inboundProperties.'http.query.params'.pass]" doc:name="Set password"/>
+        <db:select config-ref="MySQL_Configuration" doc:name="Database">
+            <db:parameterized-query><![CDATA[SELECT *
+FROM loginDetails
+WHERE username = #[flowVars.user]]]></db:parameterized-query>
+        </db:select>
+        <logger message="Payload from database is: #[payload.size()], user: #[flowVars.user], password : #[flowVars.password]" level="INFO" doc:name="Logger"/>
+        <choice doc:name="Choice">
+            <when expression="#[payload.size() != 0]">
+                <flow-ref name="CheckPassword" doc:name="CheckPassword"/>
+            </when>
+            <otherwise>
+                <set-payload value="{  &quot;message&quot;: &quot;Invalid Username!&quot; }" mimeType="application/json" doc:name="Set Payload"/>
+                <logger level="INFO" doc:name="Logger"/>
+            </otherwise>
+        </choice>
+    </flow>
+    <flow name="SignupFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/signup" allowedMethods="POST" doc:name="HTTP"/>
+        <component class="com.mule.encrypt.EncryptData" doc:name="Encrypt Password"/>
+        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+        <set-variable variableName="encryptPass" value="#[payload]" doc:name="Encrypted Password"/>
+        <db:insert config-ref="MySQL_Configuration" doc:name="Store in Database">
+            <db:parameterized-query><![CDATA[INSERT INTO logindetails
+VALUES(#[message.inboundProperties.'http.query.params'.user], #[flowVars.encryptPass])]]></db:parameterized-query>
+        </db:insert>
+        <set-payload value="{
+ 	&quot;message&quot;: &quot;SignUp Successful!&quot;
+}" mimeType="application/json" doc:name="Set Payload"/>
+    </flow>
+    <sub-flow name="CheckPassword">
+        <db:select config-ref="MySQL_Configuration" doc:name="Database">
+            <db:parameterized-query><![CDATA[SELECT *  FROM loginDetails
+WHERE username = #[flowVars.user]]]></db:parameterized-query>
+        </db:select>
+        <logger message="Password from database: #[payload.get(0).userpass]" level="INFO" doc:name="Logger"/>
+        <set-variable variableName="passdb" value="#[payload.get(0).userpass]" doc:name="Decide to login"/>
+        <component doc:name="Get hashed value of password" class="com.mule.encrypt.EncryptData"/>
+        <set-variable variableName="encryptedPass" value="#[payload]" doc:name="Variable"/>
+        <choice doc:name="Choice">
+            <when expression="#[flowVars.encryptedPass == flowVars.passdb]">
+                <set-payload value="{
+	&quot;message&quot;: &quot;Login Successful!&quot;
+}" mimeType="application/json" doc:name="Set Payload"/>
+            </when>
+            <otherwise>
+                <set-payload value="{
+	&quot;message&quot;: &quot;Invalid Password!&quot;
+}" doc:name="Set Payload" mimeType="application/json"/>
+            </otherwise>
+        </choice>
+    </sub-flow>
+</mule>
