@@ -13,7 +13,7 @@ http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee
     <db:mysql-config name="MySQL_Configuration" host="localhost" port="3306" user="root" password="Welcome123" database="cafe1" doc:name="MySQL Configuration"/>
     <payload-type-filter expectedType="java.util.List" name="Payload" doc:name="Payload"/>
     <flow name="GetMeals">
-        <http:listener config-ref="HTTP_Listener_Configuration" path="/" doc:name="HTTP"/>
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/meals" doc:name="HTTP"/>
         <set-variable variableName="meal" value="#[message.inboundProperties.'http.query.params'.meal]" doc:name="Set Meal"/>
         <logger message="Meal is: #[flowVars.meal]" level="INFO" doc:name="Logger"/>
         <choice doc:name="Choice">
@@ -44,8 +44,18 @@ payload map {
 	mealPrice: $.mealPrice,
 	fooItems: $.list1
 }]]></dw:set-payload>
+            <dw:set-variable variableName="var"><![CDATA[%dw 1.0
+%output application/json
+---
+payload map {
+	mealId: $.mealId,
+	mealName: $.mealName,
+	mealDesc: $.mealDesc,
+	mealPrice: $.mealPrice,
+	fooItems: $.list1
+}]]></dw:set-variable>
         </dw:transform-message>
-        <logger level="INFO" doc:name="Logger"/>
+        <set-payload value="#[flowVars.var]" mimeType="application/json" doc:name="Set Payload"/>
         <exception-strategy ref="CafeExceptionStrategy" doc:name="Reference Exception Strategy"/>
     </flow>
     <sub-flow name="BreakfastFlow">
@@ -53,7 +63,7 @@ payload map {
             <db:parameterized-query><![CDATA[SELECT mealtype_id FROM
 mealtype WHERE LCASE(mealtype_name) = "breakfast";]]></db:parameterized-query>
         </db:select>
-        <flow-ref name="GetData" doc:name="Get data"/>
+        <flow-ref name="GetData" doc:name="GetData"/>
         <logger level="INFO" doc:name="Logger"/>
     </sub-flow>
     <sub-flow name="LunchFlow">
@@ -109,7 +119,7 @@ flatten payload]]></dw:set-payload>
     </sub-flow>
     <sub-flow name="GetData">
         <set-variable variableName="mealTypeId" value="#[payload.get(0).mealtype_id]" doc:name="Set meal type Id"/>
-        <flow-ref name="GetMealIdList" doc:name="Set Meal Id List"/>
+        <flow-ref name="GetMealIdList" doc:name="GetMealIdList"/>
         <flow-ref name="SetMealList" doc:name="SetMealList"/>
         <flow-ref name="GetFoodItemList" doc:name="GetFoodItemList"/>
         <dw:transform-message doc:name="Transform Message">

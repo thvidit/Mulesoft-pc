@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.munit.launchconfig">
+<listAttribute key="Mpath">
+<listEntry value="C:\Users\EAI\AnypointStudio\workspace\cafe\src\test\munit\cafe-test-suite.xml"/>
+</listAttribute>
+<stringAttribute key="Ppath" value="C:\Users\EAI\AnypointStudio\workspace\cafe"/>
+<stringAttribute key="launch_mule_server_version" value="org.mule.tooling.server.3.8.5.ee"/>
+<listAttribute key="mule-project-names">
+<listEntry value="cafe"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="cafe-test-suite.xml"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="cafe"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Djava.library.path=C:\Users\EAI\AnypointStudio\workspace\cafe\src\main\app\lib&#13;&#10;-DmunitProjectName=cafe&#13;&#10;-Dlog4j.skipJansi=true"/>
+<stringAttribute key="resource" value="cafe-test-suite.xml"/>
+</launchConfiguration>

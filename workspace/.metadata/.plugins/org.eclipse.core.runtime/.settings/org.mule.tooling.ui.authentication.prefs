@@ -1,0 +1,5 @@
+authenticated.users=[{"token"\:"f0f49362-3700-4e4c-80ea-b27f7690eaff","userId"\:"thvidit","refreshToken"\:"","baseUrl"\:"https\://anypoint.mulesoft.com/"}]
+current.token=f0f49362-3700-4e4c-80ea-b27f7690eaff
+current.user=thvidit
+eclipse.preferences.version=1
+org.mule.tooling.amc.apps={"userProjectMap"\:{"thvidit"\:{"cafe"\:"{\\"applicationName\\"\:\\"cafe\\",\\"muleRuntime\\"\:\\"3.8.5\\",\\"properties\\"\:{}}"}}}

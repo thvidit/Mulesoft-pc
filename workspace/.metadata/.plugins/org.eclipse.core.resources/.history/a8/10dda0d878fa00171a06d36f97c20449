@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:spring="http://www.springframework.org/schema/beans" xmlns:core="http://www.mulesoft.org/schema/mule/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+    <munit:config name="munit" doc:name="MUnit configuration"/>
+    <spring:beans>
+        <spring:import resource="classpath:cafe.xml"/>
+    </spring:beans>
+    
+    <munit:test name="cafe-test-suite-BreakfastFlowTest" description="Test">
+        <munit:set payload="#['']" doc:name="Set HTTP query params">
+    		<munit:inbound-properties>
+        		<munit:inbound-property key="http.query.params" value="#[['meal': 'breakfast']]"/>
+    		</munit:inbound-properties>
+		</munit:set>
+        <logger level="INFO" doc:name="Logger"/>
+        <flow-ref name="GetMeals" doc:name="Flow Reference"/>
+        <logger message="munit payload is: #[flowVars.var]" level="INFO" doc:name="Logger"/>
+        <munit:assert-on-equals expectedValue="#[payload]" actualValue="#[flowVars.var]" doc:name="Assert Equals"/>
+    </munit:test>
+    <munit:test name="Copy_of_cafe-test-suite-BreakfastFlowTest" description="Test">
+        <munit:set payload="#['']" doc:name="Copy_of_Set HTTP query params">
+            <munit:inbound-properties>
+                <munit:inbound-property key="http.query.params" value="#[['meal': 'lunch']]"/>
+            </munit:inbound-properties>
+        </munit:set>
+        <logger level="INFO" doc:name="Copy_of_Logger"/>
+        <flow-ref name="GetMeals" doc:name="Copy_of_Flow Reference"/>
+        <logger message="munit payload is: #[flowVars.var]" level="INFO" doc:name="Copy_of_Logger"/>
+        <munit:assert-on-equals expectedValue="#[payload]" actualValue="#[flowVars.var]" doc:name="Copy_of_Assert Equals"/>
+    </munit:test>
+</mule>

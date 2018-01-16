@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:spring="http://www.springframework.org/schema/beans" xmlns:core="http://www.mulesoft.org/schema/mule/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+    <munit:config name="munit" doc:name="MUnit configuration"/>
+    <spring:beans>
+        <spring:import resource="classpath:cafe.xml"/>
+    </spring:beans>
+    
+    <munit:test name="cafe-test-suite-BreakfastFlowTest" description="Test">
+        <munit:set payload="#['']" doc:name="Set HTTP query params">
+    		<munit:inbound-properties>
+        		<munit:inbound-property key="http.query.params" value="#[['meal': 'breakfast']]"/>
+    		</munit:inbound-properties>
+		</munit:set>
+        <flow-ref name="GetMeals" doc:name="Flow-ref to BreakfastFlow"/>
+        <logger message="munit payload is: #[payload]" level="INFO" doc:name="Logger"/>
+        <munit:assert-on-equals expectedValue="[{&quot;mealId&quot;:5,&quot;mealName&quot;:&quot;Idli Sambhar&quot;,&quot;mealDesc&quot;:&quot;South indian goodness.&quot;,&quot;mealPrice&quot;:60,&quot;fooItems&quot;:[{&quot;item_type&quot;:&quot;Veg&quot;,&quot;item_id&quot;:2,&quot;item_name&quot;:&quot;Idli sambhar&quot;}]},{&quot;mealId&quot;:6,&quot;mealName&quot;:&quot;Corn Flakes&quot;,&quot;mealDesc&quot;:&quot;Milk wth corn flakes&quot;,&quot;mealPrice&quot;:60,&quot;fooItems&quot;:[{&quot;item_type&quot;:&quot;Veg&quot;,&quot;item_id&quot;:3,&quot;item_name&quot;:&quot;CornFlakes&quot;}]},{&quot;mealId&quot;:7,&quot;mealName&quot;:&quot;Uttapam&quot;,&quot;mealDesc&quot;:&quot;South indian goodness.&quot;,&quot;mealPrice&quot;:60,&quot;fooItems&quot;:[{&quot;item_type&quot;:&quot;Veg&quot;,&quot;item_id&quot;:21,&quot;item_name&quot;:&quot;Uttapam&quot;}]}]" actualValue="#[payload]" doc:name="Assert Equals"/>
+    </munit:test>
+</mule>

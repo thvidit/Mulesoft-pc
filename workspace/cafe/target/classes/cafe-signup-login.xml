@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:db="http://www.mulesoft.org/schema/mule/db"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
+    <flow name="LoginFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/login" doc:name="HTTP"/>
+        <set-variable variableName="user" value="#[message.inboundProperties.'http.query.params'.user == empty ? 'null' : message.inboundProperties.'http.query.params'.user]" doc:name="Check username"/>
+        <set-variable variableName="password" value="#[message.inboundProperties.'http.query.params'.pass]" doc:name="Set password"/>
+        <db:select config-ref="MySQL_Configuration" doc:name="Database">
+            <db:parameterized-query><![CDATA[SELECT *
+FROM users
+WHERE user_id = #[flowVars.user]]]></db:parameterized-query>
+        </db:select>
+        <logger message="Payload from database is:#[payload.size()], user: #[flowVars.user], password : #[flowVars.password]" level="INFO" doc:name="Logger"/>
+        <choice doc:name="Choice">
+            <when expression="#[payload.size() != 0]">
+                <flow-ref name="CheckPassword" doc:name="CheckPassword"/>
+            </when>
+            <otherwise>
+                <set-payload value="{  &quot;message&quot;: &quot;Invalid Username!&quot; }" mimeType="application/json" doc:name="Set Payload"/>
+                <logger level="INFO" doc:name="Logger"/>
+            </otherwise>
+        </choice>
+        <exception-strategy ref="cafe-signup-loginChoice_Exception_Strategy" doc:name="Reference Exception Strategy"/>
+    </flow>
+    <flow name="SignupFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/signup" allowedMethods="POST" doc:name="HTTP"/>
+        <set-variable variableName="user" value="#[message.inboundProperties.'http.query.params'.user]" doc:name="Set user"/>
+        <component class="com.mule.encrypt.EncryptData" doc:name="Encrypt Password"/>
+        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+        <set-variable variableName="encryptPass" value="#[payload]" doc:name="Encrypted String"/>
+        <db:insert config-ref="MySQL_Configuration" doc:name="Store in Database">
+            <db:parameterized-query><![CDATA[INSERT INTO users
+VALUES(#[message.inboundProperties.'http.query.params'.mid],
+#[message.inboundProperties.'http.query.params'.user], 
+#[flowVars.encryptPass],
+#[message.inboundProperties.'http.query.params'.email])]]></db:parameterized-query>
+        </db:insert>
+        <flow-ref name="GetUserData" doc:name="GetUserData"/>
+        <json:object-to-json-transformer doc:name="Object to JSON"/>
+        <exception-strategy ref="cafe-signup-loginChoice_Exception_Strategy" doc:name="Reference Exception Strategy"/>
+    </flow>
+    <sub-flow name="CheckPassword">
+        <db:select config-ref="MySQL_Configuration" doc:name="Database">
+            <db:parameterized-query><![CDATA[SELECT *  FROM users
+WHERE user_id = #[flowVars.user]]]></db:parameterized-query>
+        </db:select>
+        <logger message="Password from database: #[payload.user_pass]" level="INFO" doc:name="Logger"/>
+        <set-variable variableName="passdb" value="#[payload.get(0).user_pass]" doc:name="Decide to login"/>
+        <component doc:name="Get hashed value of password" class="com.mule.encrypt.EncryptData"/>
+        <set-variable variableName="encryptedPass" value="#[payload]" doc:name="Variable"/>
+        <choice doc:name="Choice">
+            <when expression="#[flowVars.encryptedPass == flowVars.passdb]">
+                <flow-ref name="GetUserData" doc:name="GetUserData"/>
+            </when>
+            <otherwise>
+                <set-payload value="{
+	&quot;message&quot;: &quot;Invalid Password!&quot;
+}" doc:name="Set Payload" mimeType="application/json"/>
+            </otherwise>
+        </choice>
+    </sub-flow>
+    <sub-flow name="GetUserData">
+        <db:select config-ref="MySQL_Configuration" doc:name="Database">
+            <db:parameterized-query><![CDATA[SELECT * FROM users
+where user_id= #[flowVars.user]]]></db:parameterized-query>
+        </db:select>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+payload map
+"userDetails":{
+	userId: $.user_id,
+	userName: $.user_name,
+	userEmail: $.user_email
+}]]></dw:set-payload>
+        </dw:transform-message>
+    </sub-flow>
+    <choice-exception-strategy name="cafe-signup-loginChoice_Exception_Strategy">
+        <catch-exception-strategy doc:name="Catch Exception Strategy">
+            <set-payload value="{
+&quot;message&quot;: &quot;Duplicate Primary Key.&quot;
+}" doc:name="Set Payload"/>
+        </catch-exception-strategy>
+    </choice-exception-strategy>
+
+</mule>
