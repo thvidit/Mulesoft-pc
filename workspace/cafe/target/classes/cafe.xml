@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
 http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
     <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" basePath="/cafe" doc:name="HTTP Listener Configuration"/>
-    <db:mysql-config name="MySQL_Configuration" host="localhost" port="3306" user="root" password="Welcome123" database="cafe1" doc:name="MySQL Configuration"/>
+    <db:mysql-config name="MySQL_Configuration" host="cafe.ct0pvczifqwh.eu-west-2.rds.amazonaws.com" port="3306" user="thvidit" password="thvidit3" database="cafe1" doc:name="MySQL Configuration"/>
     <payload-type-filter expectedType="java.util.List" name="Payload" doc:name="Payload"/>
     <flow name="GetMeals">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/meals" doc:name="HTTP"/>

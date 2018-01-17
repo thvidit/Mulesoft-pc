@@ -13,6 +13,7 @@ http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/fil
     <jms:activemq-connector name="Active_MQ" specification="1.1" username="admin" password="admin" brokerURL="tcp://localhost:61616" validateConnections="true" doc:name="Active MQ"/>
     <flow name="JMS-Producer">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/sendmessage" allowedMethods="POST" doc:name="HTTP"/>
+        <logger message="Message is: #[json:message]" level="INFO" doc:name="Logger"/>
         <object-to-string-transformer doc:name="Object to String"/>
         <jms:outbound-endpoint queue="muleQueue" connector-ref="Active_MQ" doc:name="JMS"/>
         <logger message="Sent message is: #[payload]" level="INFO" doc:name="Logger"/>

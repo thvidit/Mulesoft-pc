@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.munit.launchconfig">
+<listAttribute key="Mpath">
+<listEntry value="C:\Users\EAI\AnypointStudio\workspace\JavaMessagingService\src\test\munit\javamessagingservice-test-suite.xml"/>
+</listAttribute>
+<stringAttribute key="Ppath" value="C:\Users\EAI\AnypointStudio\workspace\JavaMessagingService"/>
+<stringAttribute key="launch_mule_server_version" value="org.mule.tooling.server.3.8.5.ee"/>
+<listAttribute key="mule-project-names">
+<listEntry value="JavaMessagingService"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="javamessagingservice-test-suite.xml"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="JavaMessagingService"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Djava.library.path=&#13;&#10;-DmunitProjectName=JavaMessagingService&#13;&#10;-Dlog4j.skipJansi=true"/>
+<stringAttribute key="resource" value="javamessagingservice-test-suite.xml"/>
+<stringAttribute key="test_name" value="javamessagingservice-test-suite-JMS-ConsumerTest"/>
+</launchConfiguration>
