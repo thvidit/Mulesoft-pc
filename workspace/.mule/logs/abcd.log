@@ -1,0 +1,46 @@
+2018-01-22 12:36:34,208 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'abcd'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 12:36:34,390 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-22 12:36:34,485 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-22 12:36:34,568 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-22 12:36:34,568 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-22 12:36:34,618 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@780ec4a5: startup date [Mon Jan 22 12:36:34 IST 2018]; root of context hierarchy
+2018-01-22 12:36:35,678 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-22 12:36:36,301 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-22 12:36:36,880 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\abcd\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\abcd\queue-tx-log\tx2.log
+2018-01-22 12:36:36,897 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\abcd\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\abcd\queue-xa-tx-log\tx2.log
+2018-01-22 12:36:36,967 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-22 12:36:36,967 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: abcFlow
+2018-01-22 12:36:36,967 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@383caf89
+2018-01-22 12:36:37,007 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: abcFlow.stage1
+2018-01-22 12:36:37,192 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\abcd\abcd.xml'}]"
+2018-01-22 12:36:37,192 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\abcd\abcd.xml'}]"
+2018-01-22 12:36:40,270 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'abcd'                                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 12:36:40,272 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-22 12:36:40,272 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-22 12:36:40,315 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-22 12:36:40,315 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 12:36:40,315 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-22 12:36:40,315 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: abcFlow
+2018-01-22 12:36:40,315 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: abcFlow.stage1
+2018-01-22 12:36:40,352 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-22 12:36:40,366 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: abcd                                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
